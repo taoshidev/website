@@ -1,5 +1,4 @@
 import "normalize.css/normalize.css";
-
 import "../styles/index.scss";
 
 import type { Metadata } from "next";

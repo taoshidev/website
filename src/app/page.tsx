@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main>
+    <main className="main">
       <div className="content">
         <Image
           src={logo}

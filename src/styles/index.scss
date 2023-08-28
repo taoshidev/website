@@ -11,15 +11,6 @@
   }
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
-}
-
 .content {
   display: flex;
   flex-direction: column;
@@ -27,4 +18,13 @@ main {
   align-items: center;
   position: relative;
   top: -100px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem;
+  min-height: 100vh;
 }
