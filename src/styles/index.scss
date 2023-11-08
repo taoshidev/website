@@ -59,6 +59,7 @@ a {
   vertical-align: text-bottom;
   position: relative;
   transition: all 0.05s linear;
+  width: 100px;
 
   &::after {
     margin-left: 4px;

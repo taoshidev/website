@@ -58,6 +58,9 @@ export default function Home() {
             >
               Twitter
             </a>
+            <a href="https://dashboard.taoshi.io" className="matrix">
+              Dashboard
+            </a>
           </footer>
         </div>
       </div>
