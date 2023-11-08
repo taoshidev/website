@@ -53,6 +53,7 @@ export default function Home() {
           <footer>
             <a
               href="https://twitter.com/taoshiio"
+              rel="noopener noreferrer nofollow"
               target="_blank"
               className="matrix"
             >
@@ -60,6 +61,14 @@ export default function Home() {
             </a>
             <a href="https://dashboard.taoshi.io" className="matrix">
               Dashboard
+            </a>
+            <a
+              href="https://github.com/taoshidev"
+              rel="noopener noreferrer nofollow"
+              className="matrix"
+              target="_blank"
+            >
+              Github
             </a>
           </footer>
         </div>
