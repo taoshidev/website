@@ -1,4 +1,4 @@
-export const styles = {
+export const globalStyles = {
   global: {
     "html, body": {
       margin: "0",

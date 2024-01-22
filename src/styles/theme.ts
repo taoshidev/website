@@ -1,11 +1,13 @@
 import { extendTheme } from "@chakra-ui/react";
 
-import { styles } from "./global";
+import { components } from "./components";
+import { fonts } from "./fonts";
+import { globalStyles } from "./global";
+import { tokens } from "./tokens";
 
 export const theme = extendTheme({
-  styles,
-  fonts: {
-    heading: 'var(--font-adlam)',
-    body: 'var(--font-space-mono)',
-  }
+  components,
+  fonts,
+  semanticTokens: tokens,
+  styles: globalStyles,
 });

@@ -3,7 +3,7 @@ import { clsx } from "clsx";
 
 import PlausibleProvider from "next-plausible";
 
-import { fonts } from "@/styles/fonts";
+import { ADLaMDisplay, SpaceMono } from "@/styles/fonts";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
@@ -17,10 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={clsx(fonts.ADLaMDisplay.variable, fonts.SpaceMono.variable)}
-    >
+    <html lang="en" className={clsx(ADLaMDisplay.variable, SpaceMono.variable)}>
       <head>
         <PlausibleProvider domain="taoshi.io" />
       </head>

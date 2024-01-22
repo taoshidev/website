@@ -16,6 +16,6 @@ export const SpaceMono = Space_Mono({
 });
 
 export const fonts = {
-  ADLaMDisplay,
-  SpaceMono
-}
+  heading: "var(--font-adlam)",
+  body: "var(--font-space-mono)",
+};
