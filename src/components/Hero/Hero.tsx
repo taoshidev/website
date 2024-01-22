@@ -12,8 +12,9 @@ export const Hero = () => {
   return (
     <Box>
       <Box textAlign="center" my="100px">
-        <Text fontSize="2xl" fontWeight="bold" mb="6">
-          Velit proident ut adeconsectetur deserunt.
+        <Text fontSize="xl" fontWeight="bold" mb="6">
+          Decentralized Financial Forecasting Through the Power of Artificial
+          Intelligence.
         </Text>
         <ButtonGroup spacing="5">
           <Link
