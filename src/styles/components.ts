@@ -23,9 +23,10 @@ export const components = {
   },
   Link: {
     baseStyle: {
+      borderBottom: "1px dotted transparent",
       _hover: {
         textDecoration: "none",
-        color: "orange",
+        borderBottom: "1px dotted black",
       },
     },
   },

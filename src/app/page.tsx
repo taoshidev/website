@@ -9,7 +9,7 @@ import { Nav } from "@/components/Nav";
 
 export default function Home() {
   return (
-    <Container maxW="640px" my="50px">
+    <Container maxW="640px" mt="50px" mb="160px">
       <Flex direction="column" justify="center">
         <Box>
           <Header />

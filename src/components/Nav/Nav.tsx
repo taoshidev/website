@@ -1,4 +1,4 @@
-import { Box, Link, HStack } from "@chakra-ui/react";
+import { Box, Link, HStack, Center, Divider } from "@chakra-ui/react";
 
 export const Nav = () => {
   return (

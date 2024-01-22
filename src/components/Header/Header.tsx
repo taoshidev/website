@@ -9,7 +9,7 @@ import logo from "@/app/assets/logo.svg";
 
 export const Header = () => {
   return (
-    <Center mb="8">
+    <Center mb="6">
       <VStack spacing="4">
         <Image
           as={NextImage}
