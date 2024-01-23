@@ -17,7 +17,6 @@ export const components = {
   },
   Divider: {
     baseStyle: {
-      borderStyle: "dashed",
       borderColor: "black",
     },
   },

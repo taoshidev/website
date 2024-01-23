@@ -7,10 +7,10 @@ export const Nav = () => {
         <Link
           flex="1"
           textAlign="center"
-          href="https://github.com/taoshidev/time-series-prediction-subnet?tab=readme-ov-file"
+          href="https://dashboard.taoshi.io"
           isExternal
         >
-          Get Started
+          Dashboard
         </Link>
         <Link
           flex="1"

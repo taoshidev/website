@@ -1,11 +1,12 @@
 "use client";
 
-import { Container, Flex, Box } from "@chakra-ui/react";
+import { Container, Flex, Box, Center, Divider } from "@chakra-ui/react";
 
 import { Copy } from "@/components/Copy";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Nav } from "@/components/Nav";
+import { Statistics } from "@/components/Statistics";
 
 export default function Home() {
   return (
@@ -15,7 +16,10 @@ export default function Home() {
           <Header />
           <Nav />
           <Hero />
-
+          <Statistics />
+          <Center mb="10">
+            <Divider w="50px" borderStyle="dashed" />
+          </Center>
           <Copy />
         </Box>
       </Flex>

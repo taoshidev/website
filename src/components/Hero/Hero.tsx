@@ -1,19 +1,11 @@
-import {
-  Box,
-  Center,
-  Text,
-  Divider,
-  ButtonGroup,
-  Button,
-  Link,
-} from "@chakra-ui/react";
+import { Box, Text, ButtonGroup, Button, Link } from "@chakra-ui/react";
 
 export const Hero = () => {
   return (
     <Box>
       <Box textAlign="center" my="100px">
         <Text fontSize="xl" fontWeight="bold" mb="6">
-          Decentralized Financial Forecasting Through the Power of Artificial
+          Decentralized Forecasting Through the Power of Artificial
           Intelligence.
         </Text>
         <ButtonGroup spacing="5">
@@ -35,9 +27,6 @@ export const Hero = () => {
           </Link>
         </ButtonGroup>
       </Box>
-      <Center mb="10">
-        <Divider w="50px" borderStyle="dashed" />
-      </Center>
     </Box>
   );
 };
