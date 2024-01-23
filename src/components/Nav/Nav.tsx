@@ -1,12 +1,20 @@
-import { Box, Link, HStack, Center, Divider } from "@chakra-ui/react";
+import { Box, Link, HStack } from "@chakra-ui/react";
+import { usePlausible } from "next-plausible";
 
 export const Nav = () => {
+  const plausible = usePlausible();
+
+  const sendEvent = (eventName: string) => {
+    plausible(eventName);
+  };
+
   return (
     <Box as="nav" fontSize="0.875rem">
       <HStack width="100%">
         <Link
           flex="1"
           textAlign="center"
+          onClick={() => sendEvent("dashboard")}
           href="https://dashboard.taoshi.io"
           isExternal
         >
@@ -15,6 +23,7 @@ export const Nav = () => {
         <Link
           flex="1"
           textAlign="center"
+          onClick={() => sendEvent("github")}
           href="https://github.com/taoshidev/time-series-prediction-subnet?tab=readme-ov-file"
           isExternal
         >
@@ -23,6 +32,7 @@ export const Nav = () => {
         <Link
           flex="1"
           textAlign="center"
+          onClick={() => sendEvent("discord")}
           href="https://discordapp.com"
           isExternal
         >
@@ -31,6 +41,7 @@ export const Nav = () => {
         <Link
           flex="1"
           textAlign="center"
+          onClick={() => sendEvent("twitter")}
           href="https://twitter.com/taoshiio"
           isExternal
         >
@@ -39,6 +50,7 @@ export const Nav = () => {
         <Link
           flex="1"
           textAlign="center"
+          onClick={() => sendEvent("contact")}
           href="https://twitter.com/taoshiio"
           isExternal
         >
