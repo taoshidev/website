@@ -5,6 +5,7 @@ export const Nav = () => {
   const plausible = usePlausible();
 
   const sendEvent = (eventName: string) => {
+    console.log(eventName);
     plausible(eventName);
   };
 
