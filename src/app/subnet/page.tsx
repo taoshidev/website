@@ -2,7 +2,7 @@
 
 import NextImage from "next/image";
 
-import { Image } from "@chakra-ui/next-js";
+import { Image, Link } from "@chakra-ui/next-js";
 import {
   Divider,
   Container,
@@ -177,17 +177,49 @@ export default function Page() {
           </Center>
 
           <Box mb="80px">
-            <Text fontWeight="bold" mb="3">
+            <Text fontSize="x-large" fontWeight="bold" mb="3" color="orange">
               Feeling Ready To Get Started?
             </Text>
 
-            <Text>
-              Begin your journey as a miner on Subnet 8 with our ReadMe on
-              Github. Follow our guide, begin contributing your models, and
-              start earning rewards within 10 hours. Additionally, we recommend
-              joining our Mining Hub on Discord, which is a collaborative space
-              for both novice and experienced miners.
-            </Text>
+            <Box>
+              <Text>
+                Begin your journey as a miner on Subnet 8 with our{" "}
+                <Link
+                  isExternal
+                  href="https://github.com/taoshidev/time-series-prediction-subnet"
+                  px="1"
+                  backgroundColor="orange"
+                  color="white"
+                >
+                  README on GitHub.
+                </Link>
+              </Text>
+              <Text>
+                <Link
+                  isExternal
+                  href="https://github.com/taoshidev/time-series-prediction-subnet"
+                  px="1"
+                  backgroundColor="orange"
+                  color="white"
+                >
+                  Follow our guide
+                </Link>
+                , contribute your models, and earn rewards within 10 hours.
+              </Text>
+              <Text>
+                Additionally, we recommend{" "}
+                <Link
+                  isExternal
+                  href="https://discord.gg/dks5wJNA"
+                  px="1"
+                  backgroundColor="orange"
+                  color="white"
+                >
+                  joining our Mining Hub on Discord
+                </Link>
+                , a collaborative space for novice and experienced miners.
+              </Text>
+            </Box>
           </Box>
         </Box>
       </Flex>

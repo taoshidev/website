@@ -131,7 +131,7 @@ export default function Home() {
                   width={100}
                   height={100}
                   src={intraday}
-                  alt="Picture of the author"
+                  alt="Taoshi's Mission"
                 />
               </Center>
             </HStack>
