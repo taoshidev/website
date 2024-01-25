@@ -19,6 +19,7 @@ import { Nav } from "@/components/Nav";
 import { Hubspot } from "@/components/Hubspot";
 
 import subnet from "@/app/assets/subnet.svg";
+import mining from "@/app/assets/mining.svg";
 import openSource from "@/app/assets/open-source.svg";
 import intraday from "@/app/assets/intraday.svg";
 
@@ -91,7 +92,7 @@ export default function Page() {
             <HStack width="100%">
               <Box maxWidth="600px">
                 <Text fontWeight="bold" mb="3">
-                  Intraday Bitcoin Predictions
+                  The World&apos;s Largest Incentivized Mining Pool
                 </Text>
 
                 <Text>
@@ -106,7 +107,7 @@ export default function Page() {
                   as={NextImage}
                   width={100}
                   height={100}
-                  src={subnet}
+                  src={mining}
                   alt="largest mining pool"
                 />
               </Center>
