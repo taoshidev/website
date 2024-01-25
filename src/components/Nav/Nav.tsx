@@ -1,11 +1,11 @@
-import { Box, Link, HStack } from "@chakra-ui/react";
+import { Box, HStack } from "@chakra-ui/react";
+import { Link } from "@chakra-ui/next-js";
 import { usePlausible } from "next-plausible";
 
 export const Nav = () => {
   const plausible = usePlausible();
 
   const sendEvent = (eventName: string) => {
-    console.log(eventName);
     plausible(eventName);
   };
 
@@ -14,33 +14,45 @@ export const Nav = () => {
       <HStack width="100%">
         <Link
           flex="1"
+          fontSize="xs"
+          textAlign="center"
+          onClick={() => sendEvent("subnet")}
+          href="/subnet"
+        >
+          Subnet 8
+        </Link>
+        <Link
+          flex="1"
+          fontSize="xs"
           textAlign="center"
           onClick={() => sendEvent("dashboard")}
           href="https://dashboard.taoshi.io"
-          isExternal
         >
           Dashboard
         </Link>
         <Link
           flex="1"
+          fontSize="xs"
           textAlign="center"
           onClick={() => sendEvent("github")}
-          href="https://github.com/taoshidev/time-series-prediction-subnet?tab=readme-ov-file"
+          href="https://github.com/taoshidev/time-series-prediction-subnet"
           isExternal
         >
           Github
         </Link>
         <Link
           flex="1"
+          fontSize="xs"
           textAlign="center"
           onClick={() => sendEvent("discord")}
-          href="https://discordapp.com"
+          href="https://discord.gg/MKtKVYnCDh"
           isExternal
         >
           Discord
         </Link>
         <Link
           flex="1"
+          fontSize="xs"
           textAlign="center"
           onClick={() => sendEvent("twitter")}
           href="https://twitter.com/taoshiio"
@@ -50,9 +62,10 @@ export const Nav = () => {
         </Link>
         <Link
           flex="1"
+          fontSize="xs"
           textAlign="center"
           onClick={() => sendEvent("contact")}
-          href="https://twitter.com/taoshiio"
+          href="mailto:knicholson@taoshi.io"
           isExternal
         >
           Contact

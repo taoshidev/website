@@ -3,7 +3,7 @@
 import NextImage from "next/image";
 
 import { Center, Heading, VStack } from "@chakra-ui/react";
-import { Image } from "@chakra-ui/next-js";
+import { Image, Link } from "@chakra-ui/next-js";
 
 import logo from "@/app/assets/logo.svg";
 
@@ -18,7 +18,9 @@ export const Header = () => {
           height={100}
           alt="taoshi logo"
         />
-        <Heading size="md">taoshi</Heading>
+        <Heading size="md">
+          <Link href="/">taoshi</Link>
+        </Heading>
       </VStack>
     </Center>
   );
