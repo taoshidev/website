@@ -1,7 +1,6 @@
 "use client";
 
 import NextImage from "next/image";
-
 import { Image, Link } from "@chakra-ui/next-js";
 import {
   Divider,
@@ -17,6 +16,7 @@ import {
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Nav } from "@/components/Nav";
+import { Hubspot } from "@/components/Hubspot";
 
 import subnet from "@/app/assets/subnet.svg";
 import openSource from "@/app/assets/open-source.svg";
@@ -51,7 +51,11 @@ export default function Page() {
             ctas={ctas}
           />
 
-          <Box mb="80px" borderLeft="1px dashed black" paddingLeft="20px">
+          <Box
+            mb={{ base: "40px", sm: "80px" }}
+            borderLeft="1px dashed black"
+            paddingLeft="20px"
+          >
             <Text>
               <Text as="span" borderBottom="1px dashed black">
                 Subnet 8 is the flagship subnet of Taoshi within the Bittensor
@@ -70,7 +74,7 @@ export default function Page() {
             </Text>
           </Box>
 
-          <Box mb="80px">
+          <Box mb={{ base: "40px", sm: "80px" }}>
             <Text fontWeight="bold" mb="3">
               Why Mine on Subnet 8?
             </Text>
@@ -80,7 +84,10 @@ export default function Page() {
             </Text>
           </Box>
 
-          <VStack spacing="80px" mb="80px">
+          <VStack
+            spacing={{ base: "40px", md: "80px" }}
+            mb={{ base: "40px", sm: "80px" }}
+          >
             <HStack width="100%">
               <Box maxWidth="600px">
                 <Text fontWeight="bold" mb="3">
@@ -94,7 +101,7 @@ export default function Page() {
                   contribute their best models.
                 </Text>
               </Box>
-              <Center flex="1">
+              <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
                   as={NextImage}
                   width={100}
@@ -106,7 +113,7 @@ export default function Page() {
             </HStack>
 
             <HStack width="100%">
-              <Center flex="1">
+              <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
                   as={NextImage}
                   width={100}
@@ -143,7 +150,7 @@ export default function Page() {
                   the way for many opportunities to predict financial markets.
                 </Text>
               </Box>
-              <Center flex="1">
+              <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
                   as={NextImage}
                   width={100}
@@ -155,7 +162,7 @@ export default function Page() {
             </HStack>
           </VStack>
 
-          <Box mb="80px">
+          <Box mb={{ base: "40px", sm: "80px" }}>
             <Text fontWeight="bold" mb="3">
               How Subnet 8 Functions
             </Text>
@@ -168,7 +175,7 @@ export default function Page() {
             </Text>
           </Box>
 
-          <Center my="80px">
+          <Center mb={{ base: "40px", sm: "80px" }}>
             <Divider
               orientation="horizontal"
               borderStyle="dashed"
@@ -176,7 +183,7 @@ export default function Page() {
             />
           </Center>
 
-          <Box mb="80px">
+          <Box mb={{ base: "40px", sm: "80px" }}>
             <Text fontSize="x-large" fontWeight="bold" mb="3" color="orange">
               Feeling Ready To Get Started?
             </Text>
@@ -223,6 +230,8 @@ export default function Page() {
           </Box>
         </Box>
       </Flex>
+
+      <Hubspot />
     </Container>
   );
 }

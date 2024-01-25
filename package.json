@@ -21,6 +21,7 @@
     "eslint-config-next": "13.4.19",
     "framer-motion": "^10.18.0",
     "next": "13.4.19",
+    "next-hubspot": "^1.2.0",
     "next-plausible": "^3.12.0",
     "normalize.css": "^8.0.1",
     "react": "18.2.0",

@@ -26,7 +26,7 @@ export const Hero = ({ title, copy, ctas }: HeroProps) => {
   };
   return (
     <Box>
-      <Box textAlign="center" my="150px">
+      <Box textAlign="center" my={{ base: "100px", sm: "150px" }}>
         {title && (
           <VStack mb="4">
             <Image

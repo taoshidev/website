@@ -52,7 +52,7 @@ export default function Home() {
 
           <Statistics />
 
-          <VStack spacing="80px" mb="80px">
+          <VStack spacing={{ base: "40px", md: "80px" }} mb="80px">
             <HStack width="100%">
               <Box maxWidth="600px">
                 <Text fontWeight="bold" mb="3">
@@ -67,7 +67,7 @@ export default function Home() {
                   blockchain.
                 </Text>
               </Box>
-              <Center flex="1">
+              <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
                   as={NextImage}
                   width={100}
@@ -79,7 +79,7 @@ export default function Home() {
             </HStack>
 
             <HStack width="100%">
-              <Center flex="1">
+              <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
                   as={NextImage}
                   width={100}
@@ -125,7 +125,7 @@ export default function Home() {
                   at a time.
                 </Text>
               </Box>
-              <Center flex="1">
+              <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
                   as={NextImage}
                   width={100}

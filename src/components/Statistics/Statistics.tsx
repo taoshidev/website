@@ -20,7 +20,9 @@ export const Statistics = () => {
                 *
               </Text>
             </Text>
-            <Text fontSize="sm">Miner Payouts</Text>
+            <Text textAlign="center" fontSize={{ base: "12px", sm: "14px" }}>
+              Miner Payouts
+            </Text>
           </VStack>
           <Center height="20px">
             <Divider orientation="vertical" borderStyle="dashed" />
@@ -32,7 +34,9 @@ export const Statistics = () => {
                 *
               </Text>
             </Text>
-            <Text fontSize="sm">Daily Mining Rewards</Text>
+            <Text textAlign="center" fontSize={{ base: "12px", sm: "14px" }}>
+              Daily Mining Rewards
+            </Text>
           </VStack>
           <Center height="20px">
             <Divider orientation="vertical" borderStyle="dashed" />
@@ -44,7 +48,9 @@ export const Statistics = () => {
                 *
               </Text>
             </Text>
-            <Text fontSize="sm">Payout Velocity</Text>
+            <Text textAlign="center" fontSize={{ base: "12px", sm: "14px" }}>
+              Payout Velocity
+            </Text>
           </VStack>
         </HStack>
       </Box>
