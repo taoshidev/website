@@ -8,7 +8,8 @@ import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Taoshi",
-  description: "Taoshi - Predictions through the power of AI",
+  description:
+    "Decentralized Forecasting of Financial Markets Through the Power of AI",
 };
 
 export default function RootLayout({
