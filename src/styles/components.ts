@@ -6,7 +6,7 @@ export const components = {
     variants: {
       primary: {
         bg: "transparent",
-        border: "1px dotted orange",
+        border: "1px dashed orange",
         color: "orange",
         _hover: {
           bg: "orange",
@@ -22,10 +22,10 @@ export const components = {
   },
   Link: {
     baseStyle: {
-      borderBottom: "1px dotted transparent",
+      borderBottom: "1px dashed transparent",
       _hover: {
         textDecoration: "none",
-        borderBottom: "1px dotted black",
+        borderBottom: "1px dashed black",
       },
     },
   },

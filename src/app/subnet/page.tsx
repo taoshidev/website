@@ -48,23 +48,25 @@ export default function Page() {
           <Hero
             title="Subnet 8"
             copy="The Nexus of Decentralized Financial Forecasting"
-            tagline="The flagship subnet of Taoshi within the Bittensor network, dedicated to revolutionizing the way we predict financial markets."
             ctas={ctas}
           />
 
           <Box mb="80px" borderLeft="1px dashed black" paddingLeft="20px">
             <Text>
-              Subnet 8 is the flagship subnet of Taoshi within the Bittensor
-              network, dedicated to revolutionizing the way we predict financial
-              markets. Focused exclusively on price forecasting for Bitcoin, and
-              at the cutting edge of open-source prediction modeling, we harness
-              the collective intelligence of data scientists and AI enthusiasts
-              to create a robust, decentralized forecasting platform. Subnet 8
+              <Text as="span" borderBottom="1px dashed black">
+                Subnet 8 is the flagship subnet of Taoshi within the Bittensor
+                network, dedicated to revolutionizing the way we predict
+                financial markets.
+              </Text>{" "}
+              Focused exclusively on price forecasting for Bitcoin, and at the
+              cutting edge of open-source prediction modeling, we harness the
+              collective intelligence of data scientists and AI enthusiasts to
+              create a robust, decentralized forecasting platform. Subnet 8
               champions a transparent and merit-based ecosystem, where each
               contribution is pivotal in sculpting the landscape of financial
               forecasting. By joining Subnet 8, you contribute to a cutting-edge
               ecosystem that not only values your expertise, but also rewards
-              it, through the world’s largest incentivized mining pool.
+              it, through the world&apos;s largest incentivized mining pool.
             </Text>
           </Box>
 
@@ -136,7 +138,7 @@ export default function Page() {
                 <Text>
                   Unlike competitors who focus solely on stock market
                   predictions, we are pioneering the space of intraday Bitcoin
-                  price predictions. Taoshi’s offerings will soon expand to
+                  price predictions. Taoshi&apos;s offerings will soon expand to
                   include other cryptocurrencies and financial markets, paving
                   the way for many opportunities to predict financial markets.
                 </Text>
@@ -153,14 +155,6 @@ export default function Page() {
             </HStack>
           </VStack>
 
-          <Center my="160px">
-            <Divider
-              orientation="horizontal"
-              borderStyle="dashed"
-              width="50%"
-            />
-          </Center>
-
           <Box mb="80px">
             <Text fontWeight="bold" mb="3">
               How Subnet 8 Functions
@@ -174,20 +168,25 @@ export default function Page() {
             </Text>
           </Box>
 
+          <Center my="80px">
+            <Divider
+              orientation="horizontal"
+              borderStyle="dashed"
+              width="50%"
+            />
+          </Center>
+
           <Box mb="80px">
             <Text fontWeight="bold" mb="3">
-              Getting Started
+              Feeling Ready To Get Started?
             </Text>
 
             <Text>
-              Taoshi&apos;s mission is to create an intuitive, user-friendly
-              environment that inspires individuals and enterprises to explore,
-              innovate, and thrive within the Bittensor ecosystem. Whether
-              you&apos;re an AI developer, a data scientist, or an entrepreneur
-              with a vision, our solutions serve as your gateway to a world of
-              opportunities. At Taoshi, we&apos;re shaping the future by
-              harnessing Bittensor to build a brighter, more decentralized
-              world, one specialized subnetwork at a time.
+              Begin your journey as a miner on Subnet 8 with our ReadMe on
+              Github. Follow our guide, begin contributing your models, and
+              start earning rewards within 10 hours. Additionally, we recommend
+              joining our Mining Hub on Discord, which is a collaborative space
+              for both novice and experienced miners.
             </Text>
           </Box>
         </Box>

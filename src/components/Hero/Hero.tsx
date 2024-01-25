@@ -14,12 +14,11 @@ export interface CTA {
 
 export interface HeroProps {
   copy: string;
-  tagline?: string;
   ctas: CTA[];
   title?: string;
 }
 
-export const Hero = ({ title, copy, tagline, ctas }: HeroProps) => {
+export const Hero = ({ title, copy, ctas }: HeroProps) => {
   const plausible = usePlausible();
 
   const sendEvent = (eventName: string) => {
@@ -37,13 +36,12 @@ export const Hero = ({ title, copy, tagline, ctas }: HeroProps) => {
               src={subnet}
               alt="Picture of the author"
             />
-            <Text fontWeight="bold">{title}</Text>
+            <Text>{title}</Text>
           </VStack>
         )}
-        <Text fontSize="x-large" fontWeight="bold" mb={tagline ? "1" : "6"}>
+        <Text fontSize="x-large" fontWeight="bold" mb="8">
           {copy}
         </Text>
-        {tagline && <Text mb="6">{tagline}</Text>}
         <ButtonGroup spacing="5">
           {ctas.map((cta) => (
             <Link
