@@ -230,7 +230,9 @@ export default function Page() {
           </Box>
         </Box>
       </Flex>
-
+      <Center mb={{ base: "40px", sm: "80px" }}>
+        <Divider orientation="horizontal" borderStyle="dashed" width="50%" />
+      </Center>
       <Hubspot />
     </Container>
   );

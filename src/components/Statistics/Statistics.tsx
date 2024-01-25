@@ -1,12 +1,4 @@
-import {
-  HStack,
-  Text,
-  VStack,
-  Divider,
-  Center,
-  Box,
-  Flex,
-} from "@chakra-ui/react";
+import { HStack, Text, VStack, Divider, Center, Box } from "@chakra-ui/react";
 
 export const Statistics = () => {
   return (
