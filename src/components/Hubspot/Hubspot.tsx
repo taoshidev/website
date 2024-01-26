@@ -13,11 +13,11 @@ export const Hubspot = () => {
         <Text fontWeight="bold" mb="3">
           Looking for Access to Subnet 8&apos;s Predictive Outputs?
         </Text>
-        <Text>
-          To be among the first to access the outputs of Subnet 8, fill out the
-          form below to express your interest, and we&apos;ll keep you informed
-          with the latest updates and access details as soon as they&apos;re
-          available.
+        <Text mb="8">
+          Sign up here to be among the first to access the outputs of Subnet 8.
+          Simply fill out the form below to express your interest, and
+          we&apos;ll keep you informed with the latest updates and access
+          details as soon as they&apos;re available.
         </Text>
       </Box>
 

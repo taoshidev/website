@@ -52,7 +52,7 @@ export default function Home() {
 
           <Statistics />
 
-          <VStack spacing={{ base: "40px", md: "80px" }} mb="80px">
+          <VStack spacing={{ base: "40px", md: "100px" }} mb="80px">
             <HStack width="100%">
               <Box maxWidth="600px">
                 <Text fontWeight="bold" mb="3">
