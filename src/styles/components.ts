@@ -13,6 +13,15 @@ export const components = {
           color: "white",
         },
       },
+      secondary: {
+        bg: "transparent",
+        border: "1px dashed black",
+        color: "black",
+        _hover: {
+          bg: "black",
+          color: "white",
+        },
+      },
     },
   },
   Divider: {

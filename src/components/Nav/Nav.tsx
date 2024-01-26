@@ -27,7 +27,7 @@ export const Nav = () => {
             aria-label={isOpen ? "Close menu" : "Open menu"}
             icon={isOpen ? <FaTimes /> : <FaAlignJustify />}
             onClick={onToggle}
-            variant="primary"
+            variant="secondary"
           />
         )}
       </Center>
