@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { clsx } from "clsx";
 
 import PlausibleProvider from "next-plausible";
@@ -26,13 +27,13 @@ export default function RootLayout({
         <Providers>{children}</Providers>
 
         {/* <!-- Start of HubSpot Embed Code --> */}
-        <script
+        <Script
           type="text/javascript"
           id="hs-script-loader"
           async
           defer
           src="//js.hs-scripts.com/45009699.js"
-        ></script>
+        />
         {/* <!-- End of HubSpot Embed Code --> */}
       </body>
     </html>
