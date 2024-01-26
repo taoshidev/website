@@ -2,6 +2,7 @@
 
 import NextImage from "next/image";
 import { Image, Link } from "@chakra-ui/next-js";
+
 import {
   Divider,
   Container,
@@ -11,17 +12,23 @@ import {
   VStack,
   HStack,
   Center,
+  List,
+  ListItem,
+  ListIcon,
 } from "@chakra-ui/react";
+
+import { FaCheck } from "react-icons/fa";
 
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Nav } from "@/components/Nav";
 import { Hubspot } from "@/components/Hubspot";
 
-import subnet from "@/app/assets/subnet.svg";
 import mining from "@/app/assets/mining.svg";
+import vetted from "@/app/assets/vetted.svg";
 import openSource from "@/app/assets/open-source.svg";
 import intraday from "@/app/assets/intraday.svg";
+import fsc from "@/app/assets/fsc.svg";
 
 const ctas = [
   {
@@ -53,7 +60,7 @@ export default function Page() {
           />
 
           <Box
-            mb={{ base: "40px", sm: "80px" }}
+            mb={{ base: "40px", sm: "100px" }}
             borderLeft="1px dashed black"
             paddingLeft="20px"
           >
@@ -63,19 +70,33 @@ export default function Page() {
                 network, dedicated to revolutionizing the way we predict
                 financial markets.
               </Text>{" "}
-              Focused exclusively on price forecasting for Bitcoin, and at the
-              cutting edge of open-source prediction modeling, we harness the
-              collective intelligence of data scientists and AI enthusiasts to
-              create a robust, decentralized forecasting platform. Subnet 8
-              champions a transparent and merit-based ecosystem, where each
-              contribution is pivotal in sculpting the landscape of financial
-              forecasting. By joining Subnet 8, you contribute to a cutting-edge
-              ecosystem that not only values your expertise, but also rewards
-              it, through the world&apos;s largest incentivized mining pool.
+              Currently, focused exclusively on price forecasting for Bitcoin,
+              and at the cutting edge of open-source prediction modeling, we
+              harness the collective intelligence of data scientists and AI
+              enthusiasts to create a robust, decentralized forecasting
+              platform. Subnet 8 champions a transparent and merit-based
+              ecosystem, where each contribution is pivotal in sculpting the
+              landscape of financial forecasting. By joining Subnet 8, you
+              contribute to a cutting-edge ecosystem that not only values your
+              expertise, but also rewards it, through the world&apos;s largest
+              incentivized mining pool for the prediction of financial markets.
             </Text>
           </Box>
 
-          <Box mb={{ base: "40px", sm: "80px" }}>
+          <Box mb={{ base: "40px", sm: "100px" }}>
+            <Text fontWeight="bold" mb="3">
+              How Subnet 8 Functions
+            </Text>
+            <Text>
+              Subnet 8 operates on a decentralized network where each miner
+              contributes their predictive models to forecast Bitcoin&apos;s
+              intraday price movement up to 8 hours in the future. Miner&apos;s
+              models are validated and tested against real-world data, then
+              scored and rewarded in $TAO based on their grade.
+            </Text>
+          </Box>
+
+          <Box mb={{ base: "40px", sm: "100px" }}>
             <Text fontWeight="bold" mb="3">
               Why Mine on Subnet 8?
             </Text>
@@ -86,13 +107,14 @@ export default function Page() {
           </Box>
 
           <VStack
-            spacing={{ base: "40px", md: "80px" }}
+            spacing={{ base: "40px", md: "100px" }}
             mb={{ base: "40px", sm: "80px" }}
           >
             <HStack width="100%">
               <Box maxWidth="600px">
                 <Text fontWeight="bold" mb="3">
-                  The World&apos;s Largest Incentivized Mining Pool
+                  The World&apos;s Largest Incentivized Mining Pool for the
+                  Prediction of Financial Markets
                 </Text>
 
                 <Text>
@@ -161,22 +183,88 @@ export default function Page() {
                 />
               </Center>
             </HStack>
+
+            <HStack width="100%">
+              <Center flex="1" display={{ base: "none", sm: "flex" }}>
+                <Image
+                  as={NextImage}
+                  width={100}
+                  height={100}
+                  src={vetted}
+                  alt="Vetted Data Sources"
+                />
+              </Center>
+              <Box maxWidth="600px">
+                <Text fontWeight="bold" mb="3">
+                  Vetted Data Sources
+                </Text>
+
+                <Text>
+                  Taoshi provide all miners with vetted data sources. These
+                  partner data providers give all our miners premium data
+                  sources to build their models.
+                </Text>
+              </Box>
+            </HStack>
+
+            <HStack width="100%">
+              <Box maxWidth="600px">
+                <Text fontWeight="bold" mb="3">
+                  Taoshi&apos;s Feature Set Creator
+                </Text>
+
+                <Text>
+                  We&apos;ve created a scalable feature engineer pipeline for
+                  all our miners. This is packaged in our product called Feature
+                  Set Creator. The infrastructure helps miners both for training
+                  and for go-live on main-net.
+                </Text>
+                <br />
+                <Text>
+                  The infrastructure allows miners to do the following:
+                </Text>
+                <br />
+                <List spacing="4">
+                  <ListItem display="flex" alignItems="center">
+                    <ListIcon as={FaCheck} boxSize="3" />
+                    Use pre-generated data from the vetted data sources provided
+                    by Taoshi for training.
+                  </ListItem>
+                  <ListItem display="flex" alignItems="center">
+                    <ListIcon as={FaCheck} boxSize="3" />
+                    Receive data from defined custom data sources that the miner
+                    can choose to use.
+                  </ListItem>
+                  <ListItem display="flex" alignItems="center">
+                    <ListIcon as={FaCheck} boxSize="3" />
+                    Take the data from the data sources and transform the data
+                    into features using algorithmic modeling of their choice
+                    (leveraging standardized indicators RSI, MACD, etc. or
+                    building custom ones)
+                  </ListItem>
+                  <ListItem display="flex" alignItems="center">
+                    <ListIcon as={FaCheck} boxSize="3" />
+                    Normalize the features into a feature set
+                  </ListItem>
+                  <ListItem display="flex" alignItems="center">
+                    <ListIcon as={FaCheck} boxSize="3" />
+                    Use the generated feature set for models
+                  </ListItem>
+                </List>
+              </Box>
+              <Center flex="1" display={{ base: "none", sm: "flex" }}>
+                <Image
+                  as={NextImage}
+                  width={100}
+                  height={100}
+                  src={fsc}
+                  alt="Picture of the author"
+                />
+              </Center>
+            </HStack>
           </VStack>
 
-          <Box mb={{ base: "40px", sm: "80px" }}>
-            <Text fontWeight="bold" mb="3">
-              How Subnet 8 Functions
-            </Text>
-            <Text>
-              Subnet 8 operates on a decentralized network where each miner
-              contributes their predictive models to forecast Bitcoin&apos;s
-              intraday price movement up to 8 hours in the future. Miner&apos;s
-              models are validated and tested against real-world data, then
-              scored and rewarded in $TAO based on their grade.
-            </Text>
-          </Box>
-
-          <Center mb={{ base: "40px", sm: "80px" }}>
+          <Center mb={{ base: "40px", sm: "100px" }}>
             <Divider
               orientation="horizontal"
               borderStyle="dashed"
@@ -184,14 +272,15 @@ export default function Page() {
             />
           </Center>
 
-          <Box mb={{ base: "40px", sm: "80px" }}>
+          <Box mb={{ base: "40px", sm: "100px" }}>
             <Text fontSize="x-large" fontWeight="bold" mb="3" color="orange">
-              Feeling Ready To Get Started?
+              Ready to Predict the Future?
             </Text>
 
             <Box>
               <Text>
-                Begin your journey as a miner on Subnet 8 with our{" "}
+                Feeling ready to get started? Begin your journey as a miner on
+                Subnet 8 with our{" "}
                 <Link
                   isExternal
                   href="https://github.com/taoshidev/time-series-prediction-subnet"
@@ -201,8 +290,6 @@ export default function Page() {
                 >
                   README on GitHub.
                 </Link>
-              </Text>
-              <Text>
                 <Link
                   isExternal
                   href="https://github.com/taoshidev/time-series-prediction-subnet"
@@ -213,8 +300,6 @@ export default function Page() {
                   Follow our guide
                 </Link>
                 , contribute your models, and earn rewards within 10 hours.
-              </Text>
-              <Text>
                 Additionally, we recommend{" "}
                 <Link
                   isExternal
@@ -231,7 +316,7 @@ export default function Page() {
           </Box>
         </Box>
       </Flex>
-      <Center mb={{ base: "40px", sm: "80px" }}>
+      <Center mb={{ base: "40px", sm: "100px" }}>
         <Divider orientation="horizontal" borderStyle="dashed" width="50%" />
       </Center>
       <Hubspot />
