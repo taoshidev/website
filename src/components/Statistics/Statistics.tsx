@@ -7,7 +7,7 @@ export const Statistics = () => {
         <HStack justify="space-between" alignItems="center" mb="2">
           <VStack spacing="0">
             <Text fontWeight="bold">
-              $6.8m
+              $7.6m
               <Text as="sup" fontSize="x-small">
                 *
               </Text>
@@ -21,7 +21,7 @@ export const Statistics = () => {
           </Center>
           <VStack spacing="0">
             <Text fontWeight="bold">
-              $87k
+              $133k
               <Text as="sup" fontSize="x-small">
                 *
               </Text>
