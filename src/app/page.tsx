@@ -47,7 +47,7 @@ export default function Home() {
           <Nav />
           <Hero
             ctas={ctas}
-            copy="Decentralized Forecasting of Financial Markets Through the Power of AI"
+            copy="Decentralized Financial Market Forecasting Through the Power of AI"
           />
 
           <Statistics />
