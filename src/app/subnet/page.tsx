@@ -118,10 +118,10 @@ export default function Page() {
                 </Text>
 
                 <Text>
-                  Subnet 8 has paid out 6.7 million dollars to miners to date,
-                  approximately $87k in incentives per day. We offer the highest
-                  incentives to data scientists and machine learning teams to
-                  contribute their best models.
+                  Subnet 8 has paid out 7.6 million dollars to miners to date,
+                  approximately $133k in incentives per day. We offer the
+                  highest incentives to data scientists and machine learning
+                  teams to contribute their best models.
                 </Text>
               </Box>
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
