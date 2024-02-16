@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { clsx } from "clsx";
 
 import PlausibleProvider from "next-plausible";
+import { ColorSchemeScript } from "@mantine/core";
 
-import { ADLaMDisplay, SpaceMono } from "@/styles/fonts";
 import { Providers } from "./providers";
+
+import "@mantine/core/styles.css";
 
 export const metadata: Metadata = {
   title: "Taoshi",
@@ -18,9 +19,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={clsx(ADLaMDisplay.variable, SpaceMono.variable)}>
+    <html lang="en">
       <head>
         <PlausibleProvider domain="taoshi.io" />
+        <ColorSchemeScript />
       </head>
       <body>
         <Providers>{children}</Providers>

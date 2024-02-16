@@ -1,27 +1,27 @@
 "use client";
 
 import NextImage from "next/image";
-import { Image, Link } from "@chakra-ui/next-js";
 
 import {
-  Divider,
   Container,
+  Center,
   Flex,
   Box,
   Text,
-  VStack,
-  HStack,
-  Center,
+  Divider,
   List,
-  ListItem,
-  ListIcon,
-} from "@chakra-ui/react";
+  Anchor,
+  Group,
+  rem,
+  Stack,
+  Image,
+  ThemeIcon,
+} from "@mantine/core";
 
-import { FaCheck } from "react-icons/fa";
+import { IconCircleCheck } from "@tabler/icons-react";
 
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Nav } from "@/components/Nav";
 import { Hubspot } from "@/components/Hubspot";
 
 import mining from "@/app/assets/mining.svg";
@@ -47,11 +47,10 @@ const ctas = [
 
 export default function Page() {
   return (
-    <Container maxW="800px" mt="50px" mb="160px">
+    <Container maw="800px" mt="50px" mb="160px">
       <Flex direction="column" justify="center">
         <Box>
           <Header />
-          <Nav />
 
           <Hero
             title="Subnet 8"
@@ -60,12 +59,19 @@ export default function Page() {
           />
 
           <Box
-            mb={{ base: "40px", sm: "100px" }}
-            borderLeft="1px dashed black"
-            paddingLeft="20px"
+            pl="20px"
+            mb="xl"
+            style={{
+              borderLeft: "1px dashed black",
+            }}
           >
             <Text>
-              <Text as="span" borderBottom="1px dashed black">
+              <Text
+                component="span"
+                style={{
+                  borderBottom: "1px dashed black",
+                }}
+              >
                 Subnet 8 is the flagship subnet of Taoshi within the Bittensor
                 network, dedicated to revolutionizing the way we predict
                 financial markets.
@@ -83,8 +89,8 @@ export default function Page() {
             </Text>
           </Box>
 
-          <Box mb={{ base: "40px", sm: "100px" }}>
-            <Text fontWeight="bold" mb="3">
+          <Box mb="xl">
+            <Text fw="bold" mb="sm">
               How Subnet 8 Functions
             </Text>
             <Text>
@@ -96,8 +102,8 @@ export default function Page() {
             </Text>
           </Box>
 
-          <Box mb={{ base: "40px", sm: "100px" }}>
-            <Text fontWeight="bold" mb="3">
+          <Box mb="xl">
+            <Text fw="bold" mb="sm">
               Why Mine on Subnet 8?
             </Text>
             <Text>
@@ -106,13 +112,10 @@ export default function Page() {
             </Text>
           </Box>
 
-          <VStack
-            spacing={{ base: "40px", md: "100px" }}
-            mb={{ base: "40px", sm: "80px" }}
-          >
-            <HStack width="100%">
-              <Box maxWidth="600px">
-                <Text fontWeight="bold" mb="3">
+          <Stack mb="xl">
+            <Group w="100%" mb="xl">
+              <Box maw="600px">
+                <Text fw="bold" mb="sm">
                   The World&apos;s Largest Incentivized Mining Pool for the
                   Prediction of Financial Markets
                 </Text>
@@ -126,27 +129,27 @@ export default function Page() {
               </Box>
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
-                  as={NextImage}
+                  component={NextImage}
                   width={100}
                   height={100}
                   src={mining}
                   alt="largest mining pool"
                 />
               </Center>
-            </HStack>
+            </Group>
 
-            <HStack width="100%">
+            <Group w="100%" mb="xl">
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
-                  as={NextImage}
+                  component={NextImage}
                   width={100}
                   height={100}
                   src={openSource}
                   alt="Open Source Modeling"
                 />
               </Center>
-              <Box maxWidth="600px">
-                <Text fontWeight="bold" mb="3">
+              <Box maw="600px">
+                <Text fw="bold" mb="sm">
                   Open Source Modeling
                 </Text>
 
@@ -157,11 +160,11 @@ export default function Page() {
                   and continuous improvement from the mining community.
                 </Text>
               </Box>
-            </HStack>
+            </Group>
 
-            <HStack width="100%">
-              <Box maxWidth="600px">
-                <Text fontWeight="bold" mb="3">
+            <Group w="100%" mb="xl">
+              <Box maw="600px">
+                <Text fw="bold" mb="sm">
                   Intraday Bitcoin Predictions
                 </Text>
 
@@ -175,27 +178,27 @@ export default function Page() {
               </Box>
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
-                  as={NextImage}
+                  component={NextImage}
                   width={100}
                   height={100}
                   src={intraday}
                   alt="Picture of the author"
                 />
               </Center>
-            </HStack>
+            </Group>
 
-            <HStack width="100%">
+            <Group w="100%" mb="xl">
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
-                  as={NextImage}
+                  component={NextImage}
                   width={100}
                   height={100}
                   src={vetted}
                   alt="Vetted Data Sources"
                 />
               </Center>
-              <Box maxWidth="600px">
-                <Text fontWeight="bold" mb="3">
+              <Box maw="600px">
+                <Text fw="bold" mb="sm">
                   Vetted Data Sources
                 </Text>
 
@@ -205,11 +208,11 @@ export default function Page() {
                   sources to build their models.
                 </Text>
               </Box>
-            </HStack>
+            </Group>
 
-            <HStack width="100%">
-              <Box maxWidth="600px">
-                <Text fontWeight="bold" mb="3">
+            <Group w="100%" mb="sm">
+              <Box maw="600px">
+                <Text fw="bold" mb="sm">
                   Taoshi&apos;s Feature Set Creator
                 </Text>
 
@@ -219,61 +222,59 @@ export default function Page() {
                   Set Creator. The infrastructure helps miners both for training
                   and for go-live on main-net.
                 </Text>
-                <br />
-                <Text>
-                  The infrastructure allows miners to do the following:
-                </Text>
-                <br />
-                <List spacing="4">
-                  <ListItem display="flex" alignItems="center">
-                    <ListIcon as={FaCheck} boxSize="3" />
-                    Use pre-generated data from the vetted data sources provided
-                    by Taoshi for training.
-                  </ListItem>
-                  <ListItem display="flex" alignItems="center">
-                    <ListIcon as={FaCheck} boxSize="3" />
-                    Receive data from defined custom data sources that the miner
-                    can choose to use.
-                  </ListItem>
-                  <ListItem display="flex" alignItems="center">
-                    <ListIcon as={FaCheck} boxSize="3" />
-                    Take the data from the data sources and transform the data
-                    into features using algorithmic modeling of their choice
-                    (leveraging standardized indicators RSI, MACD, etc. or
-                    building custom ones)
-                  </ListItem>
-                  <ListItem display="flex" alignItems="center">
-                    <ListIcon as={FaCheck} boxSize="3" />
-                    Normalize the features into a feature set
-                  </ListItem>
-                  <ListItem display="flex" alignItems="center">
-                    <ListIcon as={FaCheck} boxSize="3" />
-                    Use the generated feature set for models
-                  </ListItem>
-                </List>
               </Box>
-              <Center flex="1" display={{ base: "none", sm: "flex" }}>
+              <Box>
                 <Image
-                  as={NextImage}
+                  component={NextImage}
                   width={100}
                   height={100}
                   src={fsc}
                   alt="Picture of the author"
                 />
-              </Center>
-            </HStack>
-          </VStack>
+              </Box>
+            </Group>
 
-          <Center mb={{ base: "40px", sm: "100px" }}>
-            <Divider
-              orientation="horizontal"
-              borderStyle="dashed"
-              width="50%"
-            />
+            <Box mb="xl">
+              <Text mb="lg">
+                The infrastructure allows miners to do the following:
+              </Text>
+              <List
+                spacing="lg"
+                center
+                icon={
+                  <ThemeIcon color="orange" size={24} radius="xl">
+                    <IconCircleCheck
+                      style={{ width: rem(16), height: rem(16) }}
+                    />
+                  </ThemeIcon>
+                }
+              >
+                <List.Item>
+                  Use pre-generated data from the vetted data sources provided
+                  by Taoshi for training.
+                </List.Item>
+                <List.Item>
+                  Receive data from defined custom data sources that the miner
+                  can choose to use.
+                </List.Item>
+                <List.Item>
+                  Take the data from the data sources and transform the data
+                  into features using algorithmic modeling of their choice
+                  (leveraging standardized indicators RSI, MACD, etc. or
+                  building custom ones)
+                </List.Item>
+                <List.Item>Normalize the features into a feature set</List.Item>
+                <List.Item>Use the generated feature set for models</List.Item>
+              </List>
+            </Box>
+          </Stack>
+
+          <Center my="xl">
+            <Divider variant="dashed" w="50%" bg="black" />
           </Center>
 
-          <Box mb={{ base: "40px", sm: "100px" }}>
-            <Text fontSize="x-large" fontWeight="bold" mb="3" color="orange">
+          <Box mb="xl">
+            <Text size="xl" fw="bold" mb="3" color="orange">
               Ready to Predict the Future?
             </Text>
 
@@ -281,43 +282,40 @@ export default function Page() {
               <Text>
                 Feeling ready to get started? Begin your journey as a miner on
                 Subnet 8 with our{" "}
-                <Link
-                  isExternal
+                <Anchor
                   href="https://github.com/taoshidev/time-series-prediction-subnet"
                   px="1"
-                  backgroundColor="orange"
-                  color="white"
+                  bg="orange"
+                  c="white"
                 >
                   README on GitHub.
-                </Link>
-                <Link
-                  isExternal
+                </Anchor>
+                <Anchor
                   href="https://github.com/taoshidev/time-series-prediction-subnet"
                   px="1"
-                  backgroundColor="orange"
-                  color="white"
+                  bg="orange"
+                  c="white"
                 >
                   Follow our guide
-                </Link>
+                </Anchor>
                 , contribute your models, and earn rewards within 10 hours.
                 Additionally, we recommend{" "}
-                <Link
-                  isExternal
+                <Anchor
                   href="https://discord.gg/dks5wJNA"
                   px="1"
-                  backgroundColor="orange"
-                  color="white"
+                  bg="orange"
+                  c="white"
                 >
                   joining our Mining Hub on Discord
-                </Link>
+                </Anchor>
                 , a collaborative space for novice and experienced miners.
               </Text>
             </Box>
           </Box>
         </Box>
       </Flex>
-      <Center mb={{ base: "40px", sm: "100px" }}>
-        <Divider orientation="horizontal" borderStyle="dashed" width="50%" />
+      <Center my="xl">
+        <Divider variant="dashed" w="50%" bg="black" />
       </Center>
       <Hubspot />
     </Container>

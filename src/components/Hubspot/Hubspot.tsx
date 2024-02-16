@@ -1,5 +1,6 @@
 import { useHubspotForm } from "next-hubspot";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text } from "@mantine/core";
+
 export const Hubspot = () => {
   useHubspotForm({
     portalId: process.env.NEXT_PUBLIC_HUBSPOT_PORTAL_ID as string,
@@ -9,11 +10,11 @@ export const Hubspot = () => {
 
   return (
     <Box>
-      <Box mb="4">
-        <Text fontWeight="bold" mb="3">
+      <Box mb="lg">
+        <Text fw="bold" mb="sm">
           Looking for Access to Subnet 8&apos;s Predictive Outputs?
         </Text>
-        <Text mb="8">
+        <Text mb="xl">
           Sign up here to be among the first to access the outputs of Subnet 8.
           Simply fill out the form below to express your interest, and
           we&apos;ll keep you informed with the latest updates and access

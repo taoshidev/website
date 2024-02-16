@@ -2,21 +2,19 @@
 
 import NextImage from "next/image";
 
-import { Image } from "@chakra-ui/next-js";
-
 import {
   Container,
   Flex,
   Box,
   Text,
-  VStack,
+  Image,
   Center,
-  HStack,
-} from "@chakra-ui/react";
+  Group,
+  Stack,
+} from "@mantine/core";
 
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Nav } from "@/components/Nav";
 import { Statistics } from "@/components/Statistics";
 
 import logo from "@/app/assets/logo.svg";
@@ -40,11 +38,10 @@ const ctas = [
 
 export default function Home() {
   return (
-    <Container maxW="800px" mt="50px" mb="160px">
+    <Container maw="800px" mt="50px" mb="160px">
       <Flex direction="column" justify="center">
         <Box>
           <Header />
-          <Nav />
           <Hero
             ctas={ctas}
             copy="Decentralized Financial Market Forecasting Through the Power of AI"
@@ -52,10 +49,10 @@ export default function Home() {
 
           <Statistics />
 
-          <VStack spacing={{ base: "40px", md: "100px" }} mb="80px">
-            <HStack width="100%">
-              <Box maxWidth="600px">
-                <Text fontWeight="bold" mb="3">
+          <Stack gap="xl">
+            <Group w="100%" gap="xl">
+              <Box maw="600px">
+                <Text fw="bold" mb="sm">
                   Taoshi
                 </Text>
 
@@ -69,27 +66,27 @@ export default function Home() {
               </Box>
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
-                  as={NextImage}
+                  component={NextImage}
                   width={100}
                   height={100}
                   src={logo}
                   alt="taoshi logo"
                 />
               </Center>
-            </HStack>
+            </Group>
 
-            <HStack width="100%">
+            <Group w="100%" gap="xl">
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
-                  as={NextImage}
+                  component={NextImage}
                   width={100}
                   height={100}
                   src={bittensor}
                   alt="Open Source Modeling"
                 />
               </Center>
-              <Box maxWidth="600px">
-                <Text fontWeight="bold" mb="3">
+              <Box maw="600px">
+                <Text fw="bold" mb="sm">
                   Bittensor
                 </Text>
 
@@ -105,11 +102,11 @@ export default function Home() {
                   Bittensor network, tailored to their unique needs.
                 </Text>
               </Box>
-            </HStack>
+            </Group>
 
-            <HStack width="100%">
-              <Box maxWidth="600px">
-                <Text fontWeight="bold" mb="3">
+            <Group w="100%" gap="xl">
+              <Box maw="600px">
+                <Text fw="bold" mb="sm">
                   Our Mission
                 </Text>
 
@@ -127,15 +124,15 @@ export default function Home() {
               </Box>
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
-                  as={NextImage}
+                  component={NextImage}
                   width={100}
                   height={100}
                   src={intraday}
                   alt="Taoshi's Mission"
                 />
               </Center>
-            </HStack>
-          </VStack>
+            </Group>
+          </Stack>
         </Box>
       </Flex>
     </Container>

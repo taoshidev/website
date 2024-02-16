@@ -1,0 +1,170 @@
+"use client";
+
+import { Container, Flex, Box, Text, List } from "@mantine/core";
+
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
+import { Nav } from "@/components/Nav";
+
+const ctas = [
+  {
+    event: "subnet",
+    text: "Get Started",
+    href: "https://github.com/taoshidev/time-series-prediction-subnet",
+    isExternal: true,
+  },
+  {
+    event: "docs",
+    text: "Documentation",
+    href: "https://github.com/taoshidev/time-series-prediction-subnet",
+    isExternal: true,
+  },
+];
+
+export default function Page() {
+  return (
+    <Container maw="800px" mt="50px" mb="160px">
+      <Flex direction="column" justify="center">
+        <Box>
+          <Header />
+
+          <Hero
+            title="Subnet 8"
+            copy="The Nexus of Decentralized Financial Forecasting"
+            ctas={ctas}
+          />
+
+          <Box mb={{ base: "40px", sm: "100px" }}>
+            <Text fw="bold" mb="sm">
+              Welcome to the Taoshi Price Forecasting Testnet Competition!
+            </Text>
+            <Text>
+              Are you ready to challenge yourself and revolutionize the way we
+              predict financial markets? Taoshi invites you to join our latest
+              initiative on the cutting-edge Price Forecasting subnet. Dive into
+              a world where your data science and AI skills can earn you real
+              rewards, all while contributing to the growth of the decentralized
+              Bittensor network. Whether you&apos;re a student, a professional,
+              or an AI enthusiast, this is your chance to make an impact and be
+              recognized in the community.
+            </Text>
+          </Box>
+
+          <Box mb="lg">
+            <Text fw="bold" mb="sm">
+              Competition Objectives & Mechanics
+            </Text>
+            <Text mb="sm">
+              The Taoshi Subnet 8 Testnet Competition is designed to:
+            </Text>
+            <List withPadding>
+              <List.Item>
+                Empower and reward new miners within the Taoshi ecosystem.
+              </List.Item>
+              <List.Item>
+                Provide a hands-on learning experience in a simulated
+                environment akin to our mainnet.
+              </List.Item>
+              <List.Item>
+                Encourage the transition of skilled testnet miners to active
+                mainnet contributors.
+              </List.Item>
+            </List>
+          </Box>
+          <Box mb="lg">
+            <Text>
+              Participants will engage in predicting the intraday price
+              movements of Bitcoin, leveraging Taoshi&apos;s advanced tools and
+              resources. The competition will run continuously with weekly
+              resets, allowing for fresh opportunities to climb the ranks.
+              Weekly resets will occur every Friday at 1:00 PM eastern standard
+              time. Registration for all competitors is <b>COMPLETELY FREE.</b>
+            </Text>
+          </Box>
+          <Box mb="lg">
+            <Text mb="sm">
+              The top 3 miners at the time of the weekly reset will be rewarded
+              in $TAO with the following payout structure:
+            </Text>
+            <List withPadding>
+              <List.Item>1st place: 5 $TAO</List.Item>
+              <List.Item>2nd place: 3 $TAO</List.Item>
+              <List.Item>3rd place: 2 $TAO</List.Item>
+            </List>
+          </Box>
+          <Box mb="xl">
+            <Text>
+              These tokens are not just a symbol of victory; they are a gateway
+              to Taoshi&apos;s subnet and a testament to your skill. This reward
+              should allow participants to pay completely or partially to
+              register as a miner on main-net.
+            </Text>
+          </Box>
+
+          <Box mb="xl">
+            <Text fw="bold" mb="sm">
+              Stay on Top of Your Game
+            </Text>
+            <Text>
+              Our dynamic leaderboard showcases the prowess of our participants
+              in real-time. Track your weekly progress, compare results with
+              peers, and aim for the top. With this data at your fingertips, you
+              can learn from past competitions to refine your approach and
+              dominate the leaderboard.
+            </Text>
+          </Box>
+
+          <Box mb="xl">
+            <Text fw="bold" mb="sm">
+              Your Path to Victory
+            </Text>
+            <Text>Joining the competition is straightforward:</Text>
+            <List type="ordered" withPadding>
+              <List.Item>
+                Register for Taoshi Price Forecasting Testnet Competition by
+                setting up your miner using our comprehensive guide on Github.
+              </List.Item>
+              <List.Item>Start predicting and submit your results.</List.Item>
+              <List.Item>Profit</List.Item>
+            </List>
+          </Box>
+
+          <Box mb="xl">
+            <Text fw="bold" mb="sm">
+              We&apos;ve Got You Covered
+            </Text>
+            <Text>
+              Have questions? We have answers. Check out our ReadMe on Github
+              for quick solutions to common queries. Need more help? Our
+              dedicated Discord channel is ready to assist you every step of the
+              way.
+            </Text>
+          </Box>
+
+          <Box mb="40px">
+            <Text fw="bold" mb="sm">
+              Join the Taoshi Community
+            </Text>
+            <Text>
+              Come join our growing community and stay connected. Follow us on
+              Twitter, LinkedIn, and join our Mining Community Hub on Discord to
+              stay in the loop.
+            </Text>
+          </Box>
+
+          <Box>
+            <Text fw="bold" mb="sm">
+              Know the Rules
+            </Text>
+            <Text>
+              Participation in Taoshi&apos;s Testnet Competition is subject to
+              our terms and conditions. Please review them carefully to ensure a
+              fair and enjoyable experience for everyone involved. (should we
+              should create a document to outline rules?)
+            </Text>
+          </Box>
+        </Box>
+      </Flex>
+    </Container>
+  );
+}

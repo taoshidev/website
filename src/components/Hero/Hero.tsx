@@ -1,7 +1,6 @@
 import NextImage from "next/image";
 
-import { Image } from "@chakra-ui/next-js";
-import { Box, VStack, Text, ButtonGroup, Button, Link } from "@chakra-ui/react";
+import { Box, Text, Button, Group, Stack, Anchor, Image } from "@mantine/core";
 import { usePlausible } from "next-plausible";
 
 import subnet from "@/app/assets/subnet.svg";
@@ -26,36 +25,35 @@ export const Hero = ({ title, copy, ctas }: HeroProps) => {
   };
   return (
     <Box>
-      <Box textAlign="center" my={{ base: "100px", sm: "150px" }}>
+      <Box ta="center" my={{ base: "100px", sm: "150px" }}>
         {title && (
-          <VStack mb="4">
+          <Stack mb="lg" align="center">
             <Image
-              as={NextImage}
-              width={50}
-              height={50}
+              component={NextImage}
+              w={50}
+              h={50}
               src={subnet}
-              alt="Picture of the author"
+              alt="Hero Image"
             />
             <Text>{title}</Text>
-          </VStack>
+          </Stack>
         )}
-        <Text fontSize="x-large" fontWeight="bold" mb="8">
+        <Text size="xl" fw="bold" mb="xl">
           {copy}
         </Text>
-        <ButtonGroup spacing="5">
+        <Group justify="center">
           {ctas.map((cta) => (
-            <Link
+            <Anchor
               key={cta.event}
               onClick={() => sendEvent(cta.event)}
               href={cta.href}
-              isExternal={cta.isExternal}
             >
-              <Button variant="primary" size="sm" width="150px">
+              <Button variant="primary" size="sm" w="150px">
                 {cta.text}
               </Button>
-            </Link>
+            </Anchor>
           ))}
-        </ButtonGroup>
+        </Group>
       </Box>
     </Box>
   );

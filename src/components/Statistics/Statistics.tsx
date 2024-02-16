@@ -1,60 +1,60 @@
-import { HStack, Text, VStack, Divider, Center, Box } from "@chakra-ui/react";
+import { Box, Center, Divider, Group, Stack, Text } from "@mantine/core";
 
 export const Statistics = () => {
   return (
     <Box mb="100px">
-      <Box my="8">
-        <HStack justify="space-between" alignItems="center" mb="2">
-          <VStack spacing="0">
-            <Text fontWeight="bold">
+      <Box my="xl">
+        <Group justify="space-between" align="center" mb="lg">
+          <Stack gap="0" align="center">
+            <Text fw="bold">
               $7.6m
-              <Text as="sup" fontSize="x-small">
+              <Text component="sup" size="xs">
                 *
               </Text>
             </Text>
-            <Text textAlign="center" fontSize={{ base: "12px", sm: "14px" }}>
+            <Text ta="center" size="sm">
               Miner Payouts
             </Text>
-          </VStack>
-          <Center height="20px">
-            <Divider orientation="vertical" borderStyle="dashed" />
+          </Stack>
+          <Center h="20px">
+            <Divider orientation="vertical" variant="dashed" bg="black" />
           </Center>
-          <VStack spacing="0">
-            <Text fontWeight="bold">
+          <Stack gap="0" align="center">
+            <Text fw="bold">
               $133k
-              <Text as="sup" fontSize="x-small">
+              <Text component="sup" size="xs">
                 *
               </Text>
             </Text>
-            <Text textAlign="center" fontSize={{ base: "12px", sm: "14px" }}>
+            <Text ta="center" size="sm">
               Daily Mining Rewards
             </Text>
-          </VStack>
-          <Center height="20px">
-            <Divider orientation="vertical" borderStyle="dashed" />
+          </Stack>
+          <Center h="20px">
+            <Divider orientation="vertical" variant="dashed" bg="black" />
           </Center>
-          <VStack spacing="0">
-            <Text fontWeight="bold">
+          <Stack gap="0" align="center">
+            <Text fw="bold">
               10/hr
-              <Text as="sup" fontSize="x-small">
+              <Text component="sup" size="xs">
                 *
               </Text>
             </Text>
-            <Text textAlign="center" fontSize={{ base: "12px", sm: "14px" }}>
+            <Text ta="center" size="sm">
               Payout Velocity
             </Text>
-          </VStack>
-        </HStack>
+          </Stack>
+        </Group>
       </Box>
 
       <Center>
         <Box>
-          <Text fontSize="small">
-            <Text as="span" fontStyle="italic">
+          <Text size="sm">
+            <Text component="span" fs="italic">
               Estimated annual miner payout:
             </Text>{" "}
-            <Text as="span" fontWeight="bold">
-              $32m/yr<Text as="sup">*</Text>
+            <Text component="span" fw="bold">
+              $32m/yr<Text component="sup">*</Text>
             </Text>
           </Text>
         </Box>
@@ -62,7 +62,7 @@ export const Statistics = () => {
 
       <Center>
         <Box>
-          <Text fontSize="xx-small">*updated weekly</Text>
+          <Text size="xs">*updated weekly</Text>
         </Box>
       </Center>
     </Box>

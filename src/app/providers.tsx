@@ -1,15 +1,15 @@
 "use client";
 
-import { ChakraProvider, CSSReset } from "@chakra-ui/react";
+import { MantineProvider } from "@mantine/core";
+
 import { HubspotProvider } from "next-hubspot";
 
-import { theme } from "@/styles/theme";
+import { theme } from "@/theme";
 
 export const Providers = ({ children }: any) => {
   return (
-    <ChakraProvider theme={theme}>
-      <CSSReset />
+    <MantineProvider theme={theme}>
       <HubspotProvider>{children}</HubspotProvider>
-    </ChakraProvider>
+    </MantineProvider>
   );
 };
