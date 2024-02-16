@@ -144,7 +144,7 @@ export default function Page() {
                 >
                   <Table.Th>Rank</Table.Th>
                   <Table.Th>Miner</Table.Th>
-                  <Table.Th>Score</Table.Th>
+                  <Table.Th ta="right">Score</Table.Th>
                 </Table.Tr>
               </Table.Thead>
               <Table.Tbody>{rows}</Table.Tbody>
