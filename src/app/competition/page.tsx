@@ -19,22 +19,7 @@ import {
 
 import { Header } from "@/components/Header";
 
-import subnet from "@/app/assets/subnet.svg";
-
-const ctas = [
-  {
-    event: "subnet",
-    text: "Get Started",
-    href: "https://github.com/taoshidev/time-series-prediction-subnet",
-    isExternal: true,
-  },
-  {
-    event: "docs",
-    text: "Documentation",
-    href: "https://github.com/taoshidev/time-series-prediction-subnet",
-    isExternal: true,
-  },
-];
+import competition from "@/app/assets/competition.svg";
 
 const elements = [
   {
@@ -123,10 +108,10 @@ export default function Page() {
           <Stack align="center" my="100px">
             <Image
               component={NextImage}
-              w={50}
-              h={50}
-              src={subnet}
-              alt="Hero Image"
+              w={75}
+              h={75}
+              src={competition}
+              alt="Competition Image"
             />
             <Title mb="xl" ta="center">
               Leaderboard
