@@ -42,10 +42,13 @@ export default function Home() {
       <Flex direction="column" justify="center">
         <Box>
           <Header />
-          <Hero
-            ctas={ctas}
-            copy="Decentralized Financial Market Forecasting Through the Power of AI"
-          />
+
+          <Box my="150px">
+            <Hero
+              ctas={ctas}
+              copy="Decentralized Financial Market Forecasting Through the Power of AI"
+            />
+          </Box>
 
           <Statistics />
 

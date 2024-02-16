@@ -119,7 +119,7 @@ export default function Page() {
         <Box>
           <Header />
 
-          <Stack align="center" my="50px">
+          <Stack align="center" my="100px">
             <Image
               component={NextImage}
               w={50}
@@ -208,9 +208,24 @@ export default function Page() {
               in $TAO with the following payout structure:
             </Text>
             <List withPadding>
-              <List.Item>1st place: 5 $TAO</List.Item>
-              <List.Item>2nd place: 3 $TAO</List.Item>
-              <List.Item>3rd place: 2 $TAO</List.Item>
+              <List.Item>
+                1st place:{" "}
+                <Text component="span" c="orange" fw="bold">
+                  5 $TAO
+                </Text>
+              </List.Item>
+              <List.Item>
+                2nd place:{" "}
+                <Text component="span" c="orange" fw="bold">
+                  3 $TAO
+                </Text>
+              </List.Item>
+              <List.Item>
+                3rd place:{" "}
+                <Text component="span" c="orange" fw="bold">
+                  2 $TAO
+                </Text>
+              </List.Item>
             </List>
           </Box>
           <Box mb="xl">

@@ -52,11 +52,13 @@ export default function Page() {
         <Box>
           <Header />
 
-          <Hero
-            title="Subnet 8"
-            copy="The Nexus of Decentralized Financial Forecasting"
-            ctas={ctas}
-          />
+          <Box my="150px">
+            <Hero
+              title="Subnet 8"
+              copy="The Nexus of Decentralized Financial Forecasting"
+              ctas={ctas}
+            />
+          </Box>
 
           <Box
             pl="20px"
