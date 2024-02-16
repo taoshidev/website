@@ -11,11 +11,6 @@ import {
 } from "@mantine/core";
 import { useMediaQuery, useDisclosure } from "@mantine/hooks";
 import {
-  IconSearch,
-  IconPhoto,
-  IconMessageCircle,
-  IconTrash,
-  IconArrowsLeftRight,
   IconMail,
   IconBrandTwitter,
   IconBrandDiscord,
@@ -85,12 +80,12 @@ export const Nav = () => {
           Github
         </Anchor>
 
-        <Menu shadow="md" width={200}>
+        <Menu width={200} position="bottom-end" offset={15}>
           <Menu.Target>
             <Button variant="outline">More</Button>
           </Menu.Target>
 
-          <Menu.Dropdown>
+          <Menu.Dropdown style={{ border: "1px dashed black" }}>
             <Menu.Item
               onClick={() => sendEvent("contact")}
               component="a"

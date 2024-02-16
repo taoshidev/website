@@ -1,10 +1,24 @@
 "use client";
 
-import { Container, Flex, Box, Text, List } from "@mantine/core";
+import NextImage from "next/image";
+
+import {
+  Container,
+  Flex,
+  Box,
+  Text,
+  List,
+  Table,
+  Center,
+  Divider,
+  Title,
+  Stack,
+  Image,
+} from "@mantine/core";
 
 import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { Nav } from "@/components/Nav";
+
+import subnet from "@/app/assets/subnet.svg";
 
 const ctas = [
   {
@@ -21,24 +35,108 @@ const ctas = [
   },
 ];
 
+const elements = [
+  {
+    rank: 1,
+    miner: "5EcGnpYpxXkjXquVBupn3jzpoSSLubHmTRGBtnH7PH9usTtL",
+    score: 500.9284,
+  },
+  {
+    rank: 2,
+    miner: "5HGNsKUCz677KyCoN3WjMwktuGbhGR7zgZdBdLzYS59uPXre",
+    score: 493.294,
+  },
+  {
+    rank: 3,
+    miner: "5CD4PEt5nfGHtSqfAtbmo4auJXZS7PdpqHdXHobPAK1uJK28",
+    score: 490.224,
+  },
+  {
+    rank: 4,
+    miner: "5ELW9NqZPWh1kEaSEYPNnQaySLAj9PBFppLp23HiP4Yyx2Ro",
+    score: 480.9894,
+  },
+  {
+    rank: 5,
+    miner: "5Dtm2ttHWn88NsDbgur47V2Fp6JfujdXR88g5aJHBjQyAMCy",
+    score: 420.9894,
+  },
+  {
+    rank: 1,
+    miner: "5EcGnpYpxXkjXquVBupn3jzpoSSLubHmTRGBtnH7PH9usTtL",
+    score: 400.9284,
+  },
+  {
+    rank: 2,
+    miner: "5HGNsKUCz677KyCoN3WjMwktuGbhGR7zgZdBdLzYS59uPXre",
+    score: 393.294,
+  },
+  {
+    rank: 3,
+    miner: "5CD4PEt5nfGHtSqfAtbmo4auJXZS7PdpqHdXHobPAK1uJK28",
+    score: 290.224,
+  },
+  {
+    rank: 4,
+    miner: "5ELW9NqZPWh1kEaSEYPNnQaySLAj9PBFppLp23HiP4Yyx2Ro",
+    score: 180.9894,
+  },
+  {
+    rank: 10,
+    miner: "5Dtm2ttHWn88NsDbgur47V2Fp6JfujdXR88g5aJHBjQyAMCy",
+    score: 10.9894,
+  },
+];
+
 export default function Page() {
+  const rows = elements.map((element, index) => (
+    <Table.Tr key={element.miner}>
+      <Table.Td
+        c={index < 3 ? "orange" : "black"}
+        fw={index < 3 ? "bold" : "normal"}
+      >
+        {element.rank}
+      </Table.Td>
+      <Table.Td
+        c={index < 3 ? "orange" : "black"}
+        fw={index < 3 ? "bold" : "normal"}
+      >
+        {element.miner}
+      </Table.Td>
+      <Table.Td
+        align="right"
+        c={index < 3 ? "orange" : "black"}
+        fw={index < 3 ? "bold" : "normal"}
+      >
+        {element.score}
+      </Table.Td>
+    </Table.Tr>
+  ));
+
   return (
     <Container maw="800px" mt="50px" mb="160px">
       <Flex direction="column" justify="center">
         <Box>
           <Header />
 
-          <Hero
-            title="Subnet 8"
-            copy="The Nexus of Decentralized Financial Forecasting"
-            ctas={ctas}
-          />
+          <Stack align="center" my="50px">
+            <Image
+              component={NextImage}
+              w={50}
+              h={50}
+              src={subnet}
+              alt="Hero Image"
+            />
+            <Title mb="xl" ta="center">
+              Leadboards
+            </Title>
+          </Stack>
 
-          <Box mb={{ base: "40px", sm: "100px" }}>
+          <Box my="xl" ta="center">
             <Text fw="bold" mb="sm">
               Welcome to the Taoshi Price Forecasting Testnet Competition!
             </Text>
-            <Text>
+            <Text size="sm">
               Are you ready to challenge yourself and revolutionize the way we
               predict financial markets? Taoshi invites you to join our latest
               initiative on the cutting-edge Price Forecasting subnet. Dive into
@@ -49,6 +147,29 @@ export default function Page() {
               recognized in the community.
             </Text>
           </Box>
+
+          <Box my="50px">
+            <Table verticalSpacing="md">
+              <Table.Thead>
+                <Table.Tr
+                  bg="white"
+                  style={{
+                    borderTop: "1px dashed black",
+                    borderBottom: "1px dashed black",
+                  }}
+                >
+                  <Table.Th>Rank</Table.Th>
+                  <Table.Th>Miner</Table.Th>
+                  <Table.Th>Score</Table.Th>
+                </Table.Tr>
+              </Table.Thead>
+              <Table.Tbody>{rows}</Table.Tbody>
+            </Table>
+          </Box>
+
+          <Center my="50px">
+            <Divider variant="dashed" w="50%" bg="black" />
+          </Center>
 
           <Box mb="lg">
             <Text fw="bold" mb="sm">

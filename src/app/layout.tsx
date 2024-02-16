@@ -6,6 +6,7 @@ import { ColorSchemeScript } from "@mantine/core";
 import { Providers } from "./providers";
 
 import "@mantine/core/styles.css";
+import "./global.css";
 
 export const metadata: Metadata = {
   title: "Taoshi",

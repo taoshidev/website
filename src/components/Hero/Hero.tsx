@@ -13,7 +13,7 @@ export interface CTA {
 
 export interface HeroProps {
   copy: string;
-  ctas: CTA[];
+  ctas?: CTA[];
   title?: string;
 }
 
@@ -25,7 +25,7 @@ export const Hero = ({ title, copy, ctas }: HeroProps) => {
   };
   return (
     <Box>
-      <Box ta="center" my={{ base: "100px", sm: "150px" }}>
+      <Box ta="center">
         {title && (
           <Stack mb="lg" align="center">
             <Image
@@ -42,17 +42,18 @@ export const Hero = ({ title, copy, ctas }: HeroProps) => {
           {copy}
         </Text>
         <Group justify="center">
-          {ctas.map((cta) => (
-            <Anchor
-              key={cta.event}
-              onClick={() => sendEvent(cta.event)}
-              href={cta.href}
-            >
-              <Button variant="primary" size="sm" w="150px">
-                {cta.text}
-              </Button>
-            </Anchor>
-          ))}
+          {ctas?.length &&
+            ctas.map((cta) => (
+              <Anchor
+                key={cta.event}
+                onClick={() => sendEvent(cta.event)}
+                href={cta.href}
+              >
+                <Button variant="primary" size="sm" w="150px">
+                  {cta.text}
+                </Button>
+              </Anchor>
+            ))}
         </Group>
       </Box>
     </Box>
