@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import {
   Box,
   Center,
@@ -6,7 +9,6 @@ import {
   Burger,
   Menu,
   Button,
-  Text,
   rem,
 } from "@mantine/core";
 import { useMediaQuery, useDisclosure } from "@mantine/hooks";
@@ -15,11 +17,15 @@ import {
   IconBrandTwitter,
   IconBrandDiscord,
   IconBrandLinkedin,
+  IconChevronDown,
+  IconChevronUp,
 } from "@tabler/icons-react";
 import { usePlausible } from "next-plausible";
 
 export const Nav = () => {
   const [opened, { toggle }] = useDisclosure();
+  const [menuOpened, setMenuOpened] = useState(false);
+
   const plausible = usePlausible();
   const isMobile = useMediaQuery("(max-width: 400px)");
 
@@ -81,9 +87,26 @@ export const Nav = () => {
           Github
         </Anchor>
 
-        <Menu width={200} position="bottom-end" offset={15}>
+        <Menu
+          width={200}
+          position="bottom-end"
+          offset={15}
+          opened={menuOpened}
+          onChange={setMenuOpened}
+        >
           <Menu.Target>
-            <Button variant="outline">More</Button>
+            <Button
+              variant="outline"
+              rightSection={
+                menuOpened ? (
+                  <IconChevronUp size={14} />
+                ) : (
+                  <IconChevronDown size={14} />
+                )
+              }
+            >
+              More
+            </Button>
           </Menu.Target>
 
           <Menu.Dropdown style={{ border: "1px dashed black" }}>

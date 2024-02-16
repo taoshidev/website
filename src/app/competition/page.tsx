@@ -200,7 +200,10 @@ export default function Page() {
               resources. The competition will run continuously with weekly
               resets, allowing for fresh opportunities to climb the ranks.
               Weekly resets will occur every Friday at 1:00 PM eastern standard
-              time. Registration for all competitors is <b>COMPLETELY FREE.</b>
+              time. Registration for all competitors is{" "}
+              <Text component="span" fw="bold" c="orange">
+                COMPLETELY FREE.
+              </Text>
             </Text>
           </Box>
           <Box mb="lg">
@@ -259,7 +262,13 @@ export default function Page() {
             <List type="ordered" withPadding>
               <List.Item>
                 Register for Taoshi Price Forecasting Testnet Competition by
-                setting up your miner using our comprehensive guide on Github.
+                setting up your miner using our comprehensive guide on{" "}
+                <Anchor
+                  href="https://github.com/taoshidev/time-series-prediction-subnet"
+                  target="_blank"
+                >
+                  Github.
+                </Anchor>
               </List.Item>
               <List.Item>Start predicting and submit your results.</List.Item>
               <List.Item>Earn Rewards</List.Item>
@@ -276,7 +285,7 @@ export default function Page() {
                 href="https://github.com/taoshidev/time-series-prediction-subnet"
                 target="_blank"
               >
-                README on Github
+                README on Github{" "}
               </Anchor>
               for quick solutions to common queries. Need more help? Our
               dedicated{" "}
@@ -292,7 +301,7 @@ export default function Page() {
               Join the Taoshi Community
             </Text>
             <Text>
-              Come join our growing community and stay connected. Follow us on
+              Come join our growing community and stay connected. Follow us on{" "}
               <Anchor href="https://twitter.com/taoshiio" target="_blank">
                 Twitter
               </Anchor>
