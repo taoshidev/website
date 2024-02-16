@@ -14,6 +14,7 @@ import {
   Title,
   Stack,
   Image,
+  Anchor,
 } from "@mantine/core";
 
 import { Header } from "@/components/Header";
@@ -128,7 +129,7 @@ export default function Page() {
               alt="Hero Image"
             />
             <Title mb="xl" ta="center">
-              Leadboards
+              Leaderboard
             </Title>
           </Stack>
 
@@ -254,14 +255,14 @@ export default function Page() {
             <Text fw="bold" mb="sm">
               Your Path to Victory
             </Text>
-            <Text>Joining the competition is straightforward:</Text>
+            <Text mb="sm">Joining the competition is straightforward:</Text>
             <List type="ordered" withPadding>
               <List.Item>
                 Register for Taoshi Price Forecasting Testnet Competition by
                 setting up your miner using our comprehensive guide on Github.
               </List.Item>
               <List.Item>Start predicting and submit your results.</List.Item>
-              <List.Item>Profit</List.Item>
+              <List.Item>Earn Rewards</List.Item>
             </List>
           </Box>
 
@@ -270,10 +271,19 @@ export default function Page() {
               We&apos;ve Got You Covered
             </Text>
             <Text>
-              Have questions? We have answers. Check out our ReadMe on Github
+              Have questions? We have answers. Check out our{" "}
+              <Anchor
+                href="https://github.com/taoshidev/time-series-prediction-subnet"
+                target="_blank"
+              >
+                README on Github
+              </Anchor>
               for quick solutions to common queries. Need more help? Our
-              dedicated Discord channel is ready to assist you every step of the
-              way.
+              dedicated{" "}
+              <Anchor href="https://discord.gg/MKtKVYnCDh" target="_blank">
+                Discord
+              </Anchor>{" "}
+              channel is ready to assist you every step of the way.
             </Text>
           </Box>
 
@@ -283,8 +293,21 @@ export default function Page() {
             </Text>
             <Text>
               Come join our growing community and stay connected. Follow us on
-              Twitter, LinkedIn, and join our Mining Community Hub on Discord to
-              stay in the loop.
+              <Anchor href="https://twitter.com/taoshiio" target="_blank">
+                Twitter
+              </Anchor>
+              ,{" "}
+              <Anchor
+                href="https://www.linkedin.com/company/taoshi/"
+                target="_blank"
+              >
+                LinkedIn
+              </Anchor>
+              , and join our Mining Community Hub on{" "}
+              <Anchor href="https://discord.gg/MKtKVYnCDh" target="_blank">
+                Discord
+              </Anchor>{" "}
+              to stay in the loop.
             </Text>
           </Box>
 
@@ -295,8 +318,7 @@ export default function Page() {
             <Text>
               Participation in Taoshi&apos;s Testnet Competition is subject to
               our terms and conditions. Please review them carefully to ensure a
-              fair and enjoyable experience for everyone involved. (should we
-              should create a document to outline rules?)
+              fair and enjoyable experience for everyone involved.
             </Text>
           </Box>
         </Box>

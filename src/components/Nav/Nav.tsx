@@ -14,6 +14,7 @@ import {
   IconMail,
   IconBrandTwitter,
   IconBrandDiscord,
+  IconBrandLinkedin,
 } from "@tabler/icons-react";
 import { usePlausible } from "next-plausible";
 
@@ -54,10 +55,10 @@ export const Nav = () => {
           size="sm"
           ta="center"
           onClick={() => sendEvent("leaderboard")}
-          href="/leaderboard"
+          href="/competition"
           c="black"
         >
-          Leaderboard
+          Competition
         </Anchor>
         <Anchor
           flex="1"
@@ -116,6 +117,18 @@ export const Nav = () => {
               }
             >
               Discord
+            </Menu.Item>
+            <Menu.Item
+              onClick={() => sendEvent("linkedin")}
+              component="a"
+              href="https://www.linkedin.com/company/taoshi/"
+              leftSection={
+                <IconBrandLinkedin
+                  style={{ width: rem(14), height: rem(14) }}
+                />
+              }
+            >
+              LinkedIn
             </Menu.Item>
           </Menu.Dropdown>
         </Menu>
