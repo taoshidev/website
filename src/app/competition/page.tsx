@@ -49,27 +49,27 @@ const elements = [
   },
   {
     rank: 1,
-    miner: "5EcGnpYpxXkjXquVBupn3jzpoSSLubHmTRGBtnH7PH9usTtL",
+    miner: "5EcGnpYpxXkjXquVBupn3jzpoSSLubHmTRGBtnH7PH9usTtJ",
     score: 400.9284,
   },
   {
     rank: 2,
-    miner: "5HGNsKUCz677KyCoN3WjMwktuGbhGR7zgZdBdLzYS59uPXre",
+    miner: "5HGNsKUCz677KyCoN3WjMwktuGbhGR7zgZdBdLzYS59uPXrk",
     score: 393.294,
   },
   {
     rank: 3,
-    miner: "5CD4PEt5nfGHtSqfAtbmo4auJXZS7PdpqHdXHobPAK1uJK28",
+    miner: "5CD4PEt5nfGHtSqfAtbmo4auJXZS7PdpqHdXHobPAK1uJK22",
     score: 290.224,
   },
   {
     rank: 4,
-    miner: "5ELW9NqZPWh1kEaSEYPNnQaySLAj9PBFppLp23HiP4Yyx2Ro",
+    miner: "5ELW9NqZPWh1kEaSEYPNnQaySLAj9PBFppLp23HiP4Yyx2Rv",
     score: 180.9894,
   },
   {
     rank: 10,
-    miner: "5Dtm2ttHWn88NsDbgur47V2Fp6JfujdXR88g5aJHBjQyAMCy",
+    miner: "5Dtm2ttHWn88NsDbgur47V2Fp6JfujdXR88g5aJHBjQyAMCn",
     score: 10.9894,
   },
 ];

@@ -1,12 +1,11 @@
-import type { Metadata } from "next";
+import "@mantine/core/styles.css";
+import "./global.css";
 
+import type { Metadata } from "next";
 import PlausibleProvider from "next-plausible";
 import { ColorSchemeScript } from "@mantine/core";
 
 import { Providers } from "./providers";
-
-import "@mantine/core/styles.css";
-import "./global.css";
 
 export const metadata: Metadata = {
   title: "Taoshi",
@@ -22,8 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <PlausibleProvider domain="taoshi.io" />
         <ColorSchemeScript />
+
+        <PlausibleProvider domain="taoshi.io" />
+        <meta
+          name="viewport"
+          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
+        />
       </head>
       <body>
         <Providers>{children}</Providers>
