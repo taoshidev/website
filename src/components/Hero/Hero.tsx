@@ -1,6 +1,15 @@
 import NextImage from "next/image";
 
-import { Box, Text, Button, Group, Stack, Anchor, Image } from "@mantine/core";
+import {
+  Box,
+  Text,
+  Button,
+  Group,
+  Title,
+  Stack,
+  Anchor,
+  Image,
+} from "@mantine/core";
 import { usePlausible } from "next-plausible";
 
 import subnet from "@/app/assets/subnet.svg";
@@ -38,9 +47,9 @@ export const Hero = ({ title, copy, ctas }: HeroProps) => {
             <Text>{title}</Text>
           </Stack>
         )}
-        <Text size="xl" fw="bold" mb="xl">
+        <Title order={2} mb="xl">
           {copy}
-        </Text>
+        </Title>
         <Group justify="center">
           {ctas?.length &&
             ctas.map((cta) => (

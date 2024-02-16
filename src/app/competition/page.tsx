@@ -113,15 +113,13 @@ export default function Page() {
               src={competition}
               alt="Competition Image"
             />
-            <Title mb="xl" ta="center">
-              Leaderboard
+            <Title order={2} mb="xl" ta="center">
+              Welcome to the Taoshi Price <br />
+              Forecasting Testnet Competition!
             </Title>
           </Stack>
 
           <Box my="xl" ta="center">
-            <Text fw="bold" mb="sm">
-              Welcome to the Taoshi Price Forecasting Testnet Competition!
-            </Text>
             <Text size="sm">
               Are you ready to challenge yourself and revolutionize the way we
               predict financial markets? Taoshi invites you to join our latest

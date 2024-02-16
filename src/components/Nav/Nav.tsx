@@ -96,7 +96,7 @@ export const Nav = () => {
         >
           <Menu.Target>
             <Button
-              variant="subtle"
+              variant="light"
               rightSection={
                 menuOpened ? (
                   <IconChevronUp size={14} />
