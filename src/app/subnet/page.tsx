@@ -18,7 +18,7 @@ import {
   ThemeIcon,
 } from "@mantine/core";
 
-import { IconCircleCheck } from "@tabler/icons-react";
+import { IconCheck } from "@tabler/icons-react";
 
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
@@ -245,9 +245,7 @@ export default function Page() {
                 center
                 icon={
                   <ThemeIcon color="orange" size={24} radius="xl">
-                    <IconCircleCheck
-                      style={{ width: rem(16), height: rem(16) }}
-                    />
+                    <IconCheck style={{ width: rem(16), height: rem(16) }} />
                   </ThemeIcon>
                 }
               >
