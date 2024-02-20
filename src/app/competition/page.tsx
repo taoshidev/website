@@ -133,8 +133,10 @@ export default function Page() {
               recognized in the community.
             </Text>
           </Box>
-
-          <Box my="50px" className={styles["coming-soon"]}>
+          <Box my="md" ta="center">
+            <Title order={4}>Weekly Leaderboard</Title>
+          </Box>
+          <Box mb="50px" className={styles["coming-soon"]}>
             <Title tt="uppercase" className={styles["coming-soon-text"]}>
               Coming Soon
             </Title>
