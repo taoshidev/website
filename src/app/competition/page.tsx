@@ -135,7 +135,9 @@ export default function Page() {
           </Box>
 
           <Box my="50px" className={styles["coming-soon"]}>
-            <Title className={styles["coming-soon-text"]}>Coming Soon</Title>
+            <Title tt="uppercase" className={styles["coming-soon-text"]}>
+              Coming Soon
+            </Title>
             <Box className={styles["coming-soon-overlay"]}>
               <Table verticalSpacing="md">
                 <Table.Thead>
