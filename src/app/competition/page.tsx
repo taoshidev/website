@@ -21,6 +21,8 @@ import { Header } from "@/components/Header";
 
 import competition from "@/app/assets/competition.svg";
 
+import styles from "./competition.module.css";
+
 const elements = [
   {
     rank: 1,
@@ -132,23 +134,26 @@ export default function Page() {
             </Text>
           </Box>
 
-          <Box my="50px">
-            <Table verticalSpacing="md">
-              <Table.Thead>
-                <Table.Tr
-                  bg="white"
-                  style={{
-                    borderTop: "1px dashed black",
-                    borderBottom: "1px dashed black",
-                  }}
-                >
-                  <Table.Th>Rank</Table.Th>
-                  <Table.Th>Miner</Table.Th>
-                  <Table.Th ta="right">Score</Table.Th>
-                </Table.Tr>
-              </Table.Thead>
-              <Table.Tbody>{rows}</Table.Tbody>
-            </Table>
+          <Box my="50px" className={styles["coming-soon"]}>
+            <Title className={styles["coming-soon-text"]}>Coming Soon</Title>
+            <Box className={styles["coming-soon-overlay"]}>
+              <Table verticalSpacing="md">
+                <Table.Thead>
+                  <Table.Tr
+                    bg="white"
+                    style={{
+                      borderTop: "1px dashed black",
+                      borderBottom: "1px dashed black",
+                    }}
+                  >
+                    <Table.Th>Rank</Table.Th>
+                    <Table.Th>Miner</Table.Th>
+                    <Table.Th ta="right">Score</Table.Th>
+                  </Table.Tr>
+                </Table.Thead>
+                <Table.Tbody>{rows}</Table.Tbody>
+              </Table>
+            </Box>
           </Box>
 
           <Center my="50px">
@@ -221,19 +226,6 @@ export default function Page() {
               to Taoshi&apos;s subnet and a testament to your skill. This reward
               should allow participants to pay completely or partially to
               register as a miner on main-net.
-            </Text>
-          </Box>
-
-          <Box mb="xl">
-            <Text fw="bold" mb="sm">
-              Stay on Top of Your Game
-            </Text>
-            <Text>
-              Our dynamic leaderboard showcases the prowess of our participants
-              in real-time. Track your weekly progress, compare results with
-              peers, and aim for the top. With this data at your fingertips, you
-              can learn from past competitions to refine your approach and
-              dominate the leaderboard.
             </Text>
           </Box>
 
