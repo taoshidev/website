@@ -134,7 +134,7 @@ export default function Page() {
             </Text>
           </Box>
           <Box my="md" ta="center">
-            <Title order={4}>Weekly Leaderboard</Title>
+            <Text size="sm">Weekly Leaderboard</Text>
           </Box>
           <Box mb="50px" className={styles["coming-soon"]}>
             <Title tt="uppercase" className={styles["coming-soon-text"]}>
