@@ -32,6 +32,7 @@ export const Hero = ({ title, copy, ctas }: HeroProps) => {
   const sendEvent = (eventName: string) => {
     plausible(eventName);
   };
+
   return (
     <Box>
       <Box ta="center">

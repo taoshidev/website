@@ -22,7 +22,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <ColorSchemeScript />
-
         <PlausibleProvider domain="taoshi.io" />
         <meta
           name="viewport"

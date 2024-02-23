@@ -60,7 +60,7 @@ export const Nav = () => {
           flex="1"
           size="sm"
           ta="center"
-          onClick={() => sendEvent("leaderboard")}
+          onClick={() => sendEvent("competition")}
           href="/competition"
           c="black"
         >

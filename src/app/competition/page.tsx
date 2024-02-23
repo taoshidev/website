@@ -137,7 +137,11 @@ export default function Page() {
             <Text size="sm">Weekly Leaderboard</Text>
           </Box>
           <Box mb="50px" className={styles["coming-soon"]}>
-            <Title tt="uppercase" className={styles["coming-soon-text"]}>
+            <Title
+              c="orange"
+              tt="uppercase"
+              className={styles["coming-soon-text"]}
+            >
               Coming Soon
             </Title>
             <Box className={styles["coming-soon-overlay"]}>
