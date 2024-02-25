@@ -11,11 +11,13 @@ import {
   Center,
   Group,
   Stack,
+  Divider,
 } from "@mantine/core";
 
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Statistics } from "@/components/Statistics";
+import { Team } from "@/components/Team";
 
 import logo from "@/app/assets/logo.svg";
 import bittensor from "@/app/assets/bittensor.svg";
@@ -135,6 +137,12 @@ export default function Home() {
                 />
               </Center>
             </Group>
+
+            <Center my="50px">
+              <Divider variant="dashed" w="50%" bg="black" />
+            </Center>
+
+            <Team />
           </Stack>
         </Box>
       </Flex>
