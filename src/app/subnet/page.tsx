@@ -225,7 +225,7 @@ export default function Page() {
                   and for go-live on main-net.
                 </Text>
               </Box>
-              <Box>
+              <Box display={{ base: "none", sm: "flex" }}>
                 <Image
                   component={NextImage}
                   width={100}

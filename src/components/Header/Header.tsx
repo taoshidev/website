@@ -2,7 +2,7 @@
 
 import NextImage from "next/image";
 
-import { Anchor, Group, Title, Image } from "@mantine/core";
+import { Anchor, Flex, Group, Title, Image } from "@mantine/core";
 
 import { Nav } from "@/components/Nav";
 
@@ -10,7 +10,7 @@ import logo from "@/app/assets/logo.svg";
 
 export const Header = () => {
   return (
-    <Group justify="space-between" align="center" gap="xl">
+    <Flex justify="space-between" align="center" gap="xl">
       <Group>
         <Image
           component={NextImage}
@@ -27,6 +27,6 @@ export const Header = () => {
         </Anchor>
       </Group>
       <Nav />
-    </Group>
+    </Flex>
   );
 };
