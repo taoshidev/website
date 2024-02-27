@@ -74,7 +74,7 @@ export const Competition = ({ leaderboard }: any) => {
                   </Table.Tr>
                 </Table.Thead>
                 <Table.Tbody>
-                  {leaderboard.map((item, index) => (
+                  {leaderboard.map((item: any, index: number) => (
                     <Table.Tr key={item.id}>
                       <Table.Td
                         c={index < 3 ? "orange" : "black"}
