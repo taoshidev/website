@@ -18,67 +18,10 @@ import {
 } from "@mantine/core";
 
 import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 
 import competition from "@/app/assets/competition.svg";
 
-import styles from "./competition.module.css";
-
-const elements = [
-  {
-    rank: 1,
-    miner: "5EcGnpYpxXkjXquVBupn3jzpoSSLubHmTRGBtnH7PH9usTtL",
-    score: 500.9284,
-  },
-  {
-    rank: 2,
-    miner: "5HGNsKUCz677KyCoN3WjMwktuGbhGR7zgZdBdLzYS59uPXre",
-    score: 493.294,
-  },
-  {
-    rank: 3,
-    miner: "5CD4PEt5nfGHtSqfAtbmo4auJXZS7PdpqHdXHobPAK1uJK28",
-    score: 490.224,
-  },
-  {
-    rank: 4,
-    miner: "5ELW9NqZPWh1kEaSEYPNnQaySLAj9PBFppLp23HiP4Yyx2Ro",
-    score: 480.9894,
-  },
-  {
-    rank: 5,
-    miner: "5Dtm2ttHWn88NsDbgur47V2Fp6JfujdXR88g5aJHBjQyAMCy",
-    score: 420.9894,
-  },
-  {
-    rank: 1,
-    miner: "5EcGnpYpxXkjXquVBupn3jzpoSSLubHmTRGBtnH7PH9usTtJ",
-    score: 400.9284,
-  },
-  {
-    rank: 2,
-    miner: "5HGNsKUCz677KyCoN3WjMwktuGbhGR7zgZdBdLzYS59uPXrk",
-    score: 393.294,
-  },
-  {
-    rank: 3,
-    miner: "5CD4PEt5nfGHtSqfAtbmo4auJXZS7PdpqHdXHobPAK1uJK22",
-    score: 290.224,
-  },
-  {
-    rank: 4,
-    miner: "5ELW9NqZPWh1kEaSEYPNnQaySLAj9PBFppLp23HiP4Yyx2Rv",
-    score: 180.9894,
-  },
-  {
-    rank: 10,
-    miner: "5Dtm2ttHWn88NsDbgur47V2Fp6JfujdXR88g5aJHBjQyAMCn",
-    score: 10.9894,
-  },
-];
-
-export const Competition = ({ leaderboard }) => {
-  console.log(leaderboard);
+export const Competition = ({ leaderboard }: any) => {
   return (
     <Container maw="800px" mt="50px" mb="160px">
       <Flex direction="column" justify="center">
@@ -308,7 +251,6 @@ export const Competition = ({ leaderboard }) => {
               fair and enjoyable experience for everyone involved.
             </Text>
           </Box>
-          <Footer />
         </Box>
       </Flex>
     </Container>
