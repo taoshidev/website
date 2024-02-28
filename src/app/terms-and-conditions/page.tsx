@@ -1,25 +1,6 @@
 "use client";
 
-import NextImage from "next/image";
-
-import {
-  Container,
-  Center,
-  Flex,
-  Box,
-  Text,
-  Title,
-  List,
-  Anchor,
-  Group,
-  rem,
-  Stack,
-  Divider,
-  Image,
-  ThemeIcon,
-} from "@mantine/core";
-
-import { IconCheck } from "@tabler/icons-react";
+import { Container, Flex, Box, Text, Title, Anchor } from "@mantine/core";
 
 import { Header } from "@/components/Header";
 
@@ -30,7 +11,7 @@ export default function Page() {
         <Box>
           <Header />
 
-          <Box my="xl">
+          <Box my={70}>
             <Text size="sm">Official Competition Rules</Text>
             <Title>Taoshi&apos;s First Forecasting Testnet Competition</Title>
             <Text mb="lg">Terms and Conditions</Text>
