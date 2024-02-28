@@ -248,7 +248,10 @@ export const Competition = ({ leaderboard }: any) => {
             <Text>
               Participation in Taoshi&apos;s Testnet Competition is subject to
               our terms and conditions. Please review them carefully to ensure a
-              fair and enjoyable experience for everyone involved.
+              fair and enjoyable experience for everyone involved. Please click{" "}
+              <Anchor href="terms-and-conditions">here</Anchor> to carefully
+              review the terms & conditions, and to ensure a fair & enjoyable
+              experience for everyone involved.
             </Text>
           </Box>
         </Box>
