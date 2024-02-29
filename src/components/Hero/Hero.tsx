@@ -11,8 +11,6 @@ import {
   Image,
 } from "@mantine/core";
 import { usePlausible } from "next-plausible";
-
-import subnet from "@/app/assets/subnet.svg";
 export interface CTA {
   text: string;
   href: string;
@@ -24,9 +22,10 @@ export interface HeroProps {
   copy: string;
   ctas?: CTA[];
   title?: string;
+  image?: string;
 }
 
-export const Hero = ({ title, copy, ctas }: HeroProps) => {
+export const Hero = ({ title, copy, ctas, image }: HeroProps) => {
   const plausible = usePlausible();
 
   const sendEvent = (eventName: string) => {
@@ -42,7 +41,7 @@ export const Hero = ({ title, copy, ctas }: HeroProps) => {
               component={NextImage}
               w={50}
               h={50}
-              src={subnet}
+              src={image}
               alt="Hero Image"
             />
             <Text>{title}</Text>

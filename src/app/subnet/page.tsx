@@ -22,13 +22,14 @@ import { IconCheck } from "@tabler/icons-react";
 
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Hubspot } from "@/components/Hubspot";
+import { Hubspot } from "@/components/SN8Hubspot";
 
 import mining from "@/app/assets/mining.svg";
 import vetted from "@/app/assets/vetted.svg";
 import openSource from "@/app/assets/open-source.svg";
 import intraday from "@/app/assets/intraday.svg";
 import fsc from "@/app/assets/fsc.svg";
+import subnet from "@/app/assets/subnet.svg";
 
 const ctas = [
   {
@@ -55,6 +56,7 @@ export default function Page() {
           <Box my="150px">
             <Hero
               title="Subnet 8"
+              image={subnet}
               copy="The Nexus of Decentralized Financial Forecasting"
               ctas={ctas}
             />
