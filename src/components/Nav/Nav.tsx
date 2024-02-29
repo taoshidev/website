@@ -1,17 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import {
-  Box,
-  Center,
-  Anchor,
-  Flex,
-  Burger,
-  Menu,
-  Button,
-  rem,
-} from "@mantine/core";
-import { useMediaQuery, useDisclosure } from "@mantine/hooks";
+import { Box, Anchor, Flex, Menu, Button, rem } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import {
   IconMail,
   IconBrandTwitter,
@@ -22,17 +13,15 @@ import {
   IconBrandGithub,
   IconDashboard,
   IconTournament,
-  IconNumber8,
   IconSquareNumber8,
 } from "@tabler/icons-react";
 import { usePlausible } from "next-plausible";
 
 export const Nav = () => {
-  const [opened, { toggle }] = useDisclosure();
   const [menuOpened, setMenuOpened] = useState(false);
 
   const plausible = usePlausible();
-  const isMobile = useMediaQuery("(max-width: 400px)");
+  const isMobile = useMediaQuery("(max-width: 768px)");
 
   const sendEvent = (eventName: string) => {
     plausible(eventName);
