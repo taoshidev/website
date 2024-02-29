@@ -179,7 +179,7 @@ export const Nav = () => {
             size="sm"
             ta="center"
             onClick={() => sendEvent("new-subnet")}
-            href="/newsubnet"
+            href="/new-subnet"
             c="orange"
           >
             New Subnet
