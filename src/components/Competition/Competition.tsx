@@ -107,7 +107,14 @@ export const Competition = ({ leaderboard }: any) => {
                 </Table.Thead>
                 <Table.Tbody>
                   {leaderboard.map((item: any, index: number) => (
-                    <Table.Tr key={item.id}>
+                    <Table.Tr
+                      key={item.id}
+                      style={
+                        index + 1 !== leaderboard.length
+                          ? { borderBottomStyle: "dashed" }
+                          : {}
+                      }
+                    >
                       <Table.Td>
                         <Text size="sm" {...highlight(index)}>
                           {index + 1}
