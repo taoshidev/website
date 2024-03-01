@@ -5,8 +5,14 @@ export async function getLeaderboard() {
     });
 
     const data = await res.json();
-    return JSON.parse(data);
-  } catch (error) {}
 
-  return [];
+    if (!res.ok) {
+      // This will activate the closest `error.js` Error Boundary
+      throw new Error("Failed to fetch data");
+    }
+
+    return JSON.parse(data);
+  } catch (error) {
+    throw new Error("Failed to fetch data");
+  }
 }
