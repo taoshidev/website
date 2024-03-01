@@ -16,11 +16,43 @@ import {
   Anchor,
 } from "@mantine/core";
 import { isEmpty } from "lodash";
-import { Header } from "@/components/Header";
 
+import { TAOSHI_MINER } from "@/constants";
+
+import { Header } from "@/components/Header";
 import competition from "@/app/assets/competition.svg";
 
 export const Competition = ({ leaderboard }: any) => {
+  const highlight = (index: number, miner?: string) => {
+    if (miner === TAOSHI_MINER) {
+      return {
+        c: "black",
+        fw: "bold",
+      };
+    }
+    return {
+      c: index < 3 ? "orange" : "black",
+      fw: index < 3 ? "bold" : "normal",
+    };
+  };
+
+  const miner = (miner: string) => {
+    if (miner === TAOSHI_MINER) {
+      return (
+        <Box>
+          <Text size="sm" fw={700} c="orange">
+            {miner}
+          </Text>
+          <Text size="xs" fw={700}>
+            Taoshi
+          </Text>
+        </Box>
+      );
+    }
+
+    return miner;
+  };
+
   return (
     <Container maw="800px" mt="50px" mb="160px">
       <Flex direction="column" justify="center">
@@ -76,24 +108,20 @@ export const Competition = ({ leaderboard }: any) => {
                 <Table.Tbody>
                   {leaderboard.map((item: any, index: number) => (
                     <Table.Tr key={item.id}>
-                      <Table.Td
-                        c={index < 3 ? "orange" : "black"}
-                        fw={index < 3 ? "bold" : "normal"}
-                      >
-                        {index + 1}
+                      <Table.Td>
+                        <Text size="sm" {...highlight(index)}>
+                          {index + 1}
+                        </Text>
                       </Table.Td>
-                      <Table.Td
-                        c={index < 3 ? "orange" : "black"}
-                        fw={index < 3 ? "bold" : "normal"}
-                      >
-                        {item.id}
+                      <Table.Td>
+                        <Text size="sm" {...highlight(index, item.id)}>
+                          {miner(item.id)}
+                        </Text>
                       </Table.Td>
-                      <Table.Td
-                        align="right"
-                        c={index < 3 ? "orange" : "black"}
-                        fw={index < 3 ? "bold" : "normal"}
-                      >
-                        {item.score}
+                      <Table.Td align="right">
+                        <Text size="sm" {...highlight(index)}>
+                          {item.score}
+                        </Text>
                       </Table.Td>
                     </Table.Tr>
                   ))}
