@@ -54,57 +54,54 @@ export const Competition = ({ leaderboard }: any) => {
               recognized in the community.
             </Text>
           </Box>
-          {leaderboard.length ? (
-            <>
-              <Box my="md" ta="center">
-                <Text size="sm">Weekly Leaderboard</Text>
-              </Box>
-              <Box mb="50px">
-                <Box>
-                  <Table verticalSpacing="md">
-                    <Table.Thead>
-                      <Table.Tr
-                        bg="white"
-                        style={{
-                          borderTop: "1px dashed black",
-                          borderBottom: "1px dashed black",
-                        }}
+
+          <Box my="md" ta="center">
+            <Text size="sm">Weekly Leaderboard</Text>
+          </Box>
+          <Box mb="50px">
+            <Box>
+              <Table verticalSpacing="md">
+                <Table.Thead>
+                  <Table.Tr
+                    bg="white"
+                    style={{
+                      borderTop: "1px dashed black",
+                      borderBottom: "1px dashed black",
+                    }}
+                  >
+                    <Table.Th>Rank</Table.Th>
+                    <Table.Th>Miner</Table.Th>
+                    <Table.Th ta="right">Score</Table.Th>
+                  </Table.Tr>
+                </Table.Thead>
+                <Table.Tbody>
+                  {leaderboard.map((item: any, index: number) => (
+                    <Table.Tr key={item.id}>
+                      <Table.Td
+                        c={index < 3 ? "orange" : "black"}
+                        fw={index < 3 ? "bold" : "normal"}
                       >
-                        <Table.Th>Rank</Table.Th>
-                        <Table.Th>Miner</Table.Th>
-                        <Table.Th ta="right">Score</Table.Th>
-                      </Table.Tr>
-                    </Table.Thead>
-                    <Table.Tbody>
-                      {leaderboard.map((item: any, index: number) => (
-                        <Table.Tr key={item.id}>
-                          <Table.Td
-                            c={index < 3 ? "orange" : "black"}
-                            fw={index < 3 ? "bold" : "normal"}
-                          >
-                            {index + 1}
-                          </Table.Td>
-                          <Table.Td
-                            c={index < 3 ? "orange" : "black"}
-                            fw={index < 3 ? "bold" : "normal"}
-                          >
-                            {item.id}
-                          </Table.Td>
-                          <Table.Td
-                            align="right"
-                            c={index < 3 ? "orange" : "black"}
-                            fw={index < 3 ? "bold" : "normal"}
-                          >
-                            {item.score}
-                          </Table.Td>
-                        </Table.Tr>
-                      ))}
-                    </Table.Tbody>
-                  </Table>
-                </Box>
-              </Box>
-            </>
-          ) : null}
+                        {index + 1}
+                      </Table.Td>
+                      <Table.Td
+                        c={index < 3 ? "orange" : "black"}
+                        fw={index < 3 ? "bold" : "normal"}
+                      >
+                        {item.id}
+                      </Table.Td>
+                      <Table.Td
+                        align="right"
+                        c={index < 3 ? "orange" : "black"}
+                        fw={index < 3 ? "bold" : "normal"}
+                      >
+                        {item.score}
+                      </Table.Td>
+                    </Table.Tr>
+                  ))}
+                </Table.Tbody>
+              </Table>
+            </Box>
+          </Box>
 
           <Center my="50px">
             <Divider variant="dashed" w="50%" bg="black" />
