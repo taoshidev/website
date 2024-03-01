@@ -23,6 +23,7 @@
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "framer-motion": "^10.18.0",
+    "lodash": "^4.17.21",
     "next": "13.4.19",
     "next-hubspot": "^1.2.0",
     "next-plausible": "^3.12.0",

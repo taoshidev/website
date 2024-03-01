@@ -1,7 +1,6 @@
 "use client";
 
 import NextImage from "next/image";
-
 import {
   Container,
   Flex,
@@ -16,7 +15,7 @@ import {
   Image,
   Anchor,
 } from "@mantine/core";
-
+import { isEmpty } from "lodash";
 import { Header } from "@/components/Header";
 
 import competition from "@/app/assets/competition.svg";
@@ -100,6 +99,13 @@ export const Competition = ({ leaderboard }: any) => {
                   ))}
                 </Table.Tbody>
               </Table>
+              {isEmpty(leaderboard) && (
+                <Center h={200}>
+                  <Title order={3} c="orange">
+                    Empty. For now...
+                  </Title>
+                </Center>
+              )}
             </Box>
           </Box>
 
