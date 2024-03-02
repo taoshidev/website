@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import NextImage from "next/image";
 import {
   Container,
@@ -16,41 +17,95 @@ import {
   Anchor,
 } from "@mantine/core";
 import { isEmpty } from "lodash";
+import {
+  createColumnHelper,
+  flexRender,
+  getCoreRowModel,
+  useReactTable,
+  getPaginationRowModel,
+  getSortedRowModel,
+  SortingState,
+} from "@tanstack/react-table";
 
 import { TAOSHI_MINER } from "@/constants";
 
 import { Header } from "@/components/Header";
 import competition from "@/app/assets/competition.svg";
 
-export const Competition = ({ leaderboard }: any) => {
-  const highlight = (index: number, miner?: string) => {
-    if (miner === TAOSHI_MINER) {
-      return {
-        c: "black",
-        fw: "bold",
-      };
-    }
+interface Weight {
+  [key: string]: number;
+}
+interface CompetitionProps {
+  leaderboard: Weight[];
+}
+
+const columnHelper = createColumnHelper<Weight>();
+
+const columns = [
+  columnHelper.accessor("id", {
+    header: "Miner",
+    cell: (info) => info.getValue(),
+  }),
+  columnHelper.accessor("score", {
+    header: "Score",
+    cell: (info) => info.getValue(),
+    sortingFn: "basic",
+  }),
+];
+
+const PAGE_SIZE = 10;
+
+export const Competition = ({ leaderboard }: CompetitionProps) => {
+  const [data] = useState<Weight[]>(leaderboard);
+  const [sorting, setSorting] = useState<SortingState>([
+    { id: "score", desc: true },
+  ]);
+
+  const table = useReactTable({
+    data,
+    columns,
+    state: {
+      sorting,
+    },
+    initialState: {
+      pagination: {
+        pageIndex: 0,
+        pageSize: PAGE_SIZE,
+      },
+      sorting: [{ id: "score", desc: true }],
+    },
+    getSortedRowModel: getSortedRowModel(),
+    getCoreRowModel: getCoreRowModel(),
+    onSortingChange: setSorting,
+    getPaginationRowModel: getPaginationRowModel(),
+  });
+
+  const highlight = (index: number) => {
     return {
       c: index < 3 ? "orange" : "black",
       fw: index < 3 ? "bold" : "normal",
     };
   };
 
-  const miner = (miner: string) => {
-    if (miner === TAOSHI_MINER) {
+  const formatItem = (item: any, index: number) => {
+    if (item === TAOSHI_MINER) {
       return (
         <Box>
-          <Text size="sm" fw={700} c="orange">
-            {miner}
+          <Text size="sm" {...highlight(index)}>
+            {item}
           </Text>
-          <Text size="xs" fw={700}>
+          <Text size="xs" fw={700} c="black">
             Taoshi
           </Text>
         </Box>
       );
     }
 
-    return miner;
+    return (
+      <Text size="sm" {...highlight(index)}>
+        {item}
+      </Text>
+    );
   };
 
   return (
@@ -91,45 +146,42 @@ export const Competition = ({ leaderboard }: any) => {
           </Box>
           <Box mb="50px">
             <Box>
-              <Table verticalSpacing="md">
+              <Table mb="xl" verticalSpacing="md">
                 <Table.Thead>
-                  <Table.Tr
-                    bg="white"
-                    style={{
-                      borderTop: "1px dashed black",
-                      borderBottom: "1px dashed black",
-                    }}
-                  >
-                    <Table.Th>Rank</Table.Th>
-                    <Table.Th>Miner</Table.Th>
-                    <Table.Th ta="right">Score</Table.Th>
-                  </Table.Tr>
+                  {table.getHeaderGroups().map((headerGroup) => (
+                    <Table.Tr
+                      key={headerGroup.id}
+                      bg="white"
+                      style={{
+                        borderTop: "1px dashed black",
+                        borderBottom: "1px dashed black",
+                      }}
+                    >
+                      <Table.Th>Rank</Table.Th>
+                      {headerGroup.headers.map((header) => (
+                        <Table.Th key={header.id}>
+                          {header.isPlaceholder
+                            ? null
+                            : flexRender(
+                                header.column.columnDef.header,
+                                header.getContext()
+                              )}
+                        </Table.Th>
+                      ))}
+                    </Table.Tr>
+                  ))}
                 </Table.Thead>
                 <Table.Tbody>
-                  {leaderboard.map((item: any, index: number) => (
-                    <Table.Tr
-                      key={item.id}
-                      style={
-                        index + 1 !== leaderboard.length
-                          ? { borderBottomStyle: "dashed" }
-                          : {}
-                      }
-                    >
-                      <Table.Td>
-                        <Text size="sm" {...highlight(index)}>
-                          {index + 1}
-                        </Text>
+                  {table.getRowModel().rows.map((row, index) => (
+                    <Table.Tr key={row.id}>
+                      <Table.Td {...highlight(index)}>
+                        <Text size="sm">{index + 1}</Text>
                       </Table.Td>
-                      <Table.Td>
-                        <Text size="sm" {...highlight(index, item.id)}>
-                          {miner(item.id)}
-                        </Text>
-                      </Table.Td>
-                      <Table.Td align="right">
-                        <Text size="sm" {...highlight(index)}>
-                          {item.score}
-                        </Text>
-                      </Table.Td>
+                      {row.getVisibleCells().map((cell) => (
+                        <Table.Td key={cell.id}>
+                          {formatItem(cell.getValue(), index)}
+                        </Table.Td>
+                      ))}
                     </Table.Tr>
                   ))}
                 </Table.Tbody>
