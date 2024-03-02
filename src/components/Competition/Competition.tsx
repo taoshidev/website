@@ -32,14 +32,15 @@ import { TAOSHI_MINER } from "@/constants";
 import { Header } from "@/components/Header";
 import competition from "@/app/assets/competition.svg";
 
-interface Weight {
-  [key: string]: number;
+interface Score {
+  id: string;
+  score: number;
 }
 interface CompetitionProps {
-  leaderboard: Weight[];
+  [key: string]: number;
 }
 
-const columnHelper = createColumnHelper<Weight>();
+const columnHelper = createColumnHelper<Score>();
 
 const columns = [
   columnHelper.accessor("id", {
@@ -56,7 +57,7 @@ const columns = [
 const PAGE_SIZE = 10;
 
 export const Competition = ({ leaderboard }: CompetitionProps) => {
-  const [data] = useState<Weight[]>(leaderboard);
+  const [data, setData] = useState<Score[]>([]);
   const [sorting, setSorting] = useState<SortingState>([
     { id: "score", desc: true },
   ]);
@@ -107,6 +108,25 @@ export const Competition = ({ leaderboard }: CompetitionProps) => {
       </Text>
     );
   };
+
+  useEffect(() => {
+    const createLeaderboard = () => {
+      const _data: Score[] = Object.entries(leaderboard).map((item) => {
+        const [id, score] = item;
+
+        return {
+          id,
+          score,
+        };
+      });
+
+      setData(_data);
+    };
+
+    if (leaderboard) {
+      createLeaderboard();
+    }
+  }, [leaderboard]);
 
   return (
     <Container maw="800px" mt="50px" mb="160px">
@@ -186,7 +206,7 @@ export const Competition = ({ leaderboard }: CompetitionProps) => {
                   ))}
                 </Table.Tbody>
               </Table>
-              {isEmpty(leaderboard) && (
+              {isEmpty(data) && (
                 <Center h={200}>
                   <Title order={3} c="orange">
                     Empty. For now...
