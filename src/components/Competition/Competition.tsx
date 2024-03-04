@@ -194,8 +194,10 @@ export const Competition = ({ leaderboard }: CompetitionProps) => {
                 <Table.Tbody>
                   {table.getRowModel().rows.map((row, index) => (
                     <Table.Tr key={row.id}>
-                      <Table.Td {...highlight(index)}>
-                        <Text size="sm">{index + 1}</Text>
+                      <Table.Td>
+                        <Text size="sm" {...highlight(index)}>
+                          {index + 1}
+                        </Text>
                       </Table.Td>
                       {row.getVisibleCells().map((cell) => (
                         <Table.Td key={cell.id}>
