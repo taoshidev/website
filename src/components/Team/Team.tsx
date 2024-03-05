@@ -51,7 +51,7 @@ export const Team = () => {
   return (
     <Box my={100}>
       <Box mb="xl">
-        <Text fw="bold" mb="sm">
+        <Text fw="bold" mb="sm" size="sm">
           Meet the team
         </Text>
         <Title order={3}>Led By Domain Experts</Title>
