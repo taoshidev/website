@@ -16,6 +16,7 @@ import {
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Statistics } from "@/components/Statistics";
+import { Team } from "@/components/Team/Team";
 
 import logo from "@/app/assets/logo.svg";
 import bittensor from "@/app/assets/bittensor.svg";
@@ -137,6 +138,7 @@ export default function Home() {
             </Group>
           </Stack>
         </Box>
+        <Team />
       </Flex>
     </Container>
   );
