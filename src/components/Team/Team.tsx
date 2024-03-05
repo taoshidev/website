@@ -4,6 +4,7 @@ import ken from "@/app/assets/team/ken.jpg";
 import jordan from "@/app/assets/team/jordan.jpg";
 import arrash from "@/app/assets/team/arrash.jpg";
 import luke from "@/app/assets/team/luke.jpg";
+import thomas from "@/app/assets/team/thomas.jpg";
 
 const team = [
   {
@@ -41,7 +42,7 @@ const team = [
   },
   {
     name: "Thomas Dougherty",
-    image: null,
+    image: thomas,
     position: "Staff ML Scientist",
     previously: ["PhD Stanford University"],
   },
