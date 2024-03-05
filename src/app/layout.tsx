@@ -2,6 +2,7 @@ import "@mantine/core/styles.css";
 import "./global.css";
 
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import PlausibleProvider from "next-plausible";
 import { ColorSchemeScript } from "@mantine/core";
 
@@ -30,7 +31,7 @@ export default function RootLayout({
       </head>
       <body>
         <Providers>{children}</Providers>
-
+        <GoogleTagManager gtmId="AW-16481835690" />
         {/* <!-- Start of HubSpot Embed Code --> */}
         <script
           type="text/javascript"
