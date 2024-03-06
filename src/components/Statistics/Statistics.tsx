@@ -7,7 +7,7 @@ export const Statistics = () => {
         <Group justify="space-between" align="center" mb="lg">
           <Stack gap="0" align="center">
             <Text fw="bold">
-              $7.6m
+              $12.6m
               <Text component="sup" size="xs">
                 *
               </Text>
@@ -21,7 +21,7 @@ export const Statistics = () => {
           </Center>
           <Stack gap="0" align="center">
             <Text fw="bold">
-              $133k
+              $175k
               <Text component="sup" size="xs">
                 *
               </Text>
@@ -54,7 +54,7 @@ export const Statistics = () => {
               Estimated annual miner payout:
             </Text>{" "}
             <Text component="span" fw="bold">
-              $32m/yr<Text component="sup">*</Text>
+              $64m/yr<Text component="sup">*</Text>
             </Text>
           </Text>
         </Box>
