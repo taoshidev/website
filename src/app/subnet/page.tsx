@@ -125,8 +125,8 @@ export default function Page() {
                 </Text>
 
                 <Text>
-                  Subnet 8 has paid out 7.6 million dollars to miners to date,
-                  approximately $133k in incentives per day. We offer the
+                  Subnet 8 has paid out 12.6 million dollars to miners to date,
+                  approximately $175k in incentives per day. We offer the
                   highest incentives to data scientists and machine learning
                   teams to contribute their best models.
                 </Text>
