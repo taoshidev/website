@@ -10,11 +10,9 @@ import newsubnet from "@/app/assets/propnet.svg";
 
 export default function Page() {
   return (
-    <Container maw="800px" mt="50px" mb="160px">
+    <Box>
       <Flex direction="column" justify="center">
         <Box>
-          <Header />
-
           <Box my="150px">
             <Hero
               title="Subnet ???"
@@ -70,6 +68,6 @@ export default function Page() {
         <Divider variant="dashed" w="50%" bg="black" />
       </Center>
       <Hubspot />
-    </Container>
+    </Box>
   );
 }
