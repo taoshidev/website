@@ -1,4 +1,4 @@
-import { Box } from "@mantine/core";
+import { Box, Title, Text } from "@mantine/core";
 import {
   ComposableMap,
   Geographies,
