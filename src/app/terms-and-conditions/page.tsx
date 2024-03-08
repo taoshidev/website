@@ -1,8 +1,6 @@
 "use client";
 
-import { Container, Flex, Box, Text, Title, Anchor } from "@mantine/core";
-
-import { Header } from "@/components/Header";
+import { Flex, Box, Text, Title, Anchor } from "@mantine/core";
 
 export default function Page() {
   return (

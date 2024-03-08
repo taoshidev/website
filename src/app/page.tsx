@@ -2,25 +2,16 @@
 
 import NextImage from "next/image";
 
-import {
-  Container,
-  Flex,
-  Box,
-  Text,
-  Image,
-  Center,
-  Group,
-  Stack,
-} from "@mantine/core";
+import { Flex, Box, Text, Image, Center, Group, Stack } from "@mantine/core";
 
-import { Header } from "@/components/Header";
+import { Partners } from "@/components/Partners";
 import { Hero } from "@/components/Hero";
 import { Statistics } from "@/components/Statistics";
 import { Team } from "@/components/Team/Team";
 
-import logo from "@/app/assets/logo.svg";
-import bittensor from "@/app/assets/bittensor.svg";
-import intraday from "@/app/assets/intraday.svg";
+import logo from "@/assets/logo.svg";
+import bittensor from "@/assets/bittensor.svg";
+import intraday from "@/assets/intraday.svg";
 
 const ctas = [
   {
@@ -40,7 +31,7 @@ const ctas = [
 export default function Home() {
   return (
     <Flex direction="column" justify="center">
-      <Box mb={100}>
+      <Box mb="xl">
         <Box my="150px">
           <Hero
             ctas={ctas}
@@ -50,7 +41,7 @@ export default function Home() {
 
         <Statistics />
 
-        <Stack gap={100}>
+        <Stack gap={100} mb="xl">
           <Group w="100%" gap="xl">
             <Box maw="600px">
               <Text fw="bold" mb="sm">
@@ -153,6 +144,7 @@ export default function Home() {
         </Stack>
       </Box>
       <Team />
+      <Partners />
     </Flex>
   );
 }

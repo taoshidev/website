@@ -6,7 +6,7 @@ import { Anchor, Group, Title, Image } from "@mantine/core";
 
 import { Nav } from "@/components/Nav";
 
-import logo from "@/app/assets/logo.svg";
+import logo from "@/assets/logo.svg";
 
 export const Header = () => {
   return (

@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import NextImage from "next/image";
 import {
-  Container,
   Flex,
   Box,
   Text,
@@ -29,8 +28,7 @@ import {
 
 import { TAOSHI_MINER } from "@/constants";
 
-import { Header } from "@/components/Header";
-import competition from "@/app/assets/competition.svg";
+import competition from "@/assets/competition.svg";
 
 interface Score {
   id: string;

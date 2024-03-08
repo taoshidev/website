@@ -1,12 +1,11 @@
 "use client";
 
-import { Container, Flex, Box, Text, Center, Divider } from "@mantine/core";
+import { Flex, Box, Text, Center, Divider } from "@mantine/core";
 
-import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Hubspot } from "@/components/PropNetHubspot";
 
-import newsubnet from "@/app/assets/propnet.svg";
+import newsubnet from "@/assets/propnet.svg";
 
 export default function Page() {
   return (

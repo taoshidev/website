@@ -11,6 +11,7 @@ import {
   Stack,
   ActionIcon,
   Text,
+  Badge,
 } from "@mantine/core";
 import {
   IconBrandDiscord,
@@ -19,11 +20,11 @@ import {
   IconBrandTwitter,
 } from "@tabler/icons-react";
 
-import logo from "@/app/assets/logo.svg";
+import logo from "@/assets/logo.svg";
 
 export const Footer = () => {
   return (
-    <Group align="flex-start" gap="xl" h="100%" p="lg">
+    <Group align="flex-start" justify="space-between" gap="xl" h="100%" p="lg">
       <Stack justify="space-between" mr="xl">
         <Group mb="xl">
           <Image
@@ -134,7 +135,7 @@ export const Footer = () => {
               Contact Us
             </Anchor>
             <Anchor size="sm" href="/careers" c="black">
-              Careers
+              Careers <Badge size="xs">We&apos;re hiring!</Badge>
             </Anchor>
           </Stack>
         </Box>
