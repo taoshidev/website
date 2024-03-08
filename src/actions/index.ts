@@ -12,7 +12,5 @@ export async function getLeaderboard() {
     }
 
     return JSON.parse(data);
-  } catch (error) {
-    throw new Error("Failed to fetch data");
-  }
+  } catch (error) {}
 }
