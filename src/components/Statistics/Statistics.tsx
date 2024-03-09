@@ -1,10 +1,13 @@
-import { Box, Center, Divider, Group, Stack, Text } from "@mantine/core";
+import { Box, Center, Divider, Flex, Stack, Text } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 
 export const Statistics = () => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <Box mb="100px">
       <Box my="xl">
-        <Group justify="space-between" align="center" mb="lg">
+        <Flex justify="space-between" align="center" mb="lg">
           <Stack gap="0" align="center">
             <Text fw="bold">
               $12.6m
@@ -16,9 +19,12 @@ export const Statistics = () => {
               Miner Payouts
             </Text>
           </Stack>
-          <Center h="20px">
-            <Divider orientation="vertical" variant="dashed" bg="black" />
-          </Center>
+          {!isMobile && (
+            <Center h="20px">
+              <Divider orientation="vertical" variant="dashed" bg="black" />
+            </Center>
+          )}
+
           <Stack gap="0" align="center">
             <Text fw="bold">
               $175k
@@ -30,9 +36,11 @@ export const Statistics = () => {
               Daily Mining Rewards
             </Text>
           </Stack>
-          <Center h="20px">
-            <Divider orientation="vertical" variant="dashed" bg="black" />
-          </Center>
+          {!isMobile && (
+            <Center h="20px">
+              <Divider orientation="vertical" variant="dashed" bg="black" />
+            </Center>
+          )}
           <Stack gap="0" align="center">
             <Text fw="bold">
               10/hr
@@ -44,11 +52,11 @@ export const Statistics = () => {
               Payout Velocity
             </Text>
           </Stack>
-        </Group>
+        </Flex>
       </Box>
 
       <Center>
-        <Box>
+        <Box ta="center">
           <Text size="sm">
             <Text component="span" fs="italic">
               Estimated annual miner payout:

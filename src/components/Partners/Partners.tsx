@@ -24,7 +24,7 @@ export const Partners = () => {
         </Text>
         <Title order={3}>Partners & Affiliates</Title>
       </Box>
-      <SimpleGrid cols={2}>
+      <SimpleGrid cols={{ sm: 2 }}>
         <Card style={{ border: "1px dashed black" }}>
           <Center h="100%">
             <Image

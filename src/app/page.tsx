@@ -32,7 +32,7 @@ export default function Home() {
   return (
     <Flex direction="column" justify="center">
       <Box mb="xl">
-        <Box my="150px">
+        <Box my={{ sm: "150px" }} mb={{ base: "100px" }}>
           <Hero
             ctas={ctas}
             copy="Decentralized Financial Market Forecasting Through the Power of AI"

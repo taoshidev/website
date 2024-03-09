@@ -60,7 +60,7 @@ export const Team = () => {
 
       <Grid mb="xl" gutter="xl" grow>
         {team.map((member) => (
-          <Grid.Col key={member.name} span={6}>
+          <Grid.Col key={member.name} span={{ sm: 6 }}>
             <Group align="flex-start" justify="center">
               <Box>
                 <Avatar
