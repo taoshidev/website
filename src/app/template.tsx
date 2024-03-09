@@ -17,7 +17,7 @@ export default function Template({ children }: TemplateProps) {
         pos="relative"
         style={{ borderBottom: "1px dashed black" }}
       >
-        <Container maw="800px" h="100%">
+        <Container maw="1000px" h="100%">
           <Header />
         </Container>
       </AppShell.Header>
@@ -33,7 +33,7 @@ export default function Template({ children }: TemplateProps) {
         mt={250}
         style={{ borderTop: "1px dashed black" }}
       >
-        <Container maw="800px" h="100%">
+        <Container maw="1000px" h="100%">
           <Footer />
         </Container>
       </AppShell.Footer>

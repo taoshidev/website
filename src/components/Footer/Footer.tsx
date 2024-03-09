@@ -134,9 +134,9 @@ export const Footer = () => {
             <Anchor size="sm" href="mailto:support@taoshi.io" c="black">
               Contact Us
             </Anchor>
-            <Anchor size="sm" href="/careers" c="black">
+            {/* <Anchor size="sm" href="/careers" c="black">
               Careers <Badge size="xs">We&apos;re hiring!</Badge>
-            </Anchor>
+            </Anchor> */}
           </Stack>
         </Box>
       </Group>
