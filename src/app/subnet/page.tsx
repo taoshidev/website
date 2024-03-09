@@ -3,7 +3,6 @@
 import NextImage from "next/image";
 
 import {
-  Container,
   Center,
   Flex,
   Box,
@@ -20,16 +19,15 @@ import {
 
 import { IconCheck } from "@tabler/icons-react";
 
-import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Hubspot } from "@/components/SN8Hubspot";
 
-import mining from "@/app/assets/mining.svg";
-import vetted from "@/app/assets/vetted.svg";
-import openSource from "@/app/assets/open-source.svg";
-import intraday from "@/app/assets/intraday.svg";
-import fsc from "@/app/assets/fsc.svg";
-import subnet from "@/app/assets/subnet.svg";
+import mining from "@/assets/mining.svg";
+import vetted from "@/assets/vetted.svg";
+import openSource from "@/assets/open-source.svg";
+import intraday from "@/assets/intraday.svg";
+import fsc from "@/assets/fsc.svg";
+import subnet from "@/assets/subnet.svg";
 
 const ctas = [
   {
@@ -48,11 +46,9 @@ const ctas = [
 
 export default function Page() {
   return (
-    <Container maw="800px" mt="50px" mb="160px">
+    <Box>
       <Flex direction="column" justify="center">
         <Box>
-          <Header />
-
           <Box my="150px">
             <Hero
               title="Subnet 8"
@@ -320,6 +316,6 @@ export default function Page() {
         <Divider variant="dashed" w="50%" bg="black" />
       </Center>
       <Hubspot />
-    </Container>
+    </Box>
   );
 }

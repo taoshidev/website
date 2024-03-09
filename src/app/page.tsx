@@ -2,25 +2,16 @@
 
 import NextImage from "next/image";
 
-import {
-  Container,
-  Flex,
-  Box,
-  Text,
-  Image,
-  Center,
-  Group,
-  Stack,
-} from "@mantine/core";
+import { Flex, Box, Text, Image, Center, Group, Stack } from "@mantine/core";
 
-import { Header } from "@/components/Header";
+import { Partners } from "@/components/Partners";
 import { Hero } from "@/components/Hero";
 import { Statistics } from "@/components/Statistics";
 import { Team } from "@/components/Team/Team";
 
-import logo from "@/app/assets/logo.svg";
-import bittensor from "@/app/assets/bittensor.svg";
-import intraday from "@/app/assets/intraday.svg";
+import logo from "@/assets/logo.svg";
+import bittensor from "@/assets/bittensor.svg";
+import intraday from "@/assets/intraday.svg";
 
 const ctas = [
   {
@@ -39,107 +30,121 @@ const ctas = [
 
 export default function Home() {
   return (
-    <Container maw="800px" mt="50px" mb="160px">
-      <Flex direction="column" justify="center">
-        <Box>
-          <Header />
-
-          <Box my="150px">
-            <Hero
-              ctas={ctas}
-              copy="Decentralized Financial Market Forecasting Through the Power of AI"
-            />
-          </Box>
-
-          <Statistics />
-
-          <Stack gap="xl">
-            <Group w="100%" gap="xl">
-              <Box maw="600px">
-                <Text fw="bold" mb="sm">
-                  Taoshi
-                </Text>
-
-                <Text>
-                  Taoshi is leading the Bittensor revolution. We harness the
-                  full potential of Bittensor to create dynamic and rewarding
-                  subnetworks that incentivize intelligence, revolutionizing how
-                  individuals and businesses interact with the Bittensor
-                  blockchain.
-                </Text>
-              </Box>
-              <Center flex="1" display={{ base: "none", sm: "flex" }}>
-                <Image
-                  component={NextImage}
-                  width={100}
-                  height={100}
-                  src={logo}
-                  alt="taoshi logo"
-                />
-              </Center>
-            </Group>
-
-            <Group w="100%" gap="xl">
-              <Center flex="1" display={{ base: "none", sm: "flex" }}>
-                <Image
-                  component={NextImage}
-                  width={100}
-                  height={100}
-                  src={bittensor}
-                  alt="Open Source Modeling"
-                />
-              </Center>
-              <Box maw="600px">
-                <Text fw="bold" mb="sm">
-                  Bittensor
-                </Text>
-
-                <Text>
-                  Bittensor is more than just a blockchain; it&apos;s the
-                  doorway to a new era of decentralized intelligence. It&apos;s
-                  a platform that celebrates innovation, creativity, and
-                  expertise. At Taoshi, we&apos;re not only leveraging this
-                  remarkable technology; we&apos;re actively constructing
-                  specialized subnetworks, such as our cutting-edge time series
-                  prediction subnetwork, on top of it. This approach empowers
-                  users to access a wide array of possibilities within the
-                  Bittensor network, tailored to their unique needs.
-                </Text>
-              </Box>
-            </Group>
-
-            <Group w="100%" gap="xl">
-              <Box maw="600px">
-                <Text fw="bold" mb="sm">
-                  Our Mission
-                </Text>
-
-                <Text>
-                  Taoshi&apos;s mission is to create an intuitive, user-friendly
-                  environment that inspires individuals and enterprises to
-                  explore, innovate, and thrive within the Bittensor ecosystem.
-                  Whether you&apos;re an AI developer, a data scientist, or an
-                  entrepreneur with a vision, our solutions serve as your
-                  gateway to a world of opportunities. At Taoshi, we&apos;re
-                  shaping the future by harnessing Bittensor to build a
-                  brighter, more decentralized world, one specialized subnetwork
-                  at a time.
-                </Text>
-              </Box>
-              <Center flex="1" display={{ base: "none", sm: "flex" }}>
-                <Image
-                  component={NextImage}
-                  width={100}
-                  height={100}
-                  src={intraday}
-                  alt="Taoshi's Mission"
-                />
-              </Center>
-            </Group>
-          </Stack>
+    <Flex direction="column" justify="center">
+      <Box mb="xl">
+        <Box my="150px">
+          <Hero
+            ctas={ctas}
+            copy="Decentralized Financial Market Forecasting Through the Power of AI"
+          />
         </Box>
-        <Team />
-      </Flex>
-    </Container>
+
+        <Statistics />
+
+        <Stack gap={100} mb="xl">
+          <Group w="100%" gap="xl">
+            <Box maw="600px">
+              <Text fw="bold" mb="sm">
+                Taoshi
+              </Text>
+
+              <Text size="sm">
+                At Taoshi, we&apos;re pioneering the Bittensor revolution with a
+                keen focus on the future of financial forecasting. We craft
+                dynamic subnetworks, where the power of decentralized AI and
+                machine learning is harnessed to fuel real-time financial market
+                predictions. By integrating cutting-edge AI & machine learning
+                technology with the blockchain, we provide miners and developers
+                with a fertile ground for innovation, where their contributions
+                to financial market predictions are met with tangible, lucrative
+                rewards. As a cornerstone of the Bittensor ecosystem, we&apos;re
+                not just participating in the blockchain revolution; we&apos;re
+                leading it by delivering sophisticated tools and insights that
+                empower users to make informed decisions in financial markets.
+              </Text>
+            </Box>
+            <Center flex="1" display={{ base: "none", sm: "flex" }}>
+              <Image
+                component={NextImage}
+                width={100}
+                height={100}
+                src={logo}
+                alt="taoshi logo"
+              />
+            </Center>
+          </Group>
+
+          <Group w="100%" gap="xl">
+            <Center flex="1" display={{ base: "none", sm: "flex" }}>
+              <Image
+                component={NextImage}
+                width={100}
+                height={100}
+                src={bittensor}
+                alt="Open Source Modeling"
+              />
+            </Center>
+            <Box maw="600px">
+              <Text fw="bold" mb="sm">
+                Bittensor
+              </Text>
+
+              <Text size="sm">
+                Bittensor is not just a blockchain; it&apos;s a groundbreaking
+                network that fosters decentralized intelligence, where a
+                consensus mechanism rewards the creation and sharing of AI
+                models. This neural network of nodes, maintained by independent
+                miners, promotes a cooperative space for AI services to be
+                developed and utilized worldwide. At Taoshi, we harness
+                Bittensor&apos;s capabilities to build specialized subnetworks,
+                like our flagship Price Forecasting platform, that merge AI with
+                blockchain for secure, transparent, and innovative applications.
+                As part of the Bittensor ecosystem, we contribute to a
+                decentralized AI marketplace, powered by the Bittensor token
+                ($TAO), to ensure the seamless exchange of data and
+                intelligence. Taoshi stands as a gateway to this new era of
+                accessible, incentivized intelligence, where every contribution
+                to the network&apos;s growth is valued and rewarded.
+              </Text>
+            </Box>
+          </Group>
+
+          <Group w="100%" gap="xl">
+            <Box maw="600px">
+              <Text fw="bold" mb="sm">
+                Our Mission
+              </Text>
+
+              <Text size="sm">
+                At Taoshi, our mission is two-fold. First, we seek to break down
+                the barriers to sophisticated financial predictions,
+                traditionally the domain of industry elites, and democratize
+                access to this valuable intelligence. Secondly, we aspire to
+                demystify the world of financial predictions, making it
+                welcoming for everyone—from AI enthusiasts, to data scientists,
+                to visionary entrepreneurs. We&apos;re committed to providing an
+                intuitive, user-friendly environment that inspires individuals
+                and enterprises to explore, innovate, and thrive within the
+                Bittensor ecosystem. Join us at Taoshi, where we&apos;re not
+                just participants in the blockchain space; we&apos;re pioneers
+                building a brighter, more informed, and decentralized future,
+                one subnetwork at a time.
+              </Text>
+            </Box>
+            <Center flex="1" display={{ base: "none", sm: "flex" }}>
+              <Image
+                component={NextImage}
+                width={100}
+                height={100}
+                src={intraday}
+                alt="Taoshi's Mission"
+              />
+            </Center>
+          </Group>
+        </Stack>
+      </Box>
+      <Team />
+      <Partners />
+    </Flex>
   );
 }

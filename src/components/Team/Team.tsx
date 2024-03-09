@@ -1,10 +1,10 @@
 import { Box, Grid, List, Group, Title, Text, Avatar } from "@mantine/core";
 
-import ken from "@/app/assets/team/ken.jpg";
-import jordan from "@/app/assets/team/jordan.jpg";
-import arrash from "@/app/assets/team/arrash.jpg";
-import luke from "@/app/assets/team/luke.jpg";
-import thomas from "@/app/assets/team/thomas.jpg";
+import ken from "@/assets/team/ken.jpg";
+import jordan from "@/assets/team/jordan.jpg";
+import arrash from "@/assets/team/arrash.jpg";
+import luke from "@/assets/team/luke.jpg";
+import thomas from "@/assets/team/thomas.jpg";
 
 const team = [
   {
@@ -50,7 +50,7 @@ const team = [
 
 export const Team = () => {
   return (
-    <Box my={100}>
+    <Box id="team" pt={48} mt={-48}>
       <Box mb="xl">
         <Text fw="bold" mb="sm" size="sm">
           Meet the team

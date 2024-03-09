@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Box, Anchor, Flex, Menu, Button, rem } from "@mantine/core";
+import { Box, Anchor, Menu, Button, rem, Group } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import {
   IconMail,
@@ -28,9 +28,9 @@ export const Nav = () => {
   };
 
   return (
-    <Box component="nav" flex="1">
+    <Box component="nav">
       {isMobile ? (
-        <Flex justify="flex-end">
+        <Group justify="flex-end">
           <Menu
             width={200}
             position="bottom-end"
@@ -150,13 +150,11 @@ export const Nav = () => {
               </Menu.Item>
             </Menu.Dropdown>
           </Menu>
-        </Flex>
+        </Group>
       ) : (
-        <Flex align="center">
+        <Group align="center" gap="xl">
           <Anchor
-            flex="1"
             size="sm"
-            ta="center"
             onClick={() => sendEvent("subnet")}
             href="/subnet"
             c="black"
@@ -164,9 +162,7 @@ export const Nav = () => {
             Subnet 8
           </Anchor>
           <Anchor
-            flex="1"
             size="sm"
-            ta="center"
             onClick={() => sendEvent("new-subnet")}
             href="/new-subnet"
             c="orange"
@@ -174,9 +170,7 @@ export const Nav = () => {
             New Subnet
           </Anchor>
           <Anchor
-            flex="1"
             size="sm"
-            ta="center"
             onClick={() => sendEvent("competition")}
             href="/competition"
             c="black"
@@ -184,9 +178,7 @@ export const Nav = () => {
             Competition
           </Anchor>
           <Anchor
-            flex="1"
             size="sm"
-            ta="center"
             onClick={() => sendEvent("dashboard")}
             href="https://dashboard.taoshi.io"
             c="black"
@@ -278,7 +270,7 @@ export const Nav = () => {
               </Menu.Item>
             </Menu.Dropdown>
           </Menu>
-        </Flex>
+        </Group>
       )}
     </Box>
   );
