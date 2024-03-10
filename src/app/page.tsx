@@ -2,7 +2,16 @@
 
 import NextImage from "next/image";
 
-import { Flex, Box, Text, Image, Center, Group, Stack } from "@mantine/core";
+import {
+  Flex,
+  Box,
+  Text,
+  Image,
+  Center,
+  Group,
+  Stack,
+  Title,
+} from "@mantine/core";
 
 import { Partners } from "@/components/Partners";
 import { Hero } from "@/components/Hero";
@@ -12,6 +21,7 @@ import { Team } from "@/components/Team/Team";
 import logo from "@/assets/logo.svg";
 import bittensor from "@/assets/bittensor.svg";
 import intraday from "@/assets/intraday.svg";
+import { Logo } from "@/components/Logo";
 
 const ctas = [
   {
@@ -32,7 +42,8 @@ export default function Home() {
   return (
     <Flex direction="column" justify="center">
       <Box mb="xl">
-        <Box my={{ sm: "150px" }} mb={{ base: "100px" }}>
+        <Box>
+          <Logo />
           <Hero
             ctas={ctas}
             copy="Decentralized Financial Market Forecasting Through the Power of AI"
