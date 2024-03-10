@@ -2,16 +2,8 @@
 
 import NextImage from "next/image";
 
-import {
-  Flex,
-  Box,
-  Text,
-  Image,
-  Center,
-  Group,
-  Stack,
-  Title,
-} from "@mantine/core";
+import { Flex, Box, Text, Image, Center, Group, Stack } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 
 import { Partners } from "@/components/Partners";
 import { Hero } from "@/components/Hero";
@@ -39,11 +31,13 @@ const ctas = [
 ];
 
 export default function Home() {
+  const isMobile = useMediaQuery("(max-width: 768px)");
+
   return (
     <Flex direction="column" justify="center">
       <Box mb="xl">
         <Box>
-          <Logo />
+          {!isMobile && <Logo />}
           <Hero
             ctas={ctas}
             copy="Decentralized Financial Market Forecasting Through the Power of AI"
