@@ -143,7 +143,7 @@ export const Competition = ({ leaderboard }: CompetitionProps) => {
           </Title>
         </Stack>
 
-        <Box my="xl" ta="center">
+        <Box mt="xl" mb={75} ta="center">
           <Text size="sm">
             Are you ready to challenge yourself and revolutionize the way we
             predict financial markets? Taoshi invites you to join our latest
