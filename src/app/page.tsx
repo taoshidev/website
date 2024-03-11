@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <Flex direction="column" justify="center">
       <Box mb={100}>
-        <Box>
+        <Box mb={100}>
           {!isMobile && <Logo />}
           <Hero
             ctas={ctas}
