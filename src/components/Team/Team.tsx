@@ -73,10 +73,10 @@ export const Team = () => {
                 />
               </Box>
               <Box flex="1">
-                <Text fw="bold" c="orange">
+                <Text fw="bold" c="orange" size="sm">
                   {member.name}
                 </Text>
-                <Text mb="xs" size="sm">
+                <Text mb="xs" size="xs">
                   {member.position}
                 </Text>
                 <Text size="sm" fw="bold">

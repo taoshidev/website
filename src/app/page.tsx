@@ -53,7 +53,7 @@ export default function Home() {
                 Taoshi
               </Text>
 
-              <Text size="sm">
+              <Text size="xs">
                 At Taoshi, we&apos;re pioneering the Bittensor revolution with a
                 keen focus on the future of financial forecasting. We craft
                 dynamic subnetworks, where the power of decentralized AI and
@@ -94,7 +94,7 @@ export default function Home() {
                 Bittensor
               </Text>
 
-              <Text size="sm">
+              <Text size="xs">
                 Bittensor is not just a blockchain; it&apos;s a groundbreaking
                 network that fosters decentralized intelligence, where a
                 consensus mechanism rewards the creation and sharing of AI
@@ -120,7 +120,7 @@ export default function Home() {
                 Our Mission
               </Text>
 
-              <Text size="sm">
+              <Text size="xs">
                 At Taoshi, our mission is two-fold. First, we seek to break down
                 the barriers to sophisticated financial predictions,
                 traditionally the domain of industry elites, and democratize
