@@ -25,7 +25,7 @@ export const Partners = () => {
         <Title order={3}>Partners & Affiliates</Title>
       </Box>
       <SimpleGrid cols={{ sm: 2 }}>
-        <Card style={{ border: "1px dashed black" }} bg="orange">
+        <Card style={{ border: "1px dashed #F7F6F3" }} bg="orange">
           <Center h="100%">
             <Image
               component={NextImage}
@@ -36,7 +36,7 @@ export const Partners = () => {
             />
           </Center>
         </Card>
-        <Card style={{ border: "1px dashed black" }} bg="orange">
+        <Card style={{ border: "1px dashed #F7F6F3" }} bg="orange">
           <Center h="100%">
             <Image
               component={NextImage}
@@ -48,7 +48,7 @@ export const Partners = () => {
             />
           </Center>
         </Card>
-        <Card style={{ border: "1px dashed black" }} bg="orange">
+        <Card style={{ border: "1px dashed #F7F6F3" }} bg="orange">
           <Center h="100%">
             <Image
               component={NextImage}
@@ -60,7 +60,7 @@ export const Partners = () => {
             />
           </Center>
         </Card>
-        <Card style={{ border: "1px dashed black" }} bg="orange">
+        <Card style={{ border: "1px dashed #F7F6F3" }} bg="orange">
           <Center h="100%">
             <Image
               component={NextImage}
