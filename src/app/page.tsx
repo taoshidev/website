@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <Flex direction="column" justify="center">
-      <Box mb="xl">
+      <Box mb={100}>
         <Box>
           {!isMobile && <Logo />}
           <Hero
@@ -46,7 +46,7 @@ export default function Home() {
 
         <Statistics />
 
-        <Stack gap={100} mb="xl">
+        <Stack gap={100}>
           <Group w="100%" gap="xl">
             <Box maw="600px">
               <Text fw="bold" mb="sm">

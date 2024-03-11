@@ -93,7 +93,7 @@ export default function Home() {
         </Box>
 
         <Center>
-          <Box w={500} my="xl" ta="center">
+          <Box w={650} my="xl" ta="center">
             <Title order={2} mb="lg">
               Open Roles
             </Title>
@@ -106,7 +106,7 @@ export default function Home() {
         </Center>
 
         <Center>
-          <Box w={500} my="xl">
+          <Box w={650} my="xl">
             <Accordion>
               {groceries.map((item) => (
                 <Accordion.Item key={item.value} value={item.value}>

@@ -30,8 +30,8 @@ export default function Template({ children }: TemplateProps) {
 
       <AppShell.Footer
         pos="relative"
-        mt={250}
         style={{ borderTop: "1px dashed black" }}
+        mt={100}
       >
         <Container maw="1000px" h="100%">
           <Footer />

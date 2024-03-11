@@ -12,12 +12,12 @@ import {
 
 import glassnode from "@/assets/partners/glassnode.svg";
 import lunarcrush from "@/assets/partners/lunarcrush.svg";
-import uphold from "@/assets/partners/uphold.png";
+import uphold from "@/assets/partners/uphold.jpg";
 import rt21 from "@/assets/partners/roundtable21.png";
 
 export const Partners = () => {
   return (
-    <Box my="xl">
+    <Box mb={100}>
       <Box mb="xl">
         <Text fw="bold" mb="sm" size="sm">
           Supported by the best
@@ -25,7 +25,7 @@ export const Partners = () => {
         <Title order={3}>Partners & Affiliates</Title>
       </Box>
       <SimpleGrid cols={{ sm: 2 }}>
-        <Card style={{ border: "1px dashed black" }}>
+        <Card style={{ border: "1px dashed black" }} bg="orange">
           <Center h="100%">
             <Image
               component={NextImage}
@@ -36,7 +36,7 @@ export const Partners = () => {
             />
           </Center>
         </Card>
-        <Card style={{ border: "1px dashed black" }}>
+        <Card style={{ border: "1px dashed black" }} bg="orange">
           <Center h="100%">
             <Image
               component={NextImage}
@@ -48,7 +48,7 @@ export const Partners = () => {
             />
           </Center>
         </Card>
-        <Card style={{ border: "1px dashed black" }}>
+        <Card style={{ border: "1px dashed black" }} bg="orange">
           <Center h="100%">
             <Image
               component={NextImage}
@@ -60,7 +60,7 @@ export const Partners = () => {
             />
           </Center>
         </Card>
-        <Card style={{ border: "1px dashed black" }}>
+        <Card style={{ border: "1px dashed black" }} bg="orange">
           <Center h="100%">
             <Image
               component={NextImage}

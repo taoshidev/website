@@ -57,7 +57,7 @@ export const Logo = () => {
   }, []);
 
   return (
-    <Center bg="#F7F6F3" c="black" mb="xl">
+    <Center c="black" mb="xl">
       <Box ref={rootRef} className={styles.braille}>
         <Box
           ref={hiddenRef}
