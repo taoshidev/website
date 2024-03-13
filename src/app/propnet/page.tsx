@@ -44,12 +44,11 @@ export default function Page() {
             }}
           >
             <Text>
-              Prop Net is Taoshi&apos;s second subnet within the Bittensor
-              ecosystem, and stands at the forefront of a trading revolution,
-              where cutting-edge decentralized technology meets sophisticated
-              trading strategies. By leveraging the collective intelligence of
-              data scientists, traders, and machine learning teams, Prop Net is
-              a unique synergy of proprietary trading, decentralized AI, and
+              Prop Net stands at the forefront of a trading revolution, where
+              cutting-edge decentralized technology meets sophisticated trading
+              strategies. By leveraging the collective intelligence of data
+              scientists, traders, and machine learning teams, Prop Net is a
+              unique synergy of proprietary trading, decentralized AI, and
               algorithmic trading signals. No matter who you are, Prop Net
               equips you with the tools to navigate the financial markets with
               confidence.
