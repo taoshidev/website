@@ -5,6 +5,7 @@ import jordan from "@/assets/team/jordan.jpg";
 import arrash from "@/assets/team/arrash.jpg";
 import luke from "@/assets/team/luke.jpg";
 import thomas from "@/assets/team/thomas.jpg";
+import michael from "@/assets/team/michael.jpg";
 
 const team = [
   {
@@ -15,7 +16,7 @@ const team = [
   },
   {
     name: "Michael Brown",
-    image: null,
+    image: michael,
     position: "Chief Technology Officer",
     previously: ["NASA", "TARVIS Labs"],
   },
