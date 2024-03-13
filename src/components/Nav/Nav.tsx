@@ -155,27 +155,19 @@ export const Nav = () => {
         <Group align="center" gap="xl">
           <Anchor
             size="sm"
-            onClick={() => sendEvent("subnet")}
-            href="/subnet"
-            c="black"
-          >
-            Subnet 8
-          </Anchor>
-          <Anchor
-            size="sm"
             onClick={() => sendEvent("new-subnet")}
-            href="/new-subnet"
+            href="/propnet"
             c="orange"
           >
             Propnet*
           </Anchor>
           <Anchor
             size="sm"
-            onClick={() => sendEvent("competition")}
-            href="/competition"
+            onClick={() => sendEvent("github")}
+            href="https://github.com/taoshidev/time-series-prediction-subnet"
             c="black"
           >
-            Competition
+            GitHub
           </Anchor>
           <Anchor
             size="sm"
@@ -209,18 +201,6 @@ export const Nav = () => {
             </Menu.Target>
 
             <Menu.Dropdown style={{ border: "1px dashed black" }}>
-              <Menu.Item
-                onClick={() => sendEvent("github")}
-                component="a"
-                href="https://github.com/taoshidev/time-series-prediction-subnet"
-                leftSection={
-                  <IconBrandGithub
-                    style={{ width: rem(14), height: rem(14) }}
-                  />
-                }
-              >
-                GitHub
-              </Menu.Item>
               <Menu.Item
                 onClick={() => sendEvent("contact")}
                 component="a"

@@ -98,11 +98,8 @@ export const Footer = () => {
             Product
           </Text>
           <Stack gap="xs">
-            <Anchor size="sm" href="/subnet" c="black">
-              Subnet 8
-            </Anchor>
-            <Anchor size="sm" href="/competition" c="black">
-              Competition
+            <Anchor size="sm" href="/propnet" c="black">
+              Propnet
             </Anchor>
             <Anchor
               size="sm"
