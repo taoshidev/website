@@ -8,12 +8,12 @@ import { useMediaQuery } from "@mantine/hooks";
 import { Partners } from "@/components/Partners";
 import { Hero } from "@/components/Hero";
 import { Statistics } from "@/components/Statistics";
-import { Team } from "@/components/Team/Team";
+import { Team } from "@/components/Team";
+import { Logo } from "@/components/Logo";
 
 import logo from "@/assets/logo.svg";
 import bittensor from "@/assets/bittensor.svg";
 import intraday from "@/assets/intraday.svg";
-import { Logo } from "@/components/Logo";
 
 const ctas = [
   {

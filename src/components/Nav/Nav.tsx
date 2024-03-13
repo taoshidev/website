@@ -167,7 +167,7 @@ export const Nav = () => {
             href="/new-subnet"
             c="orange"
           >
-            New Subnet*
+            Propnet*
           </Anchor>
           <Anchor
             size="sm"
