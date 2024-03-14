@@ -159,7 +159,7 @@ export const Nav = () => {
             href="/propnet"
             c="orange"
           >
-            Propnet*
+            Prop Net*
           </Anchor>
           <Anchor
             size="sm"

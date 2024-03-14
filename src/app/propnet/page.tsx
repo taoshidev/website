@@ -101,8 +101,7 @@ export default function Page() {
                     </Text>{" "}
                     Miners on Prop Net are graded and subsequently rewarded with
                     $TAO for their contributions to the network, incentivizing a
-                    virtuous cycle of innovation. Currently, miners are
-                    receiving an average of $xxx,xxx in incentives per day.
+                    virtuous cycle of innovation.
                   </Text>
                 </List.Item>
                 <List.Item>
@@ -158,7 +157,7 @@ export default function Page() {
                     </Text>{" "}
                     On Taoshi&apos;s Request Network, users interested in Prop
                     Net&apos;s outputs have a wide selection to choose from.
-                    Client can tailor their purchases to specific miners and
+                    Clients can tailor their purchases to specific miners and
                     financial markets, allowing users to pay for exactly what
                     they want to receive.
                   </Text>
@@ -193,12 +192,6 @@ export default function Page() {
           <Box mb={75}>
             <Text fw="bold" mb="sm">
               Interested in Purchasing Prop Net&apos;s Trading Outputs?
-            </Text>
-            <Text mb="sm">
-              Retail traders and institutional clients alike will find Prop
-              Net&apos;s outputs to be of exceptional value. With Prop Net,
-              every trader and institution has the opportunity to harness the
-              potential of AI to optimize their trading outcomes.
             </Text>
             <Text>
               Retail traders and institutional clients alike will find Prop
