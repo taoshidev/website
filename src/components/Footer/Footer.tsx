@@ -99,7 +99,7 @@ export const Footer = () => {
           </Text>
           <Stack gap="xs">
             <Anchor size="sm" href="/propnet" c="black">
-              Propnet
+              Proprietary Trading Network
             </Anchor>
             <Anchor
               size="sm"

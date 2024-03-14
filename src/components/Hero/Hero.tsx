@@ -58,7 +58,7 @@ export const Hero = ({ title, copy, ctas, image }: HeroProps) => {
                 onClick={() => sendEvent(cta.event)}
                 href={cta.href}
               >
-                <Button variant="primary" size="sm" w="150px">
+                <Button variant="primary" size="sm" w="200px">
                   {cta.text}
                 </Button>
               </Anchor>

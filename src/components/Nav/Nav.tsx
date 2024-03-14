@@ -14,6 +14,7 @@ import {
   IconDashboard,
   IconTournament,
   IconSquareNumber8,
+  IconGraph,
 } from "@tabler/icons-react";
 import { usePlausible } from "next-plausible";
 
@@ -55,26 +56,14 @@ export const Nav = () => {
 
             <Menu.Dropdown style={{ border: "1px dashed black" }}>
               <Menu.Item
-                onClick={() => sendEvent("subnet")}
+                onClick={() => sendEvent("propnet")}
                 component="a"
-                href="/subnet"
+                href="/propnet"
                 leftSection={
-                  <IconSquareNumber8
-                    style={{ width: rem(14), height: rem(14) }}
-                  />
+                  <IconGraph style={{ width: rem(14), height: rem(14) }} />
                 }
               >
-                Subnet 8
-              </Menu.Item>
-              <Menu.Item
-                onClick={() => sendEvent("competition")}
-                component="a"
-                href="/competition"
-                leftSection={
-                  <IconTournament style={{ width: rem(14), height: rem(14) }} />
-                }
-              >
-                Competition
+                Proprietary Trading Network
               </Menu.Item>
               <Menu.Item
                 onClick={() => sendEvent("dashboard")}
@@ -105,6 +94,11 @@ export const Nav = () => {
                 onClick={() => sendEvent("contact")}
                 component="a"
                 href="mailto:knicholson@taoshi.io"
+                style={{
+                  "&:hover": {
+                    background: "red",
+                  },
+                }}
                 leftSection={
                   <IconMail style={{ width: rem(14), height: rem(14) }} />
                 }
@@ -155,11 +149,11 @@ export const Nav = () => {
         <Group align="center" gap="xl">
           <Anchor
             size="sm"
-            onClick={() => sendEvent("new-subnet")}
+            onClick={() => sendEvent("propnet")}
             href="/propnet"
             c="orange"
           >
-            Prop Net*
+            Proprietary Trading Network*
           </Anchor>
           <Anchor
             size="sm"
