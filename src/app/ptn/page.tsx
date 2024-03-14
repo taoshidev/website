@@ -1,13 +1,26 @@
 "use client";
 
-import NextImage from "next/image";
+import {
+  Flex,
+  Group,
+  Box,
+  Text,
+  Accordion,
+  Center,
+  Divider,
+  List,
+  Image,
+  Container,
+  Table,
+} from "@mantine/core";
 
-import { Flex, Box, Text, Center, Divider, List, Image } from "@mantine/core";
-
+import { PTNHero } from "@/components/PTNHero";
 import { Hero } from "@/components/Hero";
 import { Hubspot } from "@/components/PropNetHubspot";
 
 import subnet from "@/assets/subnet.svg";
+
+import { markets } from "@/constants";
 
 const ctas = [
   {
@@ -27,7 +40,7 @@ const ctas = [
 export default function Page() {
   return (
     <Box>
-      <Flex direction="column" justify="center">
+      <Container maw="800px" h="100%">
         <Box>
           <Text mb="xl" ta="center" size="xs" c="orange">
             Coming March 22
@@ -119,12 +132,87 @@ export default function Page() {
                     financial markets: by-hand using our trading dashboard,
                     utilizing their own algorithms, or modifying the open-source
                     modeling created by Taoshi.
+                    <Group align="flex-start" my="xl">
+                      <Accordion flex="1">
+                        <Accordion.Item value="BTCUSD">
+                          <Accordion.Control
+                            style={{ borderBottom: "1px dashed black" }}
+                          >
+                            <Text fw={700} size="sm">
+                              Crypto
+                            </Text>
+                          </Accordion.Control>
+
+                          <Accordion.Panel>
+                            {markets.crypto.map((item) => (
+                              <Text
+                                ta="center"
+                                my="sm"
+                                size="xs"
+                                key={item.label}
+                              >
+                                {item.label}
+                              </Text>
+                            ))}
+                          </Accordion.Panel>
+                        </Accordion.Item>
+                      </Accordion>
+                      <Accordion flex="1">
+                        <Accordion.Item value="BTCUSD">
+                          <Accordion.Control
+                            style={{ borderBottom: "1px dashed black" }}
+                          >
+                            <Text fw={700} size="sm">
+                              Forex
+                            </Text>
+                          </Accordion.Control>
+
+                          <Accordion.Panel>
+                            {markets.forex.map((item) => (
+                              <Text
+                                ta="center"
+                                my="sm"
+                                size="xs"
+                                key={item.label}
+                              >
+                                {item.label}
+                              </Text>
+                            ))}
+                          </Accordion.Panel>
+                        </Accordion.Item>
+                      </Accordion>
+
+                      <Accordion flex="1">
+                        <Accordion.Item value="BTCUSD">
+                          <Accordion.Control
+                            style={{ borderBottom: "1px dashed black" }}
+                          >
+                            <Text fw={700} size="sm">
+                              Indices
+                            </Text>
+                          </Accordion.Control>
+
+                          <Accordion.Panel>
+                            {markets.indices.map((item) => (
+                              <Text
+                                ta="center"
+                                my="sm"
+                                size="xs"
+                                key={item.label}
+                              >
+                                {item.label}
+                              </Text>
+                            ))}
+                          </Accordion.Panel>
+                        </Accordion.Item>
+                      </Accordion>
+                    </Group>
                   </Text>
                 </List.Item>
                 <List.Item mb="md">
                   <Text>
                     <Text fw={700} component="span">
-                      Miners (Rapid Payouts):
+                      Rapid Payouts:
                     </Text>{" "}
                     In the proprietary trading industry, traditional firms
                     require traders to pass rigorous challenges, oftentimes with
@@ -202,7 +290,8 @@ export default function Page() {
 
           <Box mb={75}>
             <Text fw="bold" mb="sm">
-              Interested in Purchasing Prop Net&apos;s Trading Outputs?
+              Interested in Purchasing Proprietary Trading Network&apos;s
+              Trading Outputs?
             </Text>
             <Text mb="sm">
               Retail traders and institutional clients alike will find
@@ -219,11 +308,11 @@ export default function Page() {
             </Text>
           </Box>
         </Box>
-      </Flex>
-      <Center my="xl">
-        <Divider variant="dashed" w="50%" bg="black" />
-      </Center>
-      <Hubspot />
+        <Center my="xl">
+          <Divider variant="dashed" w="50%" bg="black" />
+        </Center>
+        <Hubspot />
+      </Container>
     </Box>
   );
 }

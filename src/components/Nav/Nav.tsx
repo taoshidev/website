@@ -56,9 +56,9 @@ export const Nav = () => {
 
             <Menu.Dropdown style={{ border: "1px dashed black" }}>
               <Menu.Item
-                onClick={() => sendEvent("propnet")}
+                onClick={() => sendEvent("ptn")}
                 component="a"
-                href="/propnet"
+                href="/ptn"
                 leftSection={
                   <IconGraph style={{ width: rem(14), height: rem(14) }} />
                 }
@@ -149,8 +149,8 @@ export const Nav = () => {
         <Group align="center" gap="xl">
           <Anchor
             size="sm"
-            onClick={() => sendEvent("propnet")}
-            href="/propnet"
+            onClick={() => sendEvent("ptn")}
+            href="/ptn"
             c="orange"
           >
             Proprietary Trading Network*

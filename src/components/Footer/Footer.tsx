@@ -98,7 +98,7 @@ export const Footer = () => {
             Product
           </Text>
           <Stack gap="xs">
-            <Anchor size="sm" href="/propnet" c="black">
+            <Anchor size="sm" href="/ptn" c="black">
               Proprietary Trading Network
             </Anchor>
             <Anchor
