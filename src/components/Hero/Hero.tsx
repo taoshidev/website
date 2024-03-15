@@ -37,13 +37,15 @@ export const Hero = ({ title, copy, ctas, image }: HeroProps) => {
       <Box ta="center">
         {title && (
           <Stack mb="lg" align="center">
-            <Image
-              component={NextImage}
-              w={50}
-              h={50}
-              src={image}
-              alt="Hero Image"
-            />
+            {image && (
+              <Image
+                component={NextImage}
+                w={50}
+                h={50}
+                src={image}
+                alt="Hero Image"
+              />
+            )}
             <Text>{title}</Text>
           </Stack>
         )}
@@ -58,7 +60,7 @@ export const Hero = ({ title, copy, ctas, image }: HeroProps) => {
                 onClick={() => sendEvent(cta.event)}
                 href={cta.href}
               >
-                <Button variant="primary" size="sm" w="150px">
+                <Button variant="primary" size="sm" w="200px">
                   {cta.text}
                 </Button>
               </Anchor>

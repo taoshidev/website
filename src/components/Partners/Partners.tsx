@@ -10,6 +10,8 @@ import {
   Text,
 } from "@mantine/core";
 
+import styles from "./partners.module.css";
+
 import glassnode from "@/assets/partners/glassnode.svg";
 import lunarcrush from "@/assets/partners/lunarcrush.svg";
 import uphold from "@/assets/partners/uphold.jpg";
@@ -25,7 +27,12 @@ export const Partners = () => {
         <Title order={3}>Partners & Affiliates</Title>
       </Box>
       <SimpleGrid cols={{ sm: 2 }}>
-        <Card style={{ border: "1px dashed black" }}>
+        <Card
+          className={styles.card}
+          component="a"
+          href="https://uphold.com/en-us/institutional"
+          target="_blank"
+        >
           <Center h="100%">
             <Image
               component={NextImage}
@@ -36,7 +43,12 @@ export const Partners = () => {
             />
           </Center>
         </Card>
-        <Card style={{ border: "1px dashed black" }}>
+        <Card
+          className={styles.card}
+          component="a"
+          href="https://glassnode.com"
+          target="_blank"
+        >
           <Center h="100%">
             <Image
               component={NextImage}
@@ -48,7 +60,12 @@ export const Partners = () => {
             />
           </Center>
         </Card>
-        <Card style={{ border: "1px dashed black" }}>
+        <Card
+          className={styles.card}
+          component="a"
+          href="https://lunarcrush.com"
+          target="_blank"
+        >
           <Center h="100%">
             <Image
               component={NextImage}
@@ -60,7 +77,12 @@ export const Partners = () => {
             />
           </Center>
         </Card>
-        <Card style={{ border: "1px dashed black" }}>
+        <Card
+          className={styles.card}
+          component="a"
+          href="https://www.roundtable21.com"
+          target="_blank"
+        >
           <Center h="100%">
             <Image
               component={NextImage}

@@ -1,1 +1,1 @@
-export * from './Hubspot';
+export * from "./Hubspot";

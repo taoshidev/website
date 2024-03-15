@@ -7,7 +7,7 @@ import luke from "@/assets/team/luke.jpg";
 import thomas from "@/assets/team/thomas.jpg";
 import michael from "@/assets/team/michael.jpg";
 
-const team = [
+export const team = [
   {
     name: "Arrash Yasavolian",
     image: arrash,
