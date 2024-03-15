@@ -135,19 +135,18 @@ export default function Home() {
                 </Text>
 
                 <Text>
-                  At Taoshi, our mission is two-fold. First, we seek to break
-                  down the barriers to sophisticated financial predictions,
-                  traditionally the domain of industry elites, and democratize
-                  access to this valuable intelligence. Secondly, we aspire to
-                  demystify the world of financial predictions, making it
-                  welcoming for everyone—from AI enthusiasts, to data
-                  scientists, to visionary entrepreneurs. We&apos;re committed
+                  At Taoshi, our mission is two-fold. Firstly, we aim to
+                  democratize access to sophisticated quant signals,
+                  traditionally limited to industry elites. Secondly, we strive
+                  to demystify the world of financial markets, making it
+                  accessible to everyone—from AI enthusiasts, to data
+                  scientists, to visionary entrepreneurs. We&apos;re dedicated
                   to providing an intuitive, user-friendly environment that
-                  inspires individuals and enterprises to explore, innovate, and
-                  thrive within the Bittensor ecosystem. Join us at Taoshi,
-                  where we&apos;re not just participants in the blockchain
-                  space; we&apos;re pioneers building a brighter, more informed,
-                  and decentralized future, one subnetwork at a time.
+                  encourages exploration, innovation, and success within the
+                  Bittensor ecosystem. Join us at Taoshi, where we&apos;re not
+                  just participants in the blockchain space; we&apos;re
+                  trailblazers building a brighter, more informed, and
+                  decentralized future, one subnetwork at a time.
                 </Text>
               </Box>
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
