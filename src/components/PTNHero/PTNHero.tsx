@@ -31,7 +31,7 @@ export const PTNHero = () => {
     centerCircle.style.backgroundColor = "#282828";
     lineContainer.appendChild(centerCircle);
 
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 25; i++) {
       const angle = Math.random() * Math.PI * 2;
       const length = Math.random() * radius * 0.9;
       const innerOffset = 0.3 * radius;
@@ -51,8 +51,6 @@ export const PTNHero = () => {
       line.style.left = `${x1}px`;
       line.style.top = `${y1}px`;
       line.style.width = `${Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)}px`;
-      line.style.borderTop = "1px dotted #282828";
-      line.style.borderSpacing = "2px";
 
       lineContainer.appendChild(line);
     }

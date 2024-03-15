@@ -8,4 +8,9 @@
   height: 1px;
   transform-origin: left;
   place-self: end;
+
+  background-image: linear-gradient(to right, rgb(40, 40, 40) 33%, rgba(40,40,40,0) 40%);
+  background-position: bottom;
+  background-size: 4px 1px;
+  background-repeat: repeat-x;
 }
