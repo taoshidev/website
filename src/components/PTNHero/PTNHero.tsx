@@ -19,7 +19,7 @@ export const PTNHero = () => {
     const centerX = lineContainer.clientWidth / 2;
     const centerY = lineContainer.clientHeight / 2;
 
-    for (let i = 0; i < 80; i++) {
+    for (let i = 0; i < 50; i++) {
       const angle = Math.random() * Math.PI * 2;
       const length = Math.random() * radius * 0.8; // Random distance from the center
       const innerOffset = 0.2 * radius; // Space to keep clear in the middle
