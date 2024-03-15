@@ -185,10 +185,10 @@ export default function Page() {
             </Text>
             <Text mb="xl">
               Ready to contribute? Start your journey as a miner on PTN with our
-              README on GitHub. From Friday, March 22, 2024, follow our guide,
-              contribute signals, and earn rewards after closing your first
-              trade. We also recommend joining our Community Hub on Discord, a
-              collaborative space for miners.
+              README on GitHub. Starting Friday, March 22, 2024, follow our
+              guide, contribute signals, and earn rewards after closing your
+              first trade. We also recommend joining our Community Hub on
+              Discord, a collaborative space for miners.
             </Text>
             <Image
               my={50}
@@ -206,7 +206,7 @@ export default function Page() {
             <Text mb="sm">
               Retail traders and institutional clients will find PTN&apos;s
               outputs exceptionally valuable. With PTN, every trader and
-              institution can optimize their trading outcomes using AI
+              institution can optimize their trading outcomes using AI.
             </Text>
             <Text>
               If you&apos;re interested in purchasing the Trading Outputs

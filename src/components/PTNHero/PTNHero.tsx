@@ -22,18 +22,19 @@ export const PTNHero = () => {
 
     const centerCircle = document.createElement("div");
     centerCircle.className = "center-circle";
-    centerCircle.style.width = `${radius * 0.35}px`;
-    centerCircle.style.height = `${radius * 0.35}px`;
+    centerCircle.style.width = `${radius * 0.5}px`;
+    centerCircle.style.height = `${radius * 0.5}px`;
     centerCircle.style.borderRadius = "50%";
     centerCircle.style.position = "absolute";
-    centerCircle.style.left = `${centerX - radius * 0.175}px`;
-    centerCircle.style.top = `${centerY - radius * 0.175}px`;
+    centerCircle.style.left = `${centerX - radius * 0.25}px`;
+    centerCircle.style.top = `${centerY - radius * 0.25}px`;
+    centerCircle.style.backgroundColor = "#282828";
     lineContainer.appendChild(centerCircle);
 
     for (let i = 0; i < 25; i++) {
       const angle = Math.random() * Math.PI * 2;
-      const length = Math.random() * radius * 0.8;
-      const innerOffset = 0.2 * radius;
+      const length = Math.random() * radius * 0.9;
+      const innerOffset = 0.3 * radius;
 
       const x1 = centerX + Math.cos(angle) * innerOffset;
       const y1 = centerY + Math.sin(angle) * innerOffset;
@@ -50,6 +51,8 @@ export const PTNHero = () => {
       line.style.left = `${x1}px`;
       line.style.top = `${y1}px`;
       line.style.width = `${Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)}px`;
+      line.style.borderTop = "1px dotted #282828";
+      line.style.borderSpacing = "2px";
 
       lineContainer.appendChild(line);
     }
@@ -63,6 +66,13 @@ export const PTNHero = () => {
         yoyo: true,
         grid: "auto",
       },
+    });
+
+    gsap.to(lineContainer, {
+      rotation: 360,
+      duration: 50,
+      repeat: -1,
+      ease: "linear",
     });
   }, []);
 
