@@ -10,22 +10,12 @@ import {
   Container,
 } from "@mantine/core";
 
-import { markets } from "@/constants";
-
 import { AssetList } from "@/components/AssetList";
 import { PTNHero } from "@/components/PTNHero";
 import { Hero } from "@/components/Hero";
 import { Hubspot } from "@/components/PropNetHubspot";
 
-import subnet from "@/assets/subnet.svg";
-
 const ctas = [
-  {
-    event: "subnet",
-    text: "Use Trading Signals",
-    href: "https://github.com/taoshidev/time-series-prediction-subnet",
-    isExternal: true,
-  },
   {
     event: "docs",
     text: "Get Started Mining",
