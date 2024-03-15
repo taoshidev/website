@@ -39,7 +39,7 @@ export const PTNHero = () => {
     for (let i = 0; i < 100; i++) {
       const angle = Math.random() * Math.PI * 2;
       const length = Math.random() * radius * 0.8;
-      const innerOffset = 0.2 * radius;
+      const innerOffset = 0.1 * radius;
 
       const x1 = centerX + Math.cos(angle) * innerOffset;
       const y1 = centerY + Math.sin(angle) * innerOffset;
@@ -74,7 +74,7 @@ export const PTNHero = () => {
 
     gsap.to(lineContainer, {
       rotation: 360,
-      duration: 50,
+      duration: 100,
       repeat: -1,
       ease: "linear",
     });
