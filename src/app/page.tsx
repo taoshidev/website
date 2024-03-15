@@ -11,6 +11,7 @@ import {
   Group,
   Stack,
   Container,
+  Anchor,
 } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 
@@ -26,15 +27,15 @@ import intraday from "@/assets/intraday.svg";
 
 const ctas = [
   {
-    event: "subnet",
+    event: "ptn",
     text: "Get Started",
-    href: "/subnet",
+    href: "/ptn",
     isExternal: false,
   },
   {
     event: "docs",
     text: "Documentation",
-    href: "https://github.com/taoshidev/time-series-prediction-subnet",
+    href: "https://github.com/taoshidev/prop-net",
     isExternal: true,
   },
 ];
@@ -63,20 +64,20 @@ export default function Home() {
                   Taoshi
                 </Text>
 
-                <Text size="xs">
+                <Text>
                   At Taoshi, we&apos;re pioneering the Bittensor revolution with
-                  a keen focus on the future of financial forecasting. We craft
-                  dynamic subnetworks, where the power of decentralized AI and
-                  machine learning is harnessed to fuel real-time financial
-                  market predictions. By integrating cutting-edge AI & machine
-                  learning technology with the blockchain, we provide miners and
-                  developers with a fertile ground for innovation, where their
-                  contributions to financial market predictions are met with
-                  tangible, lucrative rewards. As a cornerstone of the Bittensor
-                  ecosystem, we&apos;re not just participating in the blockchain
-                  revolution; we&apos;re leading it by delivering sophisticated
-                  tools and insights that empower users to make informed
-                  decisions in financial markets.
+                  a keen focus on the future of trading financial markets. We
+                  craft dynamic subnetworks, where decentralized AI and machine
+                  learning power the world&apos;s most complete trading signals
+                  across various asset classes. By integrating cutting-edge AI &
+                  machine learning technology with the blockchain, we provide
+                  miners, traders, and developers with a fertile ground for
+                  innovation, where their contributions to financial market
+                  predictions yield tangible, lucrative rewards. As a
+                  cornerstone of the Bittensor ecosystem, we&apos;re not just
+                  participating in the blockchain revolution; we&apos;re leading
+                  it by delivering sophisticated tools and insights that empower
+                  users to make informed decisions in financial markets.
                 </Text>
               </Box>
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
@@ -105,7 +106,7 @@ export default function Home() {
                   Bittensor
                 </Text>
 
-                <Text size="xs">
+                <Text>
                   Bittensor is not just a blockchain; it&apos;s a groundbreaking
                   network that fosters decentralized intelligence, where a
                   consensus mechanism rewards the creation and sharing of AI
@@ -113,12 +114,13 @@ export default function Home() {
                   independent miners, promotes a cooperative space for AI
                   services to be developed and utilized worldwide. At Taoshi, we
                   harness Bittensor&apos;s capabilities to build specialized
-                  subnetworks, like our flagship Price Forecasting platform,
-                  that merge AI with blockchain for secure, transparent, and
+                  subnetworks, like our{" "}
+                  <Anchor href="/ptn">Proprietary Trading Network</Anchor>{" "}
+                  (PTN), merging AI with blockchain for secure, transparent, and
                   innovative applications. As part of the Bittensor ecosystem,
                   we contribute to a decentralized AI marketplace, powered by
                   the Bittensor token ($TAO), to ensure the seamless exchange of
-                  data and intelligence. Taoshi stands as a gateway to this new
+                  data and intelligence. Taoshi serves as a gateway to this new
                   era of accessible, incentivized intelligence, where every
                   contribution to the network&apos;s growth is valued and
                   rewarded.
@@ -132,7 +134,7 @@ export default function Home() {
                   Our Mission
                 </Text>
 
-                <Text size="xs">
+                <Text>
                   At Taoshi, our mission is two-fold. First, we seek to break
                   down the barriers to sophisticated financial predictions,
                   traditionally the domain of industry elites, and democratize
