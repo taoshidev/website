@@ -51,7 +51,7 @@ export default function Home() {
             {!isMobile && <Logo />}
             <Hero
               ctas={ctas}
-              copy="Decentralized Financial Market Forecasting Through the Power of AI"
+              copy="Delivering World Class Quant Trading Signals Through the Power of Decentralized AI"
             />
           </Box>
 

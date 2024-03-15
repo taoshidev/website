@@ -43,34 +43,34 @@ export const PTNHero = () => {
 
       const x1 = centerX + Math.cos(angle) * innerOffset;
       const y1 = centerY + Math.sin(angle) * innerOffset;
-      const x2 = centerX + Math.cos(angle) * length;
-      const y2 = centerY + Math.sin(angle) * length;
 
-      const line = document.createElement("div");
+      const dotsCount = 10;
+      const dotSpacing = (length / dotsCount) * 2;
 
-      line.className = "line";
+      for (let j = 0; j < dotsCount; j++) {
+        const dot = document.createElement("div");
+        dot.className = "dot";
+        dot.style.position = "absolute";
+        dot.style.width = "1px";
+        dot.style.height = "1px";
+        dot.style.borderRadius = "50%";
+        dot.style.backgroundColor = "#000000";
+        dot.style.left = `${x1 + Math.cos(angle) * (innerOffset + j * dotSpacing)}px`;
+        dot.style.top = `${y1 + Math.sin(angle) * (innerOffset + j * dotSpacing)}px`;
+        dot.style.opacity = "0";
+        lineContainer.appendChild(dot);
 
-      const angleDeg = angle * (180 / Math.PI);
-
-      line.style.transform = `rotate(${angleDeg}deg)`;
-      line.style.left = `${x1}px`;
-      line.style.top = `${y1}px`;
-      line.style.width = `${Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)}px`;
-      line.style.zIndex = "0";
-
-      lineContainer.appendChild(line);
+        // Fade in and out animation for each dot
+        gsap.to(dot, {
+          opacity: 1,
+          duration: 0.5,
+          delay: j * 0.1,
+          repeat: -1,
+          yoyo: true,
+          ease: "power2.inOut",
+        });
+      }
     }
-
-    gsap.to(".line", {
-      width: "30%",
-      stagger: {
-        each: 0.007,
-        from: "end",
-        repeat: -1,
-        yoyo: true,
-        grid: "auto",
-      },
-    });
 
     gsap.to(lineContainer, {
       rotation: 360,
