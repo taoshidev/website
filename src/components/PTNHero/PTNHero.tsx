@@ -31,7 +31,7 @@ export const PTNHero = () => {
     centerCircle.style.backgroundColor = "#282828";
     lineContainer.appendChild(centerCircle);
 
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 50; i++) {
       const angle = Math.random() * Math.PI * 2;
       const length = Math.random() * radius * 0.9;
       const innerOffset = 0.3 * radius;
