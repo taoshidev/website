@@ -12,8 +12,6 @@ import {
   IconChevronUp,
   IconBrandGithub,
   IconDashboard,
-  IconTournament,
-  IconSquareNumber8,
   IconGraph,
 } from "@tabler/icons-react";
 import { usePlausible } from "next-plausible";
