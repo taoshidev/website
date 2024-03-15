@@ -35,7 +35,7 @@ const ctas = [
   {
     event: "docs",
     text: "Documentation",
-    href: "https://github.com/taoshidev/prop-net",
+    href: "https://github.com/taoshidev/proprietary-trading-network",
     isExternal: true,
   },
 ];

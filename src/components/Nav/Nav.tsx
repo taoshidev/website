@@ -78,7 +78,7 @@ export const Nav = () => {
               <Menu.Item
                 onClick={() => sendEvent("github")}
                 component="a"
-                href="https://github.com/taoshidev/time-series-prediction-subnet"
+                href="https://github.com/taoshidev/proprietary-trading-network"
                 leftSection={
                   <IconBrandGithub
                     style={{ width: rem(14), height: rem(14) }}
@@ -158,7 +158,7 @@ export const Nav = () => {
           <Anchor
             size="sm"
             onClick={() => sendEvent("github")}
-            href="https://github.com/taoshidev/time-series-prediction-subnet"
+            href="https://github.com/taoshidev/proprietary-trading-network"
             c="black"
           >
             GitHub
