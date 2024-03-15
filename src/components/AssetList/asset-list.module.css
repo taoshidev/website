@@ -1,0 +1,8 @@
+.control {
+  border-bottom: 1px dashed black;
+}
+
+.control:hover {
+  color: white;
+  background: var(--mantine-color-orange-6);
+}

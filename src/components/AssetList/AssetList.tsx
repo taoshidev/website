@@ -6,7 +6,7 @@ import { gsap } from "gsap";
 
 import { markets } from "@/constants";
 
-import styles from "./ptn-hero.module.css";
+import styles from "./asset-list.module.css";
 
 export const AssetList = () => {
   return (
@@ -14,7 +14,7 @@ export const AssetList = () => {
       <Group align="flex-start" my="xl">
         <Accordion flex="1">
           <Accordion.Item value="BTCUSD">
-            <Accordion.Control style={{ borderBottom: "1px dashed black" }}>
+            <Accordion.Control className={styles.control}>
               <Text fw={700} size="sm">
                 Crypto
               </Text>
@@ -31,7 +31,7 @@ export const AssetList = () => {
         </Accordion>
         <Accordion flex="1">
           <Accordion.Item value="BTCUSD">
-            <Accordion.Control style={{ borderBottom: "1px dashed black" }}>
+            <Accordion.Control className={styles.control}>
               <Text fw={700} size="sm">
                 Forex
               </Text>
@@ -49,7 +49,7 @@ export const AssetList = () => {
 
         <Accordion flex="1">
           <Accordion.Item value="BTCUSD">
-            <Accordion.Control style={{ borderBottom: "1px dashed black" }}>
+            <Accordion.Control className={styles.control}>
               <Text fw={700} size="sm">
                 Indices
               </Text>

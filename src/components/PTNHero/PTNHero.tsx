@@ -54,7 +54,7 @@ export const PTNHero = () => {
         dot.style.width = "1px";
         dot.style.height = "1px";
         dot.style.borderRadius = "50%";
-        dot.style.backgroundColor = "#000000";
+        dot.style.backgroundColor = "#282828";
         dot.style.left = `${x1 + Math.cos(angle) * (innerOffset + j * dotSpacing)}px`;
         dot.style.top = `${y1 + Math.sin(angle) * (innerOffset + j * dotSpacing)}px`;
         dot.style.opacity = "0";
