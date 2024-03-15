@@ -39,14 +39,16 @@ export default function Page() {
     <Box>
       <Container maw="800px" h="100%">
         <Box>
-          <PTNHero />
           <Text mb="xl" ta="center" size="xs" c="orange">
             Coming March 22, 2024
           </Text>
+          <Box mb="lg">
+            <PTNHero />
+          </Box>
+
           <Box mb={200}>
             <Hero
               title="Taoshi's Proprietary Trading Network (PTN)"
-              image={subnet}
               ctas={ctas}
               copy="Revolutionizing Proprietary Trading with Decentralized AI"
             />

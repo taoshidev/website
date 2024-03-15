@@ -37,13 +37,15 @@ export const Hero = ({ title, copy, ctas, image }: HeroProps) => {
       <Box ta="center">
         {title && (
           <Stack mb="lg" align="center">
-            <Image
-              component={NextImage}
-              w={50}
-              h={50}
-              src={image}
-              alt="Hero Image"
-            />
+            {image && (
+              <Image
+                component={NextImage}
+                w={50}
+                h={50}
+                src={image}
+                alt="Hero Image"
+              />
+            )}
             <Text>{title}</Text>
           </Stack>
         )}

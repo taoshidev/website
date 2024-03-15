@@ -5,7 +5,6 @@ import type { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
 import { GoogleTagManager } from "@next/third-parties/google";
 import PlausibleProvider from "next-plausible";
-import { ColorSchemeScript } from "@mantine/core";
 
 import { Providers } from "./providers";
 
@@ -23,7 +22,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <ColorSchemeScript />
         <PlausibleProvider domain="taoshi.io" />
         <meta
           name="viewport"

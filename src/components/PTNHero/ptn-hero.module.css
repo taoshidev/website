@@ -6,7 +6,7 @@
   position: absolute;
   width: 100%;
   height: 1px;
-  background-color: black;
+  background-color: #282828;
   transform-origin: left;
   place-self: end;
 }

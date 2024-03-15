@@ -58,8 +58,8 @@ export const PTNHero = () => {
     <Box>
       <Center>
         <Box
-          h={250}
-          w={250}
+          h={200}
+          w={200}
           ref={lineContainerRef}
           className={styles["line-container"]}
         />
