@@ -15,10 +15,9 @@ export const Hubspot = () => {
           Stay Informed
         </Text>
         <Text mb="xl">
-          If you&apos;re an algorithmic trader interested in mining on our new
-          subnet, simply fill out the form below. We&apos;ll keep you in the
-          loop with the latest updates, you&apos;ll be among the first to access
-          the full power of the subnet. Your journey in the future of trading
+          If you&apos;re an algorithmic trader interested in mining on PTN,
+          please fill out the form below for updates. You&apos;ll be among the
+          first to access the subnet&apos;s full power. Your trading journey
           begins here!
         </Text>
       </Box>
