@@ -16,22 +16,34 @@ export const PTNHero = () => {
 
     const radius =
       Math.min(lineContainer.clientWidth, lineContainer.clientHeight) / 2;
+
     const centerX = lineContainer.clientWidth / 2;
     const centerY = lineContainer.clientHeight / 2;
 
-    for (let i = 0; i < 50; i++) {
+    const centerCircle = document.createElement("div");
+    centerCircle.className = "center-circle";
+    centerCircle.style.width = `${radius * 0.35}px`;
+    centerCircle.style.height = `${radius * 0.35}px`;
+    centerCircle.style.borderRadius = "50%";
+    centerCircle.style.position = "absolute";
+    centerCircle.style.left = `${centerX - radius * 0.175}px`;
+    centerCircle.style.top = `${centerY - radius * 0.175}px`;
+    lineContainer.appendChild(centerCircle);
+
+    for (let i = 0; i < 25; i++) {
       const angle = Math.random() * Math.PI * 2;
-      const length = Math.random() * radius * 0.8; // Random distance from the center
-      const innerOffset = 0.2 * radius; // Space to keep clear in the middle
+      const length = Math.random() * radius * 0.8;
+      const innerOffset = 0.2 * radius;
+
       const x1 = centerX + Math.cos(angle) * innerOffset;
       const y1 = centerY + Math.sin(angle) * innerOffset;
       const x2 = centerX + Math.cos(angle) * length;
       const y2 = centerY + Math.sin(angle) * length;
 
       const line = document.createElement("div");
+
       line.className = "line";
 
-      // Calculate rotation angle
       const angleDeg = angle * (180 / Math.PI);
 
       line.style.transform = `rotate(${angleDeg}deg)`;
@@ -62,7 +74,7 @@ export const PTNHero = () => {
           w={200}
           ref={lineContainerRef}
           className={styles["line-container"]}
-        />
+        ></Box>
       </Center>
     </Box>
   );
