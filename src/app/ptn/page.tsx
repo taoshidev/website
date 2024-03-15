@@ -19,7 +19,7 @@ const ctas = [
   {
     event: "docs",
     text: "Get Started Mining",
-    href: "https://github.com/taoshidev/prop-net",
+    href: "https://github.com/taoshidev/proprietary-trading-network",
     isExternal: true,
   },
 ];
