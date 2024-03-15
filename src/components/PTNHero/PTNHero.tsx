@@ -21,6 +21,9 @@ export const PTNHero = () => {
     const centerY = lineContainer.clientHeight / 2;
 
     const centerCircle = document.createElement("div");
+
+    centerCircle.className = "center-circle";
+
     centerCircle.className = "center-circle";
     centerCircle.style.width = `${radius * 0.5}px`;
     centerCircle.style.height = `${radius * 0.5}px`;
@@ -28,13 +31,15 @@ export const PTNHero = () => {
     centerCircle.style.position = "absolute";
     centerCircle.style.left = `${centerX - radius * 0.25}px`;
     centerCircle.style.top = `${centerY - radius * 0.25}px`;
-    centerCircle.style.backgroundColor = "#282828";
+    centerCircle.style.border = "2px solid #F7F6F3";
+    centerCircle.style.zIndex = "1";
+
     lineContainer.appendChild(centerCircle);
 
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 100; i++) {
       const angle = Math.random() * Math.PI * 2;
-      const length = Math.random() * radius * 0.9;
-      const innerOffset = 0.3 * radius;
+      const length = Math.random() * radius * 0.8;
+      const innerOffset = 0.2 * radius;
 
       const x1 = centerX + Math.cos(angle) * innerOffset;
       const y1 = centerY + Math.sin(angle) * innerOffset;
@@ -51,6 +56,7 @@ export const PTNHero = () => {
       line.style.left = `${x1}px`;
       line.style.top = `${y1}px`;
       line.style.width = `${Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)}px`;
+      line.style.zIndex = "0";
 
       lineContainer.appendChild(line);
     }
