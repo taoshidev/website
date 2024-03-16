@@ -28,7 +28,7 @@ const ctas = [
 export default function Page() {
   return (
     <Box>
-      <Container maw="800px" h="100%">
+      <Container maw="1000px" h="100%">
         <Box>
           <Text mb="xl" ta="center" size="xs" c="orange">
             Coming March 22, 2024
@@ -164,28 +164,38 @@ export default function Page() {
               </List>
             </Box>
           </Box>
-          <Card mb={75} style={{ border: "1px dashed black" }}>
-            <Box>
-              <Text fw="bold" mb="sm">
-                Get Started: Mining on Proprietary Trading Network
-              </Text>
-              <Text mb="xl">
-                Ready to contribute? Start your journey as a miner on PTN with
-                our README on GitHub. Starting Friday, March 22, 2024, follow
-                our guide, contribute signals, and earn rewards after closing
-                your first trade. We also recommend joining our Community Hub on
-                Discord, a collaborative space for miners.
-              </Text>
-              <Image
-                my={50}
-                h="auto"
-                w="100%"
-                fit="contain"
-                src="/flow.png"
-                alt="taoshi logo"
-              />
-            </Box>
+
+          <Card style={{ border: "1px dashed black" }}>
+            <Text fw="bold" mb="sm">
+              Get Started: Mining on Proprietary Trading Network
+            </Text>
+            <Text mb="xl">
+              Ready to contribute? Start your journey as a miner on PTN with our
+              README on GitHub. Starting Friday, March 22, 2024, follow our
+              guide, contribute signals, and earn rewards after closing your
+              first trade. We also recommend joining our Community Hub on
+              Discord, a collaborative space for miners.
+            </Text>
           </Card>
+
+          <Center my="xl">
+            <Divider
+              bg="black"
+              color="#F7F6F3"
+              orientation="vertical"
+              h={50}
+              variant="dashed"
+            />
+          </Center>
+
+          <Image
+            mb={100}
+            h="auto"
+            w="100%"
+            fit="contain"
+            src="/flow.png"
+            alt="taoshi logo"
+          />
 
           <Box mb={75}>
             <Text fw="bold" mb="sm">
@@ -206,7 +216,7 @@ export default function Page() {
           </Box>
         </Box>
         <Center my="xl">
-          <Divider variant="dashed" w="50%" bg="black" />
+          <Divider variant="dashed" w="50%" bg="black" color="#F7F6F3" />
         </Center>
         <Hubspot />
       </Container>
