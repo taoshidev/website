@@ -73,12 +73,12 @@ export default function Home() {
                   across various asset classes. By integrating cutting-edge AI &
                   machine learning technology with the blockchain, we provide
                   miners, traders, and developers with a fertile ground for
-                  innovation, where their contributions to financial market
-                  predictions yield tangible, lucrative rewards. As a
-                  cornerstone of the Bittensor ecosystem, we&apos;re not just
-                  participating in the blockchain revolution; we&apos;re leading
-                  it by delivering sophisticated tools and insights that empower
-                  users to make informed decisions in financial markets.
+                  innovation, where their contributions yield tangible,
+                  lucrative rewards. As a cornerstone of the Bittensor
+                  ecosystem, we&apos;re not just participating in the blockchain
+                  revolution; we&apos;re leading it by delivering sophisticated
+                  tools and insights that empower users to make informed
+                  decisions in financial markets.
                 </Text>
               </Box>
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
