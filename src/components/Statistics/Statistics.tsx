@@ -1,4 +1,4 @@
-import { Box, Center, Divider, Flex, Stack, Text } from "@mantine/core";
+import { Box, Center, Divider, Flex, Stack, Text, Card } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 
 export const Statistics = () => {
@@ -7,52 +7,54 @@ export const Statistics = () => {
   return (
     <Box mb="100px">
       <Box my="xl">
-        <Flex justify="space-between" align="center" mb="lg">
-          <Stack gap="0" align="center">
-            <Text fw="bold">
-              $12.6m
-              <Text component="sup" size="xs">
-                *
+        <Card style={{ border: "1px dashed black" }}>
+          <Flex justify="space-around" align="center">
+            <Stack gap="0" align="center">
+              <Text fw="bold">
+                $12.6m
+                <Text component="sup" size="xs">
+                  *
+                </Text>
               </Text>
-            </Text>
-            <Text ta="center" size="sm">
-              Miner Payouts
-            </Text>
-          </Stack>
-          {!isMobile && (
-            <Center h="20px">
-              <Divider orientation="vertical" variant="dashed" bg="black" />
-            </Center>
-          )}
+              <Text ta="center" size="sm">
+                Miner Payouts
+              </Text>
+            </Stack>
+            {!isMobile && (
+              <Center h="20px">
+                <Divider orientation="vertical" variant="dashed" bg="black" />
+              </Center>
+            )}
 
-          <Stack gap="0" align="center">
-            <Text fw="bold">
-              $175k
-              <Text component="sup" size="xs">
-                *
+            <Stack gap="0" align="center">
+              <Text fw="bold">
+                $175k
+                <Text component="sup" size="xs">
+                  *
+                </Text>
               </Text>
-            </Text>
-            <Text ta="center" size="sm">
-              Daily Mining Rewards
-            </Text>
-          </Stack>
-          {!isMobile && (
-            <Center h="20px">
-              <Divider orientation="vertical" variant="dashed" bg="black" />
-            </Center>
-          )}
-          <Stack gap="0" align="center">
-            <Text fw="bold">
-              10/hr
-              <Text component="sup" size="xs">
-                *
+              <Text ta="center" size="sm">
+                Daily Mining Rewards
               </Text>
-            </Text>
-            <Text ta="center" size="sm">
-              Payout Velocity
-            </Text>
-          </Stack>
-        </Flex>
+            </Stack>
+            {!isMobile && (
+              <Center h="20px">
+                <Divider orientation="vertical" variant="dashed" bg="black" />
+              </Center>
+            )}
+            <Stack gap="0" align="center">
+              <Text fw="bold">
+                10/hr
+                <Text component="sup" size="xs">
+                  *
+                </Text>
+              </Text>
+              <Text ta="center" size="sm">
+                Payout Velocity
+              </Text>
+            </Stack>
+          </Flex>
+        </Card>
       </Box>
 
       <Center>

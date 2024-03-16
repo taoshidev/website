@@ -12,6 +12,7 @@ import {
   Stack,
   Container,
   Anchor,
+  Card,
 } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 
@@ -44,7 +45,7 @@ export default function Home() {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   return (
-    <Container maw="800px" h="100%">
+    <Container maw="1000px" h="100%">
       <Flex direction="column" justify="center">
         <Box mb={100}>
           <Box mb={100}>
@@ -83,50 +84,52 @@ export default function Home() {
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
                   component={NextImage}
-                  width={100}
-                  height={100}
+                  width={200}
+                  height={200}
                   src={logo}
                   alt="taoshi logo"
                 />
               </Center>
             </Group>
 
-            <Group w="100%" gap="xl">
-              <Center flex="1" display={{ base: "none", sm: "flex" }}>
-                <Image
-                  component={NextImage}
-                  width={100}
-                  height={100}
-                  src={bittensor}
-                  alt="Open Source Modeling"
-                />
-              </Center>
-              <Box maw="600px">
-                <Text fw="bold" mb="sm">
-                  Bittensor
-                </Text>
+            <Card p="xl" style={{ border: "1px dashed black" }}>
+              <Group w="100%" gap="xl">
+                <Center flex="1" display={{ base: "none", sm: "flex" }}>
+                  <Image
+                    component={NextImage}
+                    width={200}
+                    height={200}
+                    src={bittensor}
+                    alt="Open Source Modeling"
+                  />
+                </Center>
+                <Box maw="600px">
+                  <Text fw="bold" mb="sm">
+                    Bittensor
+                  </Text>
 
-                <Text>
-                  Bittensor is not just a blockchain; it&apos;s a groundbreaking
-                  network that fosters decentralized intelligence, where a
-                  consensus mechanism rewards the creation and sharing of AI
-                  models. This neural network of nodes, maintained by
-                  independent miners, promotes a cooperative space for AI
-                  services to be developed and utilized worldwide. At Taoshi, we
-                  harness Bittensor&apos;s capabilities to build specialized
-                  subnetworks, like our{" "}
-                  <Anchor href="/ptn">Proprietary Trading Network</Anchor>{" "}
-                  (PTN), merging AI with blockchain for secure, transparent, and
-                  innovative applications. As part of the Bittensor ecosystem,
-                  we contribute to a decentralized AI marketplace, powered by
-                  the Bittensor token ($TAO), to ensure the seamless exchange of
-                  data and intelligence. Taoshi serves as a gateway to this new
-                  era of accessible, incentivized intelligence, where every
-                  contribution to the network&apos;s growth is valued and
-                  rewarded.
-                </Text>
-              </Box>
-            </Group>
+                  <Text>
+                    Bittensor is not just a blockchain; it&apos;s a
+                    groundbreaking network that fosters decentralized
+                    intelligence, where a consensus mechanism rewards the
+                    creation and sharing of AI models. This neural network of
+                    nodes, maintained by independent miners, promotes a
+                    cooperative space for AI services to be developed and
+                    utilized worldwide. At Taoshi, we harness Bittensor&apos;s
+                    capabilities to build specialized subnetworks, like our{" "}
+                    <Anchor href="/ptn">Proprietary Trading Network</Anchor>{" "}
+                    (PTN), merging AI with blockchain for secure, transparent,
+                    and innovative applications. As part of the Bittensor
+                    ecosystem, we contribute to a decentralized AI marketplace,
+                    powered by the Bittensor token ($TAO), to ensure the
+                    seamless exchange of data and intelligence. Taoshi serves as
+                    a gateway to this new era of accessible, incentivized
+                    intelligence, where every contribution to the network&apos;s
+                    growth is valued and rewarded.
+                  </Text>
+                </Box>
+              </Group>
+            </Card>
 
             <Group w="100%" gap="xl">
               <Box maw="600px">
@@ -152,8 +155,8 @@ export default function Home() {
               <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
                   component={NextImage}
-                  width={100}
-                  height={100}
+                  width={200}
+                  height={200}
                   src={intraday}
                   alt="Taoshi's Mission"
                 />

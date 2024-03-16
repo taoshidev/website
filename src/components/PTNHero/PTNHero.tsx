@@ -60,7 +60,6 @@ export const PTNHero = () => {
         dot.style.opacity = "0";
         lineContainer.appendChild(dot);
 
-        // Fade in and out animation for each dot
         gsap.to(dot, {
           opacity: 1,
           duration: 0.5,

@@ -5,14 +5,18 @@ import { create, set, render, frame, globe } from "@/utils/logo";
 
 import styles from "./logo.module.css";
 
-export const Logo = () => {
+interface LogoProps {
+  size?: number;
+}
+
+export const Logo = ({ size = 200 }: LogoProps) => {
   const [filler, setFiller] = useState("");
   const [content, setContent] = useState("");
   const hiddenRef = useRef<HTMLDivElement | null>(null);
   const rootRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const fillerSize = 100;
+    const fillerSize = size / 2;
     const initialFiller =
       "\u28ff".repeat(fillerSize) + "\n\u28ff".repeat(fillerSize - 1);
     setFiller(initialFiller);
@@ -58,7 +62,7 @@ export const Logo = () => {
 
   return (
     <Center c="black" mb="xl">
-      <Box ref={rootRef} className={styles.braille}>
+      <Box ref={rootRef} className={styles.braille} w={size} h={size}>
         <Box
           ref={hiddenRef}
           className={styles.hidden}

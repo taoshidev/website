@@ -8,6 +8,7 @@ import {
   List,
   Image,
   Container,
+  Card,
 } from "@mantine/core";
 
 import { AssetList } from "@/components/AssetList";
@@ -43,13 +44,7 @@ export default function Page() {
               copy="Revolutionizing Proprietary Trading with Decentralized AI"
             />
           </Box>
-          <Box
-            pl="20px"
-            mb={75}
-            style={{
-              borderLeft: "1px dashed black",
-            }}
-          >
+          <Card mb={75} style={{ border: "1px dashed black" }}>
             <Text>
               Taoshi&apos;s Proprietary Trading Network (PTN) spearheads a
               trading revolution, merging cutting-edge decentralized technology
@@ -59,7 +54,7 @@ export default function Page() {
               proprietary trading, decentralized AI, and quant trading signals,
               empowering all users to navigate financial markets confidently.
             </Text>
-          </Box>
+          </Card>
           <Box mb={75}>
             <Text fw="bold" mb="sm">
               How Taoshi&apos;s Proprietary Trading Network Functions
@@ -169,26 +164,29 @@ export default function Page() {
               </List>
             </Box>
           </Box>
-          <Box mb={75}>
-            <Text fw="bold" mb="sm">
-              Get Started: Mining on Proprietary Trading Network
-            </Text>
-            <Text mb="xl">
-              Ready to contribute? Start your journey as a miner on PTN with our
-              README on GitHub. Starting Friday, March 22, 2024, follow our
-              guide, contribute signals, and earn rewards after closing your
-              first trade. We also recommend joining our Community Hub on
-              Discord, a collaborative space for miners.
-            </Text>
-            <Image
-              my={50}
-              h="auto"
-              w="100%"
-              fit="contain"
-              src="/flow.png"
-              alt="taoshi logo"
-            />
-          </Box>
+          <Card mb={75} style={{ border: "1px dashed black" }}>
+            <Box>
+              <Text fw="bold" mb="sm">
+                Get Started: Mining on Proprietary Trading Network
+              </Text>
+              <Text mb="xl">
+                Ready to contribute? Start your journey as a miner on PTN with
+                our README on GitHub. Starting Friday, March 22, 2024, follow
+                our guide, contribute signals, and earn rewards after closing
+                your first trade. We also recommend joining our Community Hub on
+                Discord, a collaborative space for miners.
+              </Text>
+              <Image
+                my={50}
+                h="auto"
+                w="100%"
+                fit="contain"
+                src="/flow.png"
+                alt="taoshi logo"
+              />
+            </Box>
+          </Card>
+
           <Box mb={75}>
             <Text fw="bold" mb="sm">
               Interested in Purchasing PTN&apos;s Trading Outputs?

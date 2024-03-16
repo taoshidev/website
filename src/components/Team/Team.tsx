@@ -1,4 +1,13 @@
-import { Box, Grid, List, Group, Title, Text, Avatar } from "@mantine/core";
+import {
+  Box,
+  Grid,
+  List,
+  Group,
+  Title,
+  Text,
+  Avatar,
+  Card,
+} from "@mantine/core";
 
 import ken from "@/assets/team/ken.jpg";
 import jordan from "@/assets/team/jordan.jpg";
@@ -59,44 +68,46 @@ export const Team = () => {
         <Title order={3}>Led By Domain Experts</Title>
       </Box>
 
-      <Grid mb="xl" gutter="xl" grow>
+      <Grid mb="xl" gutter="lg" grow>
         {team.map((member) => (
-          <Grid.Col key={member.name} span={{ sm: 6 }}>
-            <Group align="flex-start" justify="center">
-              <Box>
-                <Avatar
-                  size="lg"
-                  alt={member.name}
-                  radius={0}
-                  src={member.image?.src}
-                  variant="light"
-                  color="orange"
-                />
-              </Box>
-              <Box flex="1">
-                <Text fw="bold" c="orange" size="sm">
-                  {member.name}
-                </Text>
-                <Text mb="xs" size="xs">
-                  {member.position}
-                </Text>
-                <Text size="sm" fw="bold">
-                  Experience / Education
-                </Text>
-                <List
-                  size="xs"
-                  icon={
-                    <Text size="xs" c="orange">
-                      -
-                    </Text>
-                  }
-                >
-                  {member.previously.map((item) => (
-                    <List.Item key={item}>{item}</List.Item>
-                  ))}
-                </List>
-              </Box>
-            </Group>
+          <Grid.Col key={member.name} span={{ sm: 4 }}>
+            <Card h="100%" style={{ border: "1px dashed black" }}>
+              <Group align="flex-start" justify="center">
+                <Box>
+                  <Avatar
+                    size="lg"
+                    alt={member.name}
+                    radius={0}
+                    src={member.image?.src}
+                    variant="light"
+                    color="orange"
+                  />
+                </Box>
+                <Box flex="1">
+                  <Text fw="bold" c="orange" size="sm">
+                    {member.name}
+                  </Text>
+                  <Text mb="xs" size="xs">
+                    {member.position}
+                  </Text>
+                  <Text size="sm" fw="bold">
+                    Experience / Education
+                  </Text>
+                  <List
+                    size="xs"
+                    icon={
+                      <Text size="xs" c="orange">
+                        -
+                      </Text>
+                    }
+                  >
+                    {member.previously.map((item) => (
+                      <List.Item key={item}>{item}</List.Item>
+                    ))}
+                  </List>
+                </Box>
+              </Group>
+            </Card>
           </Grid.Col>
         ))}
       </Grid>
