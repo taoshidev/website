@@ -104,10 +104,6 @@ const questions = [
         description:
           "Models and strategies are separate. well work to continue to build open source models. it's on teams to take that basis to generate even better models & working strategies.",
       },
-      {
-        value: "Are there plans to expand the asset classes?",
-        description: "",
-      },
     ],
   },
   {
