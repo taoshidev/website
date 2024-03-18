@@ -15,6 +15,7 @@ import {
   IconTournament,
   IconSquareNumber8,
   IconGraph,
+  IconQuestionMark,
 } from "@tabler/icons-react";
 import { usePlausible } from "next-plausible";
 
@@ -74,6 +75,18 @@ export const Nav = () => {
                 }
               >
                 Dashboard
+              </Menu.Item>
+              <Menu.Item
+                onClick={() => sendEvent("faq")}
+                component="a"
+                href="/faw"
+                leftSection={
+                  <IconQuestionMark
+                    style={{ width: rem(14), height: rem(14) }}
+                  />
+                }
+              >
+                FAQ
               </Menu.Item>
               <Menu.Item
                 onClick={() => sendEvent("github")}
@@ -157,19 +170,27 @@ export const Nav = () => {
           </Anchor>
           <Anchor
             size="sm"
-            onClick={() => sendEvent("github")}
-            href="https://github.com/taoshidev/proprietary-trading-network"
-            c="black"
-          >
-            GitHub
-          </Anchor>
-          <Anchor
-            size="sm"
             onClick={() => sendEvent("dashboard")}
             href="https://dashboard.taoshi.io"
             c="black"
           >
             Dashboard
+          </Anchor>
+          <Anchor
+            size="sm"
+            onClick={() => sendEvent("faq")}
+            href="/faq"
+            c="black"
+          >
+            FAQ
+          </Anchor>
+          <Anchor
+            size="sm"
+            onClick={() => sendEvent("github")}
+            href="https://github.com/taoshidev/proprietary-trading-network"
+            c="black"
+          >
+            GitHub
           </Anchor>
 
           <Menu

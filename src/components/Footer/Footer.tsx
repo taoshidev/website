@@ -117,6 +117,9 @@ export const Footer = () => {
             >
               Dashboard
             </Anchor>
+            <Anchor size="sm" href="/faq" c="black">
+              FAQ
+            </Anchor>
           </Stack>
         </Box>
 
