@@ -10,6 +10,9 @@ import {
   List,
   Image,
   Title,
+  Anchor,
+  Button,
+  Divider,
 } from "@mantine/core";
 
 import brain from "@/assets/brain.svg";
@@ -199,10 +202,6 @@ const questions = [
       },
     ],
   },
-  {
-    title: "Bittensor",
-    items: [],
-  },
 ];
 
 export default function Page() {
@@ -252,6 +251,21 @@ export default function Page() {
               </Box>
             ))}
           </Accordion>
+        </Box>
+
+        <Center my={100}>
+          <Divider variant="dashed" w="50%" bg="black" />
+        </Center>
+
+        <Box ta="center">
+          <Title order={3} mb="xl">
+            Didn&apos;t find what you were looking for? Ask Us.
+          </Title>
+          <Anchor href="https://discord.gg/MKtKVYnCDh" target="_blank">
+            <Button variant="primary" size="sm" w="200px">
+              Join our Discord.
+            </Button>
+          </Anchor>
         </Box>
       </Box>
     </Box>
