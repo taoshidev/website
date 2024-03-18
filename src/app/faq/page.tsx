@@ -23,7 +23,8 @@ const questions = [
     items: [
       {
         value: "Does Taoshi have a token?",
-        description: "No. We want to provide as much value to Tao as possible.",
+        description:
+          "No. We want to provide as much value to the Bittensor ecosystem as possible.",
       },
       {
         value:
@@ -226,7 +227,13 @@ export default function Page() {
                   {question.title}
                 </Title>
                 {question.items.map((item) => (
-                  <Accordion.Item key={item.value} value={item.value}>
+                  <Accordion.Item
+                    key={item.value}
+                    value={item.value}
+                    style={{
+                      borderBottom: "1px dashed black",
+                    }}
+                  >
                     <Accordion.Control>
                       <Text size="sm">{item.value}</Text>
                     </Accordion.Control>
