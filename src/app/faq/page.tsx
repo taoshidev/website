@@ -49,11 +49,6 @@ const questions = [
     title: "Proprietary Trading Network",
     items: [
       {
-        value: "What are the goals of PTN?",
-        description:
-          "Miner provide trading strategies based on deep ML models.",
-      },
-      {
         value: "Will there be a dashboard where I can see the statistics?",
         description: "We provide an analysis on our Dashboard.",
       },
