@@ -19,7 +19,7 @@ export interface CTA {
 }
 
 export interface HeroProps {
-  copy: string;
+  copy?: string;
   ctas?: CTA[];
   title?: string;
   image?: string;
@@ -35,23 +35,24 @@ export const Hero = ({ title, copy, ctas, image }: HeroProps) => {
   return (
     <Box>
       <Box ta="center">
-        {title && (
-          <Stack mb="lg" align="center">
-            {image && (
-              <Image
-                component={NextImage}
-                w={50}
-                h={50}
-                src={image}
-                alt="Hero Image"
-              />
-            )}
-            <Text>{title}</Text>
-          </Stack>
+        <Stack mb="lg" align="center">
+          {image && (
+            <Image
+              component={NextImage}
+              w={100}
+              h={100}
+              src={image}
+              alt="Hero Image"
+            />
+          )}
+
+          {title && <Text>{title}</Text>}
+        </Stack>
+        {copy && (
+          <Title order={2} mb="xl">
+            {copy}
+          </Title>
         )}
-        <Title order={2} mb="xl">
-          {copy}
-        </Title>
         <Group justify="center">
           {ctas?.length &&
             ctas.map((cta) => (
