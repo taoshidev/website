@@ -32,14 +32,14 @@ const questions = [
         description: (
           <Box>
             <Text size="sm" mb="sm">
-              The current landscape of Bittensor isn&apos;t the most friendly to
-              completely new non technical individuals. If you want to run a
-              miner or validator it is recommended to learn some python.
+              The current landscape of Bittensor is difficult to navigate for
+              non-technical individuals. If you want to run a miner or
+              validator, it is recommended to learn Python.
             </Text>
 
             <Text size="sm">
               We have partners launching automated trading solutions built on
-              PTN and they&apos;ll be onboarding customers.
+              PTN, and they&apos;ll be onboarding customers.
             </Text>
           </Box>
         ),
@@ -51,7 +51,15 @@ const questions = [
     items: [
       {
         value: "Will there be a dashboard where I can see the statistics?",
-        description: "We provide an analysis on our Dashboard.",
+        description: (
+          <Text size="sm">
+            Our{" "}
+            <Anchor href="https://dashboard.taoshi.io" target="_blank">
+              Dashboard
+            </Anchor>{" "}
+            provides a detailed analysis on PTN&apos;s miners.
+          </Text>
+        ),
       },
       {
         value: "What is the netuid of the PTN testnet?",
@@ -60,7 +68,7 @@ const questions = [
       {
         value: "What is roadmap for other assets?",
         description:
-          "It is likely we will add other pairs. The decision is based off demand.",
+          "Taoshi is likely to add other tradeable assets to PTN. We consistently evaluate options based on market factors and demand.",
       },
       {
         value: "Is a fee applied when taking profit?",
@@ -87,7 +95,7 @@ const questions = [
       {
         value: "How often are the incentives granted to miners?",
         description:
-          "Incentives are granted every 30 minutes, based on a 30-day rolling lookback period (can be found in the source code). ",
+          "Incentives are granted every 30 minutes, based on a 30-day rolling lookback period (can be found in the source code). Miners are entitled to receive rewards after closing their first trade.",
       },
       {
         value: "What are the benefits of having immunity?",
@@ -103,7 +111,7 @@ const questions = [
         value:
           "Will there be a base model/strategy to get miners started, ie Taoshi v3, 4.5?",
         description:
-          "Models and strategies are separate. well work to continue to build open source models. it's on teams to take that basis to generate even better models & working strategies.",
+          "Models and strategies are separate. We'll continue to build open source models. Miners & teams should iterate on the base models to generate better models and functional trading strategies.",
       },
     ],
   },
@@ -111,9 +119,9 @@ const questions = [
     title: "Time Series Prediction Subnet?",
     items: [
       {
-        value: "What happened to Taosh's Time Series Prediction Subnet?",
+        value: "What happened to Taoshi's Time Series Prediction Subnet?",
         description:
-          "PTN is the next iteration of TSPS. You can now take your prediction models and apply them to make a trading strategy to be used on PTN",
+          "PTN is the next iteration of TSPS. You can now take your prediction models and apply them to make a trading strategy to be used on PTN.",
       },
       {
         value: "Why not launch a new subnet instead?",
@@ -131,22 +139,33 @@ const questions = [
             <List>
               <List.Item mb="md">
                 <Text size="sm">
-                  Adding congestion on the SN slot level. There are currently
-                  many potentially valuable SNs trying to register running on
-                  testnet. Adding another Taoshi SN at this time would only add
-                  to it and increase the cost of registration for everyone else
-                  as well.
+                  At Taoshi, we deeply value the Bittensor ecosystem, and we
+                  believe this evolution of TSPS will bring the most value to
+                  the entire ecosystem. Here&apos;s why:
                 </Text>
               </List.Item>
               <List.Item mb="md">
                 <Text size="sm">
-                  Concentrating on a single SN to bring the most value.
-                  Splitting our attention across SNs means we&apos;re not
-                  concentrating all our efforts & resources on bringing the most
-                  value to the community. Considering that PTN has an incredibly
-                  significant SN, especially with the launch of the request
-                  network, we want to ensure we drive as much revenue and
-                  support for TAO as we can.
+                  PTN generates direct revenue, which is crucial for the
+                  community.
+                </Text>
+              </List.Item>
+              <List.Item mb="md">
+                <Text size="sm">
+                  Taoshi&apos;s Request Network provides immediate value to
+                  validators and clients purchasing trading signals.
+                </Text>
+              </List.Item>
+              <List.Item mb="md">
+                <Text size="sm">
+                  Miners will address a concrete challenge with return-based
+                  rewards for their quant signals
+                </Text>
+              </List.Item>
+              <List.Item mb="md">
+                <Text size="sm">
+                  Adding another subnet creates additional congestion is not
+                  beneficial for the community
                 </Text>
               </List.Item>
             </List>
@@ -173,24 +192,14 @@ const questions = [
     items: [
       {
         value: "What is the revenue model?",
-        description: "Likely users will pay per signal.",
+        description:
+          "Although still under development, users will likely pay per signal.",
       },
       {
         value:
           "Wont validators or miners just give away their signals for free?",
-        description: (
-          <Box>
-            <Text size="sm">
-              Not every trader has capital. Traders share signals because they
-              might want capital.
-            </Text>
-            <Text size="sm">
-              Our incentives are greater than those of a prop firm. Taoshi has
-              over 100k paid out daily. A trader on PTN can earn millions of
-              dollars. Taoshi is the evolution of prop firms.
-            </Text>
-          </Box>
-        ),
+        description:
+          "Miners or validators could, in theory, give away trade signals for free. However, they'd be forgoing likely 6, if not 7 figures worth of potential revenues. All parties are great incentivized to monetize signals on PTN.",
       },
     ],
   },
