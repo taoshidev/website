@@ -70,7 +70,7 @@ export const team = [
 		previously: [
 			"Squadformers",
 			"Bitwise Industries",
-			"CSUF - Professor of Info Sys",
+			"CSUF - Professor",
 			"Competitive Capital Corp",
 			"Executive MBA - MIS",
 		],
