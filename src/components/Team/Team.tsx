@@ -18,6 +18,7 @@ import arrash from "@/assets/team/arrash.jpg";
 import luke from "@/assets/team/luke.jpg";
 import thomas from "@/assets/team/thomas.jpg";
 import michael from "@/assets/team/michael.jpg";
+import lucas from "@/assets/team/lucas.jpg";
 
 export const team = [
 	{
@@ -62,6 +63,18 @@ export const team = [
 		position: "Staff ML Scientist",
 		previously: ["PhD Stanford University"],
 	},
+	{
+		name: "Lucas Phan",
+		image: lucas,
+		position: "Sr Staff Full-Stack Software Engineer",
+		previously: [
+			"Squadformers",
+			"Bitwise Industries",
+			"CSUF - Professor of Info Sys",
+			"Competitive Capital Corp",
+			"Executive MBA - MIS",
+		],
+	},
 ];
 
 export const Team = () => {
@@ -74,7 +87,7 @@ export const Team = () => {
 				<Title order={3}>Led By Domain Experts</Title>
 			</Box>
 
-			<Grid mb="xl" gutter="lg" grow>
+			<Grid mb="xl" gutter="lg">
 				{team.map((member) => (
 					<Grid.Col key={member.name} span={{ sm: 4 }}>
 						<Card h="100%" style={{ border: "1px dashed black" }}>
