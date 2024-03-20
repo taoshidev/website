@@ -97,6 +97,7 @@ export const Team = () => {
 										{member.twitter && (
 											<ActionIcon
 												component="a"
+												target="_blank"
 												radius={0}
 												href={member.twitter}
 												variant="subtle"
