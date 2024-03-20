@@ -160,8 +160,8 @@ const questions = [
 							</List.Item>
 							<List.Item mb="md">
 								<Text size="sm">
-									Adding another subnet creates additional congestion is not
-									beneficial for the community
+									Adding another subnet creates additional congestion, which is
+									not beneficial for the community
 								</Text>
 							</List.Item>
 						</List>
