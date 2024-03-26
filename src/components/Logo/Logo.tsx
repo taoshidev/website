@@ -9,7 +9,7 @@ interface LogoProps {
 	size?: number;
 }
 
-export const Logo = ({ size = 500 }: LogoProps) => {
+export const Logo = ({ size = 250 }: LogoProps) => {
 	const [filler, setFiller] = useState("");
 	const [content, setContent] = useState("");
 	const hiddenRef = useRef<HTMLDivElement | null>(null);
