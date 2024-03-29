@@ -219,7 +219,7 @@ export default function Page() {
       <Container fluid>
         <Grid>
           {partners.map((partner) => (
-            <Grid.Col span={4} key={partner.label}>
+            <Grid.Col span={{ base: 12, sm: 6, md: 4 }} key={partner.label}>
               <Card
                 bg="transparent"
                 style={{ border: "1px dashed black" }}
