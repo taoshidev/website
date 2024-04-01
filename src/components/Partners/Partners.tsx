@@ -14,7 +14,7 @@ import styles from "./partners.module.css";
 
 import glassnode from "@/assets/partners/glassnode.svg";
 import lunarcrush from "@/assets/partners/lunarcrush.svg";
-import uphold from "@/assets/partners/uphold.jpg";
+import uphold from "@/assets/partners/uphold-white.jpg";
 import rt21 from "@/assets/partners/roundtable21.png";
 
 export const Partners = () => {

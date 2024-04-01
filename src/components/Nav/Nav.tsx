@@ -12,9 +12,8 @@ import {
   IconChevronUp,
   IconBrandGithub,
   IconDashboard,
-  IconTournament,
-  IconSquareNumber8,
   IconGraph,
+  IconHandLoveYou,
   IconQuestionMark,
 } from "@tabler/icons-react";
 import { usePlausible } from "next-plausible";
@@ -117,6 +116,19 @@ export const Nav = () => {
                 }
               >
                 Contact
+              </Menu.Item>
+
+              <Menu.Item
+                onClick={() => sendEvent("partners")}
+                component="a"
+                href="/partners"
+                leftSection={
+                  <IconHandLoveYou
+                    style={{ width: rem(14), height: rem(14) }}
+                  />
+                }
+              >
+                Partners
               </Menu.Item>
 
               <Menu.Item
@@ -225,6 +237,19 @@ export const Nav = () => {
                 }
               >
                 Contact
+              </Menu.Item>
+
+              <Menu.Item
+                onClick={() => sendEvent("partners")}
+                component="a"
+                href="/partners"
+                leftSection={
+                  <IconHandLoveYou
+                    style={{ width: rem(14), height: rem(14) }}
+                  />
+                }
+              >
+                Partners
               </Menu.Item>
 
               <Menu.Item

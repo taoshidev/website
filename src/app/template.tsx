@@ -22,11 +22,7 @@ export default function Template({ children }: TemplateProps) {
         </Container>
       </AppShell.Header>
 
-      <AppShell.Main>
-        <Container maw="1000px" h="100%">
-          {children}
-        </Container>
-      </AppShell.Main>
+      <AppShell.Main>{children}</AppShell.Main>
 
       <AppShell.Footer
         pos="relative"
