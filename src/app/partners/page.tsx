@@ -117,20 +117,20 @@ const partners = [
     image: glassnode,
     description: (
       <Text size="xs">
-        Glassnode is a premier provider of in-depth futures and on-chain Bitcoin
-        data, and greatly enhances the resources available to our community. If
-        you’re interested in reviewing historical data they’ve provided,
-        featuring a selection of their indicators with a 1-year lookback, please
-        visit this{" "}
+        Glassnode, a premier provider of in-depth futures and on-chain Bitcoin
+        data, is working with Taoshi to enhance the resources available to our
+        community. If you’re interested in reviewing historical data they’ve
+        provided, featuring a selection of their indicators with a 1-year
+        lookback, please visit this{" "}
         <Anchor
           href="https://drive.google.com/drive/u/0/folders/1r1H9cqgsxR8wRu3MeY3CJPfqxMA2GkEI"
           target="_blank"
         >
           link
-        </Anchor>
+        </Anchor>{" "}
         ; this dataset represents just a glimpse of Glassnode&apos;s extensive
         metrics library. Additionally, Glassnode is generously offering a
-        discounted rate to Taoshi miners—simply visit this{" "}
+        favorable rate to Taoshi miners—simply visit this{" "}
         <Anchor
           href="https://docs.google.com/document/d/1hmHHjPZB_npZ-UM0Ysd0KX1J1hrFWhq8iSj6YoYQLIo/edit#heading=h.jedax0urx6v3"
           target="_blank"
@@ -150,14 +150,10 @@ const partners = [
       <>
         <Text mb="md" size="xs">
           Dale is a decentralized autonomous liquidity engine that provides a
-          seamless and secure trading experience for users. Taoshi is proud to
-          partner with Dale to offer a unique trading experience that leverages
-          the power of the Bittensor network. Our collaboration with Dale will
-          enable users to access a wide range of trading pairs and liquidity
-          pools, empowering them to make informed decisions and maximize their
-          trading potential. We are excited to work with Dale to redefine
-          excellence in the trading world and provide our users with a
-          cutting-edge trading experience.
+          seamless and secure trading experience for users. Our collaboration
+          with Dale will enable users to access a wide range of trading pairs
+          and liquidity pools whilst leveraging PTN’s outputs, empowering them
+          to make informed decisions and maximize their trading potential.
         </Text>
         <Text size="xs">
           Stay tuned to Dale’s{" "}
@@ -202,14 +198,17 @@ export default function Page() {
     <Box>
       <Container maw="1000px" h="100%">
         <Box mb={200} ta="center">
-          <Hero copy="Our Esteemed Partners" image={partnersLogo} />
+          <Hero
+            copy="Our Esteemed Partners & Affiliates"
+            image={partnersLogo}
+          />
           <Text mb="xl">
             Welcome to the dedicated space where we celebrate the collaborative
             spirit and shared vision that helps drive our success at Taoshi. Our
-            partners are integral to our journey, bringing unique strengths,
-            insights, and innovations that enrich our offerings and empower our
-            clients. Here, we proudly showcase the diverse network of alliances
-            that help us redefine excellence in the trading world.
+            partners & affiliates are integral to our journey, bringing unique
+            strengths, insights, and innovations that enrich our offerings and
+            empower our clients. Here, we proudly showcase the diverse network
+            of alliances that help us redefine excellence in the trading world.
           </Text>
           <Button component="a" href="mailto:support@taoshi.io" target="_blank">
             Join Us
@@ -271,16 +270,20 @@ export default function Page() {
           <Title mb="xl" order={3}>
             Interested in a Partnership with Taoshi?
           </Title>
+          <Text mb="lg">
+            Are you ready to navigate the cutting-edge intersection of
+            decentralized AI and trading? Taoshi calls on visionary businesses
+            and entrepreneurial spirits to join us as partners. Our
+            collaboration will pave the way for delivering PTN&apos;s services
+            to your clientele, fostering innovation, and spearheading growth
+            within the Bittensor ecosystem. Embrace the opportunity to redefine
+            trading with us. If your business is driven to integrate dAI
+            solutions and offer unparalleled trading services, connect with us
+            at{" "}
+            <Anchor href="mailto:support@taoshi.io">support@taoshi.io</Anchor>.
+          </Text>
           <Text mb="xl">
-            Are you ready to explore the frontier of decentralized AI and
-            trading? Taoshi invites innovative minds and forward-thinking
-            organizations to partner with us. Through collaboration, we can
-            unlock new opportunities, drive technological advancements, and lead
-            the way in the Bittensor ecosystem. If you&apos;re inspired to
-            co-create the future of dAI and trading, we want to hear from you.
-            Reach out to us via email at{" "}
-            <Anchor href="mailto:support@taoshi.io">support@taoshi.io</Anchor>{" "}
-            and let&rsquo;s discuss how we can synergize our efforts.
+            Together, let&apos;s shape the future of decentralized trading.
           </Text>
           <Button component="a" href="mailto:support@taoshi.io" target="_blank">
             Join Us

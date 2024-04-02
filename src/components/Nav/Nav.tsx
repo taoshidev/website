@@ -63,7 +63,7 @@ export const Nav = () => {
                   <IconGraph style={{ width: rem(14), height: rem(14) }} />
                 }
               >
-                Proprietary Trading Network
+                PTN
               </Menu.Item>
               <Menu.Item
                 onClick={() => sendEvent("dashboard")}
@@ -87,6 +87,9 @@ export const Nav = () => {
               >
                 FAQ
               </Menu.Item>
+
+              <Menu.Divider variant="dashed" />
+
               <Menu.Item
                 onClick={() => sendEvent("github")}
                 component="a"
@@ -99,8 +102,6 @@ export const Nav = () => {
               >
                 GitHub
               </Menu.Item>
-
-              <Menu.Divider variant="dashed" />
 
               <Menu.Item
                 onClick={() => sendEvent("contact")}
@@ -196,14 +197,6 @@ export const Nav = () => {
           >
             FAQ
           </Anchor>
-          <Anchor
-            size="sm"
-            onClick={() => sendEvent("github")}
-            href="https://github.com/taoshidev/proprietary-trading-network"
-            c="black"
-          >
-            GitHub
-          </Anchor>
 
           <Menu
             width={200}
@@ -228,6 +221,19 @@ export const Nav = () => {
             </Menu.Target>
 
             <Menu.Dropdown style={{ border: "1px dashed black" }}>
+              <Menu.Item
+                onClick={() => sendEvent("github")}
+                component="a"
+                href="https://github.com/taoshidev/proprietary-trading-network"
+                leftSection={
+                  <IconBrandGithub
+                    style={{ width: rem(14), height: rem(14) }}
+                  />
+                }
+              >
+                GitHub
+              </Menu.Item>
+
               <Menu.Item
                 onClick={() => sendEvent("contact")}
                 component="a"
