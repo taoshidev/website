@@ -127,7 +127,7 @@ const partners = [
           target="_blank"
         >
           link
-        </Anchor>{" "}
+        </Anchor>
         ; this dataset represents just a glimpse of Glassnode&apos;s extensive
         metrics library. Additionally, Glassnode is generously offering a
         favorable rate to Taoshi miners—simply visit this{" "}
@@ -143,8 +143,8 @@ const partners = [
   },
   {
     label: "Dale",
-    website: "https://twitter.com/DaleNetwork",
-    twitter: "https://twitter.com/DaleNetwork",
+    website: "https://twitter.com/tradewithdale",
+    twitter: "https://twitter.com/tradewithdale",
     image: dale,
     description: (
       <>
