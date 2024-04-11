@@ -31,7 +31,7 @@ export const team = [
   {
     name: "Michael Brown",
     image: michael,
-    position: "Architect",
+    position: "Software Engineering Architect",
     previously: ["NASA", "TARVIS Labs"],
   },
   {
