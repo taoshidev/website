@@ -136,13 +136,6 @@ const questions = [
             <List>
               <List.Item mb="md">
                 <Text size="sm">
-                  At Taoshi, we deeply value the Bittensor ecosystem, and we
-                  believe this evolution of TSPS will bring the most value to
-                  the entire ecosystem. Here&apos;s why:
-                </Text>
-              </List.Item>
-              <List.Item mb="md">
-                <Text size="sm">
                   PTN generates direct revenue, which is crucial for the
                   community.
                 </Text>
