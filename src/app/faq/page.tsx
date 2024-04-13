@@ -222,7 +222,7 @@ export default function Page() {
           <Box>
             <Accordion>
               {questions.map((question) => (
-                <Box key={question.title} mb={50}>
+                <Box key={question.title} mb={70}>
                   <Title order={3} mb="sm">
                     {question.title}
                   </Title>
@@ -235,7 +235,7 @@ export default function Page() {
                       }}
                     >
                       <Accordion.Control>
-                        <Text size="sm">{item.value}</Text>
+                        <Text fw="bold">{item.value}</Text>
                       </Accordion.Control>
                       <Accordion.Panel>
                         {typeof item.description === "string" ? (
