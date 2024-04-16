@@ -20,6 +20,7 @@ import nasa from "@/assets/nasa.png";
 import vision from "@/assets/vision.png";
 import saturn from "@/assets/saturn.png";
 import rnHero from "@/assets/rn-hero.png";
+import integrate from "@/assets/integrate.png";
 import flywheel from "@/assets/flywheel.png";
 import sneakPeak from "@/assets/sneak-peak.png";
 
@@ -56,14 +57,14 @@ export default function Page() {
         </Group>
       </Container>
 
-      <Box bg="orange" mb={170}>
-        <Container maw="1000px" w="100%" py={70}>
+      <Box bg="orange">
+        <Container maw="1000px" w="100%" py={100}>
           <Group justify="space-between">
-            <Center flex="1">
+            <Center mr={50}>
               <Image
                 component={NextImage}
-                w="auto"
-                h={300}
+                w={300}
+                h="auto"
                 fit="contain"
                 src={sneakPeak}
                 alt="Hero Image"
@@ -71,16 +72,21 @@ export default function Page() {
             </Center>
             <Box flex="1">
               <Title order={3} c="white" mb="sm">
-                A Sneak Peek into The Request Network
+                A Hub for Decentralized Services and Data
               </Title>
-              <Text c="white" mb="xl">
-                Imagine a digital marketplace where you can select and purchase
-                the most relevant trading signals for your strategy, tailored to
-                your preferred asset classes and currency pairs—all with the
-                simplicity and security of stablecoin transactions.
+              <Text c="#F7F6F3" mb="xl" size="sm">
+                Enter a new era of service and data exchange with the Request
+                Network, a versatile platform built for the Bittensor ecosystem,
+                and architected by Taoshi. The Request Network heralds a new
+                paradigm in decentralized services, offering a dynamic
+                marketplace that can be integrated with every subnet built on
+                Bittensor. Whether you seek data, computational tasks, or
+                complex analyses, the Request Network facilitates these
+                exchanges with the trust and efficiency of stablecoin
+                transactions.
               </Text>
               <Group justify="flex-end">
-                <Button variant="outline" color="white">
+                <Button variant="outline" color="white" size="sm">
                   Learn More
                 </Button>
               </Group>
@@ -89,22 +95,26 @@ export default function Page() {
         </Container>
       </Box>
 
-      <Container maw="1000px" w="100%" py={70} mb={170}>
+      <Container maw="1000px" w="100%" py={100}>
         <Group justify="space-between">
           <Box flex="1">
             <Title order={3} mb="sm">
-              Taoshi’s Vision
+              Harnessing the Collective Capabilities of Subnets
             </Title>
-            <Text mb="xl">
-              We seek to empower traders by providing unparalleled access to
-              curated, high-quality trading signals from the world&apos;s top
-              quant traders on PTN.
+            <Text mb="xl" size="sm">
+              The Request Network is your portal to the vast array of services
+              offered by Bittensor&apos;s subnets. Each subnet is a powerhouse
+              of specialized functions, delivering not just data, but also
+              performing tasks that span from intricate financial modeling and
+              predictions to the generation of AI-driven solutions. The Request
+              Network equips users with the tools to propel innovation,
+              research, and development across various domains.
             </Text>
-            <Button variant="outline" color="#282828">
+            <Button variant="outline" color="#282828" size="sm">
               Learn More
             </Button>
           </Box>
-          <Center flex="1">
+          <Center ml={50}>
             <Image
               component={NextImage}
               w={275}
@@ -117,10 +127,10 @@ export default function Page() {
         </Group>
       </Container>
 
-      <Box bg="#282828" mb={170}>
-        <Container maw="1000px" w="100%" py={70}>
+      <Box bg="#282828">
+        <Container maw="1000px" w="100%" py={100}>
           <Group justify="space-between">
-            <Center flex="1">
+            <Center mr={50}>
               <Image
                 component={NextImage}
                 w={427}
@@ -132,17 +142,22 @@ export default function Page() {
             </Center>
             <Box flex="1">
               <Title c="white" order={3} mb="sm">
-                Bringing the Flywheel Effect to Bittensor
+                Fostering a Synergistic Ecosystem
               </Title>
-              <Text c="white" mb="xl">
-                All participants in the Request Network and PTN ecosystem
-                benefit: Miners are rewarded for contributing their expert quant
-                signals, signal clients gain a competitive edge to outperform
-                the market, and validators receive 100% of Request Network
-                revenues for their pivotal role in the ecosystem.
+              <Text c="white" mb="xl" size="sm">
+                At the heart of the Bittensor network is a thriving community
+                where every participant&apos;s contribution is valued. The
+                Request Network catalyzes a virtuous cycle within each
+                subnet&apos;s ecosystem; miners are incentivized to offer not
+                only data but also their computational services, while consumers
+                access a comprehensive suite of resources to elevate their
+                endeavors. Validators, a backbone of the Bittensor ecosystem,
+                are remunerated with 100% of the Request Network&apos;s
+                transactional revenue, acknowledging their critical role in
+                maintaining network integrity and facilitating its operations.
               </Text>
               <Group justify="flex-end">
-                <Button variant="outline" color="white">
+                <Button variant="outline" color="white" size="sm">
                   Learn More
                 </Button>
               </Group>
@@ -151,7 +166,45 @@ export default function Page() {
         </Container>
       </Box>
 
-      <Container maw="1000px" w="100%" py={70} mb={170}>
+      <Box bg="white">
+        <Container maw="1000px" w="100%" py={100}>
+          <Group justify="space-between">
+            <Center mr={50}>
+              <Image
+                component={NextImage}
+                w="auto"
+                h={300}
+                fit="contain"
+                src={integrate}
+                alt="Hero Image"
+              />
+            </Center>
+            <Box flex="1">
+              <Title c="#282828" order={3} mb="sm">
+                Ready to Integrate your Subnet with the Request Network?
+              </Title>
+              <Text c="#282828" mb="xl" size="sm">
+                Any subnet within the Bittensor ecosystem can democratize their
+                highly valuable intelligence through the Request Network. If
+                you’d like to integrate your subnet with the Request Network,
+                please reach out to our team via email at{" "}
+                <Anchor href="mailto:support@taoshi.io">
+                  support@taoshi.io
+                </Anchor>{" "}
+                - we’ll work with you to complete the integration as soon as
+                possible!
+              </Text>
+              <Group justify="flex-end">
+                <Button variant="outline" color="#282828" size="sm">
+                  Learn More
+                </Button>
+              </Group>
+            </Box>
+          </Group>
+        </Container>
+      </Box>
+
+      <Container maw="1000px" w="100%" py={100} mb={170}>
         <Group justify="space-between">
           <Box flex="1">
             <Title mb="xl">Roadmap</Title>
@@ -248,19 +301,22 @@ export default function Page() {
           />
         </Center>
         <Box mb="xl" ta="center">
-          <Title mb="sm">Stay Tuned</Title>
-          <Text mb="lg">
-            Stay up to date on all things Taoshi through our{" "}
-            <Anchor href="https://twitter.com/taoshiio/">Twitter</Anchor>,{" "}
-            <Anchor href="https://discord.com/invite/MKtKVYnCDh">
-              Discord
+          <Title mb="sm" order={3}>
+            Looking for Access to Outputs from Taoshi’s subnet?
+          </Title>
+          <Text mb="lg" size="sm">
+            If you’re looking to learn more about how Taoshi is utilizing the
+            Request Network with the Proprietary Trading Network (PTN), please
+            visit this{" "}
+            <Anchor
+              href="https://sataoshi.atlassian.net/wiki/spaces/Marketing/pages/90112010"
+              target="_blank"
+            >
+              page
             </Anchor>
-            , and{" "}
-            <Anchor href="https://www.linkedin.com/company/taoshi/">
-              LinkedIn
-            </Anchor>
-            . Here, we’ll be posting updates and more teasers on the Request
-            Network. Our team is here to support you and answer your questions!
+            . We’ll provide an overview on how the Request Network is
+            democratizing access to world-class signals from miners on PTN, and
+            outline how anyone can utilize them, too.
           </Text>
           <Center mt="xl">
             <Button bg="orange">Join Discord</Button>
