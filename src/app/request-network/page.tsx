@@ -4,7 +4,6 @@ import NextImage from "next/image";
 import {
   Anchor,
   Box,
-  Grid,
   Container,
   Center,
   Card,
@@ -14,12 +13,8 @@ import {
   Stack,
   List,
   Group,
-  ActionIcon,
   Button,
 } from "@mantine/core";
-import { IconBrandX } from "@tabler/icons-react";
-
-import { Hero } from "@/components/Hero";
 
 import nasa from "@/assets/nasa.png";
 import vision from "@/assets/vision.png";
@@ -37,11 +32,15 @@ export default function Page() {
             <Text c="orange" size="xs">
               Coming End of April 2024
             </Text>
-            <Title>Request Network</Title>
+            <Title mb="xs">request network</Title>
             <Text>A signals marketplace, built on Bittensor.</Text>
-            <Group mt="lg" gap="lg">
-              <Button>Get Started</Button>
-              <Button>Whitepaper</Button>
+            <Group mt="xl" gap="xl">
+              <Button bg="#282828" c="white">
+                Get Started
+              </Button>
+              <Button bg="white" c="#282828">
+                White Paper
+              </Button>
             </Group>
           </Box>
           <Box flex="1">
@@ -71,16 +70,20 @@ export default function Page() {
               />
             </Center>
             <Box flex="1">
-              <Title order={3} c="white" mb="lg">
+              <Title order={3} c="white" mb="sm">
                 A Sneak Peek into The Request Network
               </Title>
-              <Text c="white">
+              <Text c="white" mb="xl">
                 Imagine a digital marketplace where you can select and purchase
                 the most relevant trading signals for your strategy, tailored to
                 your preferred asset classes and currency pairs—all with the
                 simplicity and security of stablecoin transactions.
               </Text>
-              <Button>Learn More</Button>
+              <Group justify="flex-end">
+                <Button variant="outline" color="white">
+                  Learn More
+                </Button>
+              </Group>
             </Box>
           </Group>
         </Container>
@@ -89,15 +92,17 @@ export default function Page() {
       <Container maw="1000px" w="100%" py={70} mb={170}>
         <Group justify="space-between">
           <Box flex="1">
-            <Title order={3} mb="lg">
+            <Title order={3} mb="sm">
               Taoshi’s Vision
             </Title>
-            <Text>
+            <Text mb="xl">
               We seek to empower traders by providing unparalleled access to
               curated, high-quality trading signals from the world&apos;s top
               quant traders on PTN.
             </Text>
-            <Button>Learn More</Button>
+            <Button variant="outline" color="#282828">
+              Learn More
+            </Button>
           </Box>
           <Center flex="1">
             <Image
@@ -126,17 +131,21 @@ export default function Page() {
               />
             </Center>
             <Box flex="1">
-              <Title c="white" order={3} mb="lg">
+              <Title c="white" order={3} mb="sm">
                 Bringing the Flywheel Effect to Bittensor
               </Title>
-              <Text c="white">
+              <Text c="white" mb="xl">
                 All participants in the Request Network and PTN ecosystem
                 benefit: Miners are rewarded for contributing their expert quant
                 signals, signal clients gain a competitive edge to outperform
                 the market, and validators receive 100% of Request Network
                 revenues for their pivotal role in the ecosystem.
               </Text>
-              <Button>Learn More</Button>
+              <Group justify="flex-end">
+                <Button variant="outline" color="white">
+                  Learn More
+                </Button>
+              </Group>
             </Box>
           </Group>
         </Container>
@@ -253,6 +262,9 @@ export default function Page() {
             . Here, we’ll be posting updates and more teasers on the Request
             Network. Our team is here to support you and answer your questions!
           </Text>
+          <Center mt="xl">
+            <Button bg="orange">Join Discord</Button>
+          </Center>
         </Box>
       </Container>
     </Box>
