@@ -66,6 +66,16 @@ export const Nav = () => {
                 PTN
               </Menu.Item>
               <Menu.Item
+                onClick={() => sendEvent("request-network")}
+                component="a"
+                href="/request-network"
+                leftSection={
+                  <IconGraph style={{ width: rem(14), height: rem(14) }} />
+                }
+              >
+                Request Network
+              </Menu.Item>
+              <Menu.Item
                 onClick={() => sendEvent("dashboard")}
                 component="a"
                 href="https://dashboard.taoshi.io"

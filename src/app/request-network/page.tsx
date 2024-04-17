@@ -239,14 +239,19 @@ export default function Page() {
         </Container>
       </Box>
 
-      <Container maw="1000px" w="100%" py={100} mb={170}>
+      <Container
+        maw="1000px"
+        w="100%"
+        py={{ base: 50, sm: 100 }}
+        px={{ sm: 20 }}
+      >
         <Group justify="space-between">
           <Box flex="1">
             <Title mb="xl">Roadmap</Title>
             <Stack
               gap="xl"
-              style={{ borderLeft: "1px dashed #282828" }}
-              pl="xl"
+              style={{ sm: { borderLeft: "1px dashed #282828" } }}
+              pl={{ sm: "xl" }}
             >
               <Card>
                 <Text c="orange" mb="md">
@@ -348,7 +353,14 @@ export default function Page() {
             to your preferred asset classes and currency pairs.
           </Text>
           <Center mt="xl">
-            <Button bg="orange">Join Discord</Button>
+            <Button
+              bg="orange"
+              component="a"
+              href="https://discord.gg/epEZf4s3"
+              target="_blank"
+            >
+              Join Discord
+            </Button>
           </Center>
         </Box>
       </Container>
