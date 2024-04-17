@@ -29,20 +29,20 @@ export default function Page() {
     <Box>
       <Container maw="1000px" h="100%" mb={170}>
         <Group justify="space-between">
-          <Box flex="1">
+          <Box flex="1" mr="lg">
             <Text c="orange" size="xs">
               Coming End of April 2024
             </Text>
-            <Title mb="xs">request network</Title>
-            <Text>A signals marketplace, built on Bittensor.</Text>
-            <Group mt="xl" gap="xl">
+            <Title c="black">request network</Title>
+            <Text c="#282828">A digital marketplace, built on Bittensor</Text>
+            {/* <Group mt="xl" gap="xl">
               <Button bg="#282828" c="white">
                 Get Started
               </Button>
               <Button bg="white" c="#282828">
                 White Paper
               </Button>
-            </Group>
+            </Group> */}
           </Box>
           <Box flex="1">
             <Image
@@ -85,11 +85,6 @@ export default function Page() {
                 exchanges with the trust and efficiency of stablecoin
                 transactions.
               </Text>
-              <Group justify="flex-end">
-                <Button variant="outline" color="white" size="sm">
-                  Learn More
-                </Button>
-              </Group>
             </Box>
           </Group>
         </Container>
@@ -110,9 +105,6 @@ export default function Page() {
               Network equips users with the tools to propel innovation,
               research, and development across various domains.
             </Text>
-            <Button variant="outline" color="#282828" size="sm">
-              Learn More
-            </Button>
           </Box>
           <Center ml={50}>
             <Image
@@ -156,11 +148,6 @@ export default function Page() {
                 transactional revenue, acknowledging their critical role in
                 maintaining network integrity and facilitating its operations.
               </Text>
-              <Group justify="flex-end">
-                <Button variant="outline" color="white" size="sm">
-                  Learn More
-                </Button>
-              </Group>
             </Box>
           </Group>
         </Container>
@@ -195,8 +182,14 @@ export default function Page() {
                 possible!
               </Text>
               <Group justify="flex-end">
-                <Button variant="outline" color="#282828" size="sm">
-                  Learn More
+                <Button
+                  href="mailto:support@taoshi.io"
+                  component="a"
+                  variant="outline"
+                  color="#282828"
+                  size="sm"
+                >
+                  Connect with Us
                 </Button>
               </Group>
             </Box>
@@ -302,21 +295,15 @@ export default function Page() {
         </Center>
         <Box mb="xl" ta="center">
           <Title mb="sm" order={3}>
-            Looking for Access to Outputs from Taoshi’s subnet?
+            How is Taoshi Using the Request Network?
           </Title>
           <Text mb="lg" size="sm">
-            If you’re looking to learn more about how Taoshi is utilizing the
-            Request Network with the Proprietary Trading Network (PTN), please
-            visit this{" "}
-            <Anchor
-              href="https://sataoshi.atlassian.net/wiki/spaces/Marketing/pages/90112010"
-              target="_blank"
-            >
-              page
-            </Anchor>
-            . We’ll provide an overview on how the Request Network is
-            democratizing access to world-class signals from miners on PTN, and
-            outline how anyone can utilize them, too.
+            Taoshi is using the Request Network to help fulfill our vision to
+            empower traders and institutions by democratizing access to trading
+            signals from our Proprietary Trading Network (PTN). It will act as a
+            digital marketplace where you can select and purchase the most
+            relevant, world-class trading signals for your strategies, tailored
+            to your preferred asset classes and currency pairs.
           </Text>
           <Center mt="xl">
             <Button bg="orange">Join Discord</Button>
