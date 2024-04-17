@@ -9,6 +9,13 @@ export const components = {
       },
     }),
   },
+  Card: {
+    styles: () => ({
+      root: {
+        border: "1px dashed #282828",
+      },
+    }),
+  },
   Checkbox: {
     styles: () => ({
       input: {

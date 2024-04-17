@@ -219,12 +219,7 @@ export default function Page() {
         <Grid>
           {partners.map((partner) => (
             <Grid.Col span={{ base: 12, sm: 6, md: 4 }} key={partner.label}>
-              <Card
-                bg="transparent"
-                style={{ border: "1px dashed black" }}
-                p="lg"
-                h="100%"
-              >
+              <Card bg="transparent" p="lg" h="100%">
                 <Card.Section p="lg" mb="md">
                   <Group justify="space-between" align="center">
                     <Box display="inline-block">

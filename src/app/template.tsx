@@ -12,7 +12,7 @@ interface TemplateProps {
 
 export default function Template({ children }: TemplateProps) {
   return (
-    <AppShell header={{ height: 80 }} padding="md">
+    <AppShell header={{ height: 80 }}>
       <AppShell.Header
         pos="relative"
         style={{ borderBottom: "1px dashed black" }}
