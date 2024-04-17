@@ -59,7 +59,12 @@ export default function Page() {
       </Container>
 
       <Box bg="orange">
-        <Container maw="1000px" w="100%" py={100} px={{ sm: 20 }}>
+        <Container
+          maw="1000px"
+          w="100%"
+          py={{ base: 50, sm: 100 }}
+          px={{ sm: 20 }}
+        >
           <Flex
             justify="space-between"
             direction={{ base: "column", sm: "row" }}
@@ -97,7 +102,12 @@ export default function Page() {
         </Container>
       </Box>
 
-      <Container maw="1000px" w="100%" py={100}>
+      <Container
+        maw="1000px"
+        w="100%"
+        py={{ base: 50, sm: 100 }}
+        px={{ sm: 20 }}
+      >
         <Flex
           justify="space-between"
           align="center"
@@ -134,7 +144,12 @@ export default function Page() {
       </Container>
 
       <Box bg="#282828">
-        <Container maw="1000px" w="100%" py={100}>
+        <Container
+          maw="1000px"
+          w="100%"
+          py={{ base: 50, sm: 100 }}
+          px={{ sm: 20 }}
+        >
           <Flex
             justify="space-between"
             align="center"
@@ -172,7 +187,12 @@ export default function Page() {
       </Box>
 
       <Box bg="white">
-        <Container maw="1000px" w="100%" py={100}>
+        <Container
+          maw="1000px"
+          w="100%"
+          py={{ base: 50, sm: 100 }}
+          px={{ sm: 20 }}
+        >
           <Flex
             justify="space-between"
             align="center"
