@@ -177,9 +177,17 @@ export const Nav = () => {
             size="sm"
             onClick={() => sendEvent("ptn")}
             href="/ptn"
+            c="black"
+          >
+            PTN
+          </Anchor>
+          <Anchor
+            size="sm"
+            onClick={() => sendEvent("request-network")}
+            href="/request-network"
             c="orange"
           >
-            Proprietary Trading Network*
+            Request Network
           </Anchor>
           <Anchor
             size="sm"
