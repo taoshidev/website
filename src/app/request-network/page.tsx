@@ -98,7 +98,11 @@ export default function Page() {
       </Box>
 
       <Container maw="1000px" w="100%" py={100}>
-        <Flex justify="space-between" direction={{ base: "column", sm: "row" }}>
+        <Flex
+          justify="space-between"
+          align="center"
+          direction={{ base: "column", sm: "row" }}
+        >
           <Box flex="1">
             <Title order={3} mb="sm">
               Harnessing the Collective Capabilities of Subnets
@@ -133,9 +137,10 @@ export default function Page() {
         <Container maw="1000px" w="100%" py={100}>
           <Flex
             justify="space-between"
+            align="center"
             direction={{ base: "column", sm: "row" }}
           >
-            <Center mr={{ sm: 50 }} display={{ base: "none" }}>
+            <Center mr={{ sm: 50 }} display={{ base: "none", sm: "flex" }}>
               <Image
                 component={NextImage}
                 w={427}
@@ -170,9 +175,10 @@ export default function Page() {
         <Container maw="1000px" w="100%" py={100}>
           <Flex
             justify="space-between"
+            align="center"
             direction={{ base: "column", sm: "row" }}
           >
-            <Center mr={{ sm: 50 }} display={{ base: "none" }}>
+            <Center mr={{ sm: 50 }} display={{ base: "none", sm: "flex" }}>
               <Image
                 component={NextImage}
                 w="auto"
