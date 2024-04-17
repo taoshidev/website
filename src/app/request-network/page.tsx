@@ -11,6 +11,7 @@ import {
   Text,
   Image,
   Stack,
+  Flex,
   List,
   Group,
   Button,
@@ -44,7 +45,7 @@ export default function Page() {
               </Button>
             </Group> */}
           </Box>
-          <Box flex="1">
+          <Box flex="1" display={{ base: "none", sm: "block" }}>
             <Image
               component={NextImage}
               w="auto"
@@ -58,9 +59,15 @@ export default function Page() {
       </Container>
 
       <Box bg="orange">
-        <Container maw="1000px" w="100%" py={100}>
-          <Group justify="space-between">
-            <Center mr={50}>
+        <Container maw="1000px" w="100%" py={100} px={{ sm: 20 }}>
+          <Flex
+            justify="space-between"
+            direction={{ base: "column", sm: "row" }}
+          >
+            <Center
+              mr={{ base: 0, sm: 50 }}
+              display={{ base: "none", sm: "block" }}
+            >
               <Image
                 component={NextImage}
                 w={300}
@@ -86,12 +93,12 @@ export default function Page() {
                 transactions.
               </Text>
             </Box>
-          </Group>
+          </Flex>
         </Container>
       </Box>
 
       <Container maw="1000px" w="100%" py={100}>
-        <Group justify="space-between">
+        <Flex justify="space-between" direction={{ base: "column", sm: "row" }}>
           <Box flex="1">
             <Title order={3} mb="sm">
               Harnessing the Collective Capabilities of Subnets
@@ -106,7 +113,10 @@ export default function Page() {
               research, and development across various domains.
             </Text>
           </Box>
-          <Center ml={50}>
+          <Center
+            ml={{ base: 0, sm: 50 }}
+            display={{ base: "none", sm: "block" }}
+          >
             <Image
               component={NextImage}
               w={275}
@@ -116,13 +126,16 @@ export default function Page() {
               alt="Hero Image"
             />
           </Center>
-        </Group>
+        </Flex>
       </Container>
 
       <Box bg="#282828">
         <Container maw="1000px" w="100%" py={100}>
-          <Group justify="space-between">
-            <Center mr={50}>
+          <Flex
+            justify="space-between"
+            direction={{ base: "column", sm: "row" }}
+          >
+            <Center mr={{ sm: 50 }} display={{ base: "none" }}>
               <Image
                 component={NextImage}
                 w={427}
@@ -149,14 +162,17 @@ export default function Page() {
                 maintaining network integrity and facilitating its operations.
               </Text>
             </Box>
-          </Group>
+          </Flex>
         </Container>
       </Box>
 
       <Box bg="white">
         <Container maw="1000px" w="100%" py={100}>
-          <Group justify="space-between">
-            <Center mr={50}>
+          <Flex
+            justify="space-between"
+            direction={{ base: "column", sm: "row" }}
+          >
+            <Center mr={{ sm: 50 }} display={{ base: "none" }}>
               <Image
                 component={NextImage}
                 w="auto"
@@ -193,7 +209,7 @@ export default function Page() {
                 </Button>
               </Group>
             </Box>
-          </Group>
+          </Flex>
         </Container>
       </Box>
 
@@ -269,7 +285,7 @@ export default function Page() {
               </Card>
             </Stack>
           </Box>
-          <Center flex="1">
+          <Center flex="1" display={{ base: "none", sm: "flex" }}>
             <Image
               component={NextImage}
               w="auto"
