@@ -35,7 +35,7 @@ export default function Page() {
               Coming End of April 2024
             </Text>
             <Title c="black">request network</Title>
-            <Text c="#282828">A digital marketplace, built on Bittensor</Text>
+            <Text c="#282828">A digital marketplace, built for Bittensor</Text>
             {/* <Group mt="xl" gap="xl">
               <Button bg="#282828" c="white">
                 Get Started
