@@ -19,6 +19,7 @@ import luke from "@/assets/team/luke.jpg";
 import thomas from "@/assets/team/thomas.jpg";
 import michael from "@/assets/team/michael.jpg";
 import lucas from "@/assets/team/lucas.jpg";
+import tom from "@/assets/team/tom.jpg";
 
 export const team = [
   {
@@ -74,6 +75,12 @@ export const team = [
       "Competitive Capital Corp",
       "Executive MBA - MIS",
     ],
+  },
+  {
+    name: "Tom Alperin",
+    image: tom,
+    position: "Staff Full Stack Engineer",
+    previously: ["Bitwise Industries", "California State University Fresno"],
   },
 ];
 
