@@ -32,7 +32,7 @@ export default function Page() {
         <Group justify="space-between">
           <Box flex="1" mr="lg">
             <Text c="orange" size="xs">
-              Coming End of April 2024
+              Coming June 2nd
             </Text>
             <Title c="black">request network</Title>
             <Text c="#282828">A digital marketplace, built for Bittensor</Text>
