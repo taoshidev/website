@@ -21,7 +21,7 @@ export default function Template({ children }: TemplateProps) {
 
       <AppShell.Main>{children}</AppShell.Main>
 
-      <AppShell.Footer pos="relative" mt={100}>
+      <AppShell.Footer pos="relative">
         <Container maw="1000px" h="100%">
           <Footer />
         </Container>

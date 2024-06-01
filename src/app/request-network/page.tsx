@@ -22,6 +22,9 @@ import { useDisclosure } from "@mantine/hooks";
 import rnLogo from "@/assets/rn/logo.svg";
 import background from "@/assets/rn/bg.png";
 import backgroundWhite from "@/assets/rn/bg-white.png";
+import backgroundBlack from "@/assets/rn/bg-black.png";
+import ecosystem from "@/assets/rn/ecosystem.png";
+import zap from "@/assets/rn/zap.png";
 
 const questions = [
   {
@@ -214,7 +217,7 @@ export default function Page() {
         style={{ backgroundPosition: "center bottom" }}
       >
         <Stack h={600} align="center" pt="100">
-          <Stack align="center" w={700}>
+          <Stack align="center" maw={700}>
             <Image
               component={NextImage}
               w={40}
@@ -260,10 +263,10 @@ export default function Page() {
             direction={{ base: "column", sm: "row" }}
           >
             <Box flex="1">
-              <Title order={3} mb="sm">
+              <Title order={3} mb="sm" ta="center">
                 A Hub for Decentralized Services and Data
               </Title>
-              <Text mb="xl" size="sm">
+              <Text mb="xl" size="sm" ta="center">
                 Enter a new era of service and data exchange with the Request
                 Network, a versatile platform built for the Bittensor ecosystem,
                 and architected by Taoshi. The Request Network heralds a new
@@ -279,36 +282,41 @@ export default function Page() {
         </Container>
       </Box>
 
-      <Box bg="#ECEBE9">
-        <BackgroundImage src={backgroundWhite.src} radius={0}>
-          <Container
-            maw="1000px"
-            w="100%"
-            py={{ base: 50, sm: 100 }}
-            px={{ sm: 20 }}
-          >
-            <Group justify="flex-start" align="flex-start">
-              <Box flex="1">
-                <Title order={3} mb="sm">
-                  Harnessing the Collective Capabilities of Subnets
-                </Title>
-              </Box>
-              <Box flex="2">
-                <Text size="sm">
-                  The Request Network is your portal to the vast array of
-                  services offered by Bittensor&apos;s subnets. Each subnet is a
-                  powerhouse of specialized functions, delivering not just data,
-                  but also performing tasks that span from intricate financial
-                  modeling and predictions to the generation of AI-driven
-                  solutions. The Request Network equips users with the tools to
-                  propel innovation, research, and development across various
-                  domains.
-                </Text>
-              </Box>
-            </Group>
-          </Container>
-        </BackgroundImage>
-      </Box>
+      <Container
+        maw="1000px"
+        w="100%"
+        py={{ base: 50, sm: 100 }}
+        px={{ sm: 20 }}
+      >
+        <Group>
+          <Group justify="flex-start" align="center">
+            <Center mb="lg" flex="1">
+              <Image
+                component={NextImage}
+                w="auto"
+                h={300}
+                fit="contain"
+                src={zap}
+                alt="Hero Image"
+              />
+            </Center>
+            <Box flex="2">
+              <Title order={3} mb="sm">
+                Harnessing the Collective Capabilities of Subnets
+              </Title>
+              <Text size="sm">
+                The Request Network is your portal to the vast array of services
+                offered by Bittensor&apos;s subnets. Each subnet is a powerhouse
+                of specialized functions, delivering not just data, but also
+                performing tasks that span from intricate financial modeling and
+                predictions to the generation of AI-driven solutions. The
+                Request Network equips users with the tools to propel
+                innovation, research, and development across various domains.
+              </Text>
+            </Box>
+          </Group>
+        </Group>
+      </Container>
 
       <Box>
         <Container
@@ -322,11 +330,11 @@ export default function Page() {
             align="center"
             direction={{ base: "column", sm: "row" }}
           >
-            <Box flex="1">
+            <Box flex="2">
               <Title order={3} mb="sm">
                 Fostering a Synergistic Ecosystem
               </Title>
-              <Text mb="xl" size="sm">
+              <Text size="sm">
                 At the heart of the Bittensor network is a thriving community
                 where every participant&apos;s contribution is valued. The
                 Request Network catalyzes a virtuous cycle within each
@@ -339,51 +347,69 @@ export default function Page() {
                 maintaining network integrity and facilitating its operations.
               </Text>
             </Box>
+            <Center mb="lg" flex="1">
+              <Image
+                component={NextImage}
+                w="auto"
+                h={250}
+                fit="contain"
+                src={ecosystem}
+                alt="Hero Image"
+              />
+            </Center>
           </Flex>
         </Container>
       </Box>
 
-      <Box>
-        <Container
-          maw="1000px"
-          w="100%"
-          py={{ base: 50, sm: 100 }}
-          px={{ sm: 20 }}
+      <Box bg="#282828">
+        <BackgroundImage
+          src={backgroundBlack.src}
+          radius={0}
+          style={{ backgroundPosition: "center top" }}
         >
-          <Flex
-            justify="space-between"
-            align="center"
-            direction={{ base: "column", sm: "row" }}
+          <Container
+            maw="1000px"
+            w="100%"
+            py={{ base: 50, sm: 100 }}
+            px={{ sm: 20 }}
           >
-            <Box flex="1">
-              <Title c="#282828" order={3} mb="sm">
-                Ready to Integrate your Subnet with the Request Network?
-              </Title>
-              <Text c="#282828" mb="xl" size="sm">
-                Any subnet within the Bittensor ecosystem can democratize their
-                highly valuable intelligence through the Request Network. If
-                you’d like to integrate your subnet with the Request Network,
-                please reach out to our team via email at{" "}
-                <Anchor href="mailto:support@taoshi.io">
-                  support@taoshi.io
-                </Anchor>{" "}
-                - we’ll work with you to complete the integration as soon as
-                possible!
-              </Text>
-              <Group justify="flex-end">
-                <Button
-                  href="mailto:support@taoshi.io"
-                  component="a"
-                  variant="outline"
-                  color="#282828"
-                  size="sm"
-                >
-                  Connect with Us
-                </Button>
-              </Group>
-            </Box>
-          </Flex>
-        </Container>
+            <Flex
+              justify="space-between"
+              align="center"
+              direction={{ base: "column", sm: "row" }}
+            >
+              <Box flex="1">
+                <Title ta="center" c="white" order={3} mb="sm">
+                  Ready to Integrate your Subnet with the Request Network?
+                </Title>
+                <Center mx="auto">
+                  <Text ta="center" c="white" mb="xl" size="sm">
+                    Any subnet within the Bittensor ecosystem can democratize
+                    their highly valuable intelligence through the Request
+                    Network. If you’d like to integrate your subnet with the
+                    Request Network, please reach out to our team via email at{" "}
+                    <Anchor href="mailto:support@taoshi.io">
+                      support@taoshi.io
+                    </Anchor>{" "}
+                    - we’ll work with you to complete the integration as soon as
+                    possible!
+                  </Text>
+                </Center>
+                <Group justify="flex-end">
+                  <Button
+                    href="mailto:support@taoshi.io"
+                    component="a"
+                    variant="outline"
+                    color="#282828"
+                    size="sm"
+                  >
+                    Connect with Us
+                  </Button>
+                </Group>
+              </Box>
+            </Flex>
+          </Container>
+        </BackgroundImage>
       </Box>
 
       <Container
@@ -429,34 +455,48 @@ export default function Page() {
         </Center>
       </Container>
 
-      <Container maw="1000px" w="100%" mb={170}>
-        <Box mb="xl" ta="center">
-          <Title mb="sm" order={3}>
-            How is Taoshi Using the Request Network?
-          </Title>
-          <Text mb="lg" size="sm">
-            Taoshi is using the Request Network to help fulfill our vision to
-            empower traders and institutions by democratizing access to trading
-            signals from our Proprietary Trading Network (PTN). It will act as a
-            digital marketplace where you can select and purchase the most
-            relevant, world-class trading signals for your strategies, tailored
-            to your preferred asset classes and currency pairs.
-          </Text>
-          <Center mt="xl">
-            <Group gap="lg" mt="xl">
-              <Button color="#282828">Learn More</Button>
-              <Button
-                href="mailto:support@taoshi.io"
-                component="a"
-                variant="outline"
-                color="#282828"
-              >
-                Sign Up
-              </Button>
-            </Group>
-          </Center>
-        </Box>
-      </Container>
+      <Box bg="#ECEBE9">
+        <BackgroundImage
+          src={backgroundWhite.src}
+          radius={0}
+          style={{ backgroundPosition: "center top" }}
+        >
+          <Container
+            maw="1000px"
+            w="100%"
+            py={{ base: 50, sm: 100 }}
+            px={{ sm: 20 }}
+          >
+            <Box mb="xl" ta="center">
+              <Title mb="sm" order={3}>
+                How is Taoshi Using the Request Network?
+              </Title>
+              <Text mb="lg" size="sm">
+                Taoshi is using the Request Network to help fulfill our vision
+                to empower traders and institutions by democratizing access to
+                trading signals from our Proprietary Trading Network (PTN). It
+                will act as a digital marketplace where you can select and
+                purchase the most relevant, world-class trading signals for your
+                strategies, tailored to your preferred asset classes and
+                currency pairs.
+              </Text>
+              <Center mt="xl">
+                <Group gap="lg" mt="xl">
+                  <Button color="#282828">Learn More</Button>
+                  <Button
+                    href="mailto:support@taoshi.io"
+                    component="a"
+                    variant="outline"
+                    color="#282828"
+                  >
+                    Sign Up
+                  </Button>
+                </Group>
+              </Center>
+            </Box>
+          </Container>
+        </BackgroundImage>
+      </Box>
     </Box>
   );
 }
