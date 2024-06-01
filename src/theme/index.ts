@@ -6,7 +6,7 @@ import { components } from "./components";
 
 export const theme = createTheme({
   defaultRadius: "0",
-  black: "#000",
+  black: "#282828",
   primaryColor: "orange",
   colors: {
     orange,

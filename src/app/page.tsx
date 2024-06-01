@@ -92,7 +92,7 @@ export default function Home() {
               </Center>
             </Group>
 
-            <Card p="xl" style={{ border: "1px dashed black" }}>
+            <Card p="xl" withBorder>
               <Group w="100%" gap="xl">
                 <Center flex="1" display={{ base: "none", sm: "flex" }}>
                   <Image

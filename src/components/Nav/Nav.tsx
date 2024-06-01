@@ -238,7 +238,7 @@ export const Nav = () => {
               </Button>
             </Menu.Target>
 
-            <Menu.Dropdown style={{ border: "1px dashed black" }}>
+            <Menu.Dropdown>
               <Menu.Item
                 onClick={() => sendEvent("github")}
                 component="a"
