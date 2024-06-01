@@ -195,7 +195,7 @@ const partners = [
 
 export default function Page() {
   return (
-    <Box>
+    <Box my="100">
       <Container maw="1000px" h="100%">
         <Box mb={200} ta="center">
           <Hero

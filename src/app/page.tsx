@@ -45,7 +45,7 @@ export default function Home() {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   return (
-    <Container maw="1000px" h="100%">
+    <Container maw="1000px" h="100%" my="100">
       <Flex direction="column" justify="center">
         <Box mb={100}>
           <Box mb={100}>

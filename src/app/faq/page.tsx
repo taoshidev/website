@@ -197,7 +197,7 @@ const questions = [
 
 export default function Page() {
   return (
-    <Container maw="1000px" h="100%">
+    <Container maw="1000px" h="100%" my="100">
       <Box>
         <Box mb={200}>
           <Box ta="center" mb={75}>
