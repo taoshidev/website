@@ -237,13 +237,10 @@ export default function Page() {
               domains - all through the power of Bittensor.
             </Text>
             <Group gap="lg" mt="xl">
-              <Button color="#282828">Learn More</Button>
-              <Button
-                href="mailto:support@taoshi.io"
-                component="a"
-                variant="outline"
-                color="#282828"
-              >
+              <Button color="#282828" variant="outline">
+                Learn More
+              </Button>
+              <Button href="/" component="a" color="orange">
                 Sign Up
               </Button>
             </Group>
@@ -482,13 +479,10 @@ export default function Page() {
               </Text>
               <Center mt="xl">
                 <Group gap="lg" mt="xl">
-                  <Button color="#282828">Learn More</Button>
-                  <Button
-                    href="mailto:support@taoshi.io"
-                    component="a"
-                    variant="outline"
-                    color="#282828"
-                  >
+                  <Button color="#282828" variant="outline">
+                    Learn More
+                  </Button>
+                  <Button href="/" component="a" color="orange">
                     Sign Up
                   </Button>
                 </Group>
