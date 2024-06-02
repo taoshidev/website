@@ -264,15 +264,12 @@ export default function Page() {
                 A Hub for Decentralized Services and Data
               </Title>
               <Text mb="xl" size="sm" ta="center">
-                Enter a new era of service and data exchange with the Request
-                Network, a versatile platform built for the Bittensor ecosystem,
-                and architected by Taoshi. The Request Network heralds a new
-                paradigm in decentralized services, offering a dynamic
-                marketplace that can be integrated with every subnet built on
-                Bittensor. Whether you seek data, computational tasks, or
-                complex analyses, the Request Network facilitates these
-                exchanges with the trust and efficiency of stablecoin
-                transactions.
+                The Request Network heralds a new paradigm in decentralized
+                services, offering a dynamic marketplace that can be integrated
+                with every subnet built on Bittensor. Whether you seek data,
+                computational tasks, or complex analyses, the Request Network
+                facilitates these exchanges with the trust and efficiency of
+                stablecoin transactions.
               </Text>
             </Box>
           </Flex>
