@@ -10,6 +10,7 @@ import {
   Text,
   Image,
   Stack,
+  List,
   Flex,
   Collapse,
   Group,
@@ -232,7 +233,7 @@ export default function Page() {
             <Text ta="center" size="sm">
               The Request Network, architected by Taoshi, is a digital
               marketplace for decentralized data and services from the Bittensor
-              network. Get started and become empowered with with the tools to
+              network. Get started and become empowered with the tools to
               propel innovation, research, and development across various
               domains - all through the power of Bittensor.
             </Text>
@@ -252,7 +253,7 @@ export default function Page() {
         <Container
           maw="1000px"
           w="100%"
-          py={{ base: 50, sm: 100 }}
+          py={{ base: 50, sm: 75 }}
           px={{ sm: 20 }}
         >
           <Flex
@@ -261,15 +262,10 @@ export default function Page() {
           >
             <Box flex="1">
               <Title order={3} mb="sm" ta="center">
-                A Hub for Decentralized Services and Data
+                The Request Network: Your Gateway to Decentralized Innovation
               </Title>
               <Text mb="xl" size="sm" ta="center">
-                The Request Network heralds a new paradigm in decentralized
-                services, offering a dynamic marketplace that can be integrated
-                with every subnet built on Bittensor. Whether you seek data,
-                computational tasks, or complex analyses, the Request Network
-                facilitates these exchanges with the trust and efficiency of
-                stablecoin transactions.
+                Enter a new era of decentralized innovation with the Request Network, a versatile platform designed for the Bittensor ecosystem and crafted by Taoshi. This network serves as a hub for a dynamic marketplace, seamlessly connecting users to the vast array of specialized services offered by each Bittensor subnet. From intricate financial modeling to AI-driven solutions, the Request Network facilitates access to data, computational tasks, complex analyses, and more. It equips users with the necessary tools to drive innovation, research, and development across diverse domains, all while ensuring trust and efficiency through stablecoin transactions. As a portal to decentralized services, the Request Network stands at the forefront of a new paradigm, capable of integration with every subnet on the Bittensor network to harness their collective capabilities and propel the ecosystem forward.
               </Text>
             </Box>
           </Flex>
@@ -279,11 +275,11 @@ export default function Page() {
       <Container
         maw="1000px"
         w="100%"
-        py={{ base: 50, sm: 100 }}
+        py={{ base: 50, sm: 75 }}
         px={{ sm: 20 }}
       >
         <Group>
-          <Group justify="flex-start" align="center">
+          <Group justify="flex-start" align="center" gap='xl'>
             <Center mb="lg" flex="1">
               <Image
                 component={NextImage}
@@ -296,17 +292,40 @@ export default function Page() {
             </Center>
             <Box flex="2">
               <Title order={3} mb="sm">
-                Harnessing the Collective Capabilities of Subnets
+                How it Works
               </Title>
-              <Text size="sm">
-                The Request Network is your portal to the vast array of services
-                offered by Bittensor&apos;s subnets. Each subnet is a powerhouse
-                of specialized functions, delivering not just data, but also
-                performing tasks that span from intricate financial modeling and
-                predictions to the generation of AI-driven solutions. The
-                Request Network equips users with the tools to propel
-                innovation, research, and development across various domains.
+              <Text size="sm" mb='md'>
+                The Request Network operates as a user-friendly marketplace where consumers can effortlessly purchase data, services, and more directly from validators. To get started, follow the below steps:
               </Text>
+
+              <List mb='xl'>
+                <List.Item>
+                  <Text size='sm' fw='bold' component='span'>Registration: </Text>
+                  <Text size='sm' component='span'>Begin by visiting the Request Network marketplace and completing the registration process to create your user account.</Text>
+                </List.Item>
+                <List.Item>
+                  <Text size='sm' fw='bold' component='span'>Subnet Selection: </Text>
+                  <Text size='sm' component='span'>Begin by visiting the Request Network marketplace and completing the registration process to create your user account.</Text>
+                </List.Item>
+                <List.Item>
+                  <Text size='sm' fw='bold' component='span'>Validator Selection: </Text>
+                  <Text size='sm' component='span'>Begin by visiting the Request Network marketplace and completing the registration process to create your user account.</Text>
+                </List.Item>
+                <List.Item>
+                  <Text size='sm' fw='bold' component='span'>Service Agreement: </Text>
+                  <Text size='sm' component='span'>Begin by visiting the Request Network marketplace and completing the registration process to create your user account.</Text>
+                </List.Item>
+                <List.Item>
+                  <Text size='sm' fw='bold' component='span'>Payment: </Text>
+                  <Text size='sm' component='span'>Begin by visiting the Request Network marketplace and completing the registration process to create your user account.</Text>
+                </List.Item>
+                <List.Item>
+                  <Text size='sm' fw='bold' component='span'>API Key Access: </Text>
+                  <Text size='sm' component='span'>Once the payment is confirmed, you will receive an API key, granting you direct peer-to-peer access to the validator&apos;s services or data for your project or research needs.</Text>
+                </List.Item>
+              </List>
+
+              <Button component='a' href='https://request.taoshi.io/login' target='_blank'>Request Network Marketplace</Button>
             </Box>
           </Group>
         </Group>
@@ -316,13 +335,14 @@ export default function Page() {
         <Container
           maw="1000px"
           w="100%"
-          py={{ base: 50, sm: 100 }}
+          py={{ base: 50, sm: 75 }}
           px={{ sm: 20 }}
         >
           <Flex
             justify="space-between"
             align="center"
             direction={{ base: "column", sm: "row" }}
+            gap='xl'
           >
             <Box flex="2">
               <Title order={3} mb="sm">
@@ -364,7 +384,7 @@ export default function Page() {
           <Container
             maw="1000px"
             w="100%"
-            py={{ base: 50, sm: 100 }}
+            py={{ base: 50, sm: 75 }}
             px={{ sm: 20 }}
           >
             <Flex
@@ -409,7 +429,7 @@ export default function Page() {
       <Container
         maw="1000px"
         w="100%"
-        py={{ base: 50, sm: 100 }}
+        py={{ base: 50, sm: 75 }}
         px={{ sm: 20 }}
       >
         <Center>
@@ -458,7 +478,7 @@ export default function Page() {
           <Container
             maw="1000px"
             w="100%"
-            py={{ base: 50, sm: 100 }}
+            py={{ base: 50, sm: 75 }}
             px={{ sm: 20 }}
           >
             <Box mb="xl" ta="center">
