@@ -261,8 +261,8 @@ export default function Page() {
             direction={{ base: "column", sm: "row" }}
           >
             <Box flex="1">
-              <Title order={3} mb="sm" ta="center">
-                The Request Network: Your Gateway to Decentralized Innovation
+              <Title order={3} mb="md" ta="center">
+                The Request Network<br />Your Gateway to Decentralized Innovation
               </Title>
               <Text mb="xl" size="sm" ta="center">
                 Enter a new era of decentralized innovation with the Request Network, a versatile platform designed for the Bittensor ecosystem and crafted by Taoshi. This network serves as a hub for a dynamic marketplace, seamlessly connecting users to the vast array of specialized services offered by each Bittensor subnet. From intricate financial modeling to AI-driven solutions, the Request Network facilitates access to data, computational tasks, complex analyses, and more. It equips users with the necessary tools to drive innovation, research, and development across diverse domains, all while ensuring trust and efficiency through stablecoin transactions. As a portal to decentralized services, the Request Network stands at the forefront of a new paradigm, capable of integration with every subnet on the Bittensor network to harness their collective capabilities and propel the ecosystem forward.
@@ -397,7 +397,7 @@ export default function Page() {
                   Ready to Integrate your Subnet with the Request Network?
                 </Title>
                 <Center mx="auto">
-                  <Text ta="center" c="white" mb="xl" size="sm">
+                  <Text ta="center" c="white" size="sm">
                     Any subnet within the Bittensor ecosystem can democratize
                     their highly valuable intelligence through the Request
                     Network. If you’d like to integrate your subnet with the
