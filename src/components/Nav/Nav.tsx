@@ -68,12 +68,12 @@ export const Nav = () => {
               <Menu.Item
                 onClick={() => sendEvent("request-network")}
                 component="a"
-                href="/request-network"
+                href="request.taoshi.io/"
                 leftSection={
-                  <IconGraph style={{ width: rem(14), height: rem(14) }} />
+                  <IconDashboard style={{ width: rem(14), height: rem(14) }} />
                 }
               >
-                Request Network
+                Request Networkss
               </Menu.Item>
               <Menu.Item
                 onClick={() => sendEvent("dashboard")}
@@ -194,7 +194,7 @@ export const Nav = () => {
           <Anchor
             size="sm"
             onClick={() => sendEvent("request-network")}
-            href="/request-network"
+            href="https://request.taoshi.io"
             c="orange"
           >
             Request Network

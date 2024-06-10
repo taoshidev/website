@@ -301,27 +301,39 @@ export default function Page() {
               <List mb='xl'>
                 <List.Item>
                   <Text size='sm' fw='bold' component='span'>Registration: </Text>
-                  <Text size='sm' component='span'>Begin by visiting the Request Network marketplace and completing the registration process to create your user account.</Text>
+                  <Text size='sm' component='span'>
+                    Begin by visiting the Request Network marketplace and completing the registration process to create your user account.
+                  </Text>
                 </List.Item>
                 <List.Item>
                   <Text size='sm' fw='bold' component='span'>Subnet Selection: </Text>
-                  <Text size='sm' component='span'>Browse the marketplace to choose from a diverse range of subnets, each offering specialized services and capabilities to meet your specific needs.</Text>
+                  <Text size='sm' component='span'>
+                    Browse the marketplace to choose from a diverse range of subnets, each offering specialized services and capabilities to meet your specific needs.
+                  </Text>
                 </List.Item>
                 <List.Item>
                   <Text size='sm' fw='bold' component='span'>Validator Selection: </Text>
-                  <Text size='sm' component='span'>Select a validator within your chosen subnet. Validators are the service providers who will fulfill your data or service requests.</Text>
+                  <Text size='sm' component='span'>
+                    Select a validator within your chosen subnet. Validators are the service providers who will fulfill your data or service requests.
+                  </Text>
                 </List.Item>
                 <List.Item>
                   <Text size='sm' fw='bold' component='span'>Service Agreement: </Text>
-                  <Text size='sm' component='span'>Review and agree to the terms of service with your chosen validator, which will detail the scope and specifications of the services or data provided.</Text>
+                  <Text size='sm' component='span'>
+                    Review and agree to the terms of service with your chosen validator, which will detail the scope and specifications of the services or data provided.
+                  </Text>
                 </List.Item>
                 <List.Item>
                   <Text size='sm' fw='bold' component='span'>Payment: </Text>
-                  <Text size='sm' component='span'>Complete the transaction by making a payment in stablecoins, ensuring a secure and trustworthy exchange.</Text>
+                  <Text size='sm' component='span'>
+                    Complete the transaction by making a payment in stablecoins, ensuring a secure and trustworthy exchange.
+                  </Text>
                 </List.Item>
                 <List.Item>
                   <Text size='sm' fw='bold' component='span'>API Key Access: </Text>
-                  <Text size='sm' component='span'>Once the payment is confirmed, you will receive an API key, granting you direct peer-to-peer access to the validator&apos;s services or data for your project or research needs.</Text>
+                  <Text size='sm' component='span'>
+                    Once the payment is confirmed, you will receive an API key, granting you direct peer-to-peer access to the validator&apos;s services or data for your project or research needs.
+                  </Text>
                 </List.Item>
               </List>
 
