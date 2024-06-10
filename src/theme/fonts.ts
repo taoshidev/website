@@ -1,4 +1,7 @@
 import localFont from "next/font/local";
+import { DM_Sans } from "next/font/google";
+
+const DMSans = DM_Sans({ subsets: ["latin"] });
 
 export const ADLaMDisplay = localFont({
   src: "../fonts/ADLaMDisplay-Regular.ttf",
@@ -33,5 +36,5 @@ export const SpaceMono = localFont({
 
 export const fonts = {
   heading: ADLaMDisplay,
-  body: SpaceMono,
+  body: DMSans,
 };

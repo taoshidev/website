@@ -197,7 +197,7 @@ const questions = [
 
 export default function Page() {
   return (
-    <Container maw="1000px" h="100%">
+    <Container maw="1000px" h="100%" my="100">
       <Box>
         <Box mb={200}>
           <Box ta="center" mb={75}>
@@ -227,13 +227,7 @@ export default function Page() {
                     {question.title}
                   </Title>
                   {question.items.map((item) => (
-                    <Accordion.Item
-                      key={item.value}
-                      value={item.value}
-                      style={{
-                        borderBottom: "1px dashed black",
-                      }}
-                    >
+                    <Accordion.Item key={item.value} value={item.value}>
                       <Accordion.Control>
                         <Text fw="bold">{item.value}</Text>
                       </Accordion.Control>
@@ -252,7 +246,7 @@ export default function Page() {
           </Box>
 
           <Center my={100}>
-            <Divider variant="dashed" w="50%" bg="black" />
+            <Divider w="50%" bg="black" />
           </Center>
 
           <Box ta="center">

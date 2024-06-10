@@ -28,7 +28,7 @@ const ctas = [
 
 export default function Page() {
   return (
-    <Container maw="1000px" h="100%">
+    <Container maw="1000px" h="100%" my="100">
       <Box>
         <Box>
           <Box mb="lg">
@@ -42,7 +42,7 @@ export default function Page() {
               copy="Revolutionizing Proprietary Trading with Decentralized AI"
             />
           </Box>
-          <Card mb={75} style={{ border: "1px dashed black" }}>
+          <Card mb={75} withBorder>
             <Text>
               Taoshi&apos;s Proprietary Trading Network (PTN) spearheads a
               trading revolution, merging cutting-edge decentralized technology

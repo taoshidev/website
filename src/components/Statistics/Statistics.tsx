@@ -7,7 +7,7 @@ export const Statistics = () => {
   return (
     <Box mb="100px">
       <Box my="xl">
-        <Card style={{ border: "1px dashed black" }}>
+        <Card withBorder>
           <Flex justify="space-around" align="center">
             <Stack gap="0" align="center">
               <Text fw="bold">
@@ -22,7 +22,7 @@ export const Statistics = () => {
             </Stack>
             {!isMobile && (
               <Center h="20px">
-                <Divider orientation="vertical" variant="dashed" bg="black" />
+                <Divider orientation="vertical" />
               </Center>
             )}
 
@@ -39,7 +39,7 @@ export const Statistics = () => {
             </Stack>
             {!isMobile && (
               <Center h="20px">
-                <Divider orientation="vertical" variant="dashed" bg="black" />
+                <Divider orientation="vertical" />
               </Center>
             )}
             <Stack gap="0" align="center">

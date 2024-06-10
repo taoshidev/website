@@ -10,7 +10,7 @@ import logo from "@/assets/logo.svg";
 
 export const Header = () => {
   return (
-    <Group justify="space-between" align="center" h="100%">
+    <Group justify="space-between" align="center" h="100%" py="md">
       <Group flex="1">
         <Image
           component={NextImage}

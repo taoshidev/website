@@ -97,7 +97,7 @@ export const Team = () => {
       <Grid mb="xl" gutter="lg">
         {team.map((member) => (
           <Grid.Col key={member.name} span={{ sm: 4 }}>
-            <Card h="100%" style={{ border: "1px dashed black" }}>
+            <Card h="100%" withBorder>
               <Group align="flex-start" justify="center">
                 <Box>
                   <Avatar

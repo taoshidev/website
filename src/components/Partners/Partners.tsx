@@ -10,8 +10,6 @@ import {
   Text,
 } from "@mantine/core";
 
-import styles from "./partners.module.css";
-
 import glassnode from "@/assets/partners/glassnode.svg";
 import lunarcrush from "@/assets/partners/lunarcrush.svg";
 import uphold from "@/assets/partners/uphold-white.jpg";
@@ -28,7 +26,7 @@ export const Partners = () => {
       </Box>
       <SimpleGrid cols={{ sm: 2 }}>
         <Card
-          className={styles.card}
+          withBorder
           component="a"
           href="https://uphold.com/en-us/institutional"
           target="_blank"
@@ -44,7 +42,7 @@ export const Partners = () => {
           </Center>
         </Card>
         <Card
-          className={styles.card}
+          withBorder
           component="a"
           href="https://glassnode.com"
           target="_blank"
@@ -61,7 +59,7 @@ export const Partners = () => {
           </Center>
         </Card>
         <Card
-          className={styles.card}
+          withBorder
           component="a"
           href="https://lunarcrush.com"
           target="_blank"
@@ -78,7 +76,7 @@ export const Partners = () => {
           </Center>
         </Card>
         <Card
-          className={styles.card}
+          withBorder
           component="a"
           href="https://www.roundtable21.com"
           target="_blank"
