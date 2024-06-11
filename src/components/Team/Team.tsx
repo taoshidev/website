@@ -20,6 +20,8 @@ import thomas from "@/assets/team/thomas.jpg";
 import michael from "@/assets/team/michael.jpg";
 import lucas from "@/assets/team/lucas.jpg";
 import tom from "@/assets/team/tom.jpg";
+import sam from "@/assets/team/sam.jpg";
+import diego from "@/assets/team/diego.jpg";
 
 export const team = [
   {
@@ -81,6 +83,18 @@ export const team = [
     image: tom,
     position: "Staff Full Stack Engineer",
     previously: ["Bitwise Industries", "California State University Fresno"],
+  },
+  {
+    name: "Diego Arenas",
+    image: diego,
+    position: "Software Engineer",
+    previously: ["B.S. Math with Comp Sci MIT"],
+  },
+  {
+    name: "Samuel Li",
+    image: sam,
+    position: "Software Engineer",
+    previously: ["AMD", "BSE Duke University"],
   },
 ];
 
