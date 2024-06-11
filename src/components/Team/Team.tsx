@@ -22,6 +22,7 @@ import lucas from "@/assets/team/lucas.jpg";
 import tom from "@/assets/team/tom.jpg";
 import sam from "@/assets/team/sam.jpg";
 import diego from "@/assets/team/diego.jpg";
+import mike from "@/assets/team/mike.jpg";
 
 export const team = [
   {
@@ -36,6 +37,12 @@ export const team = [
     image: michael,
     position: "Software Engineering Architect",
     previously: ["NASA", "TARVIS Labs"],
+  },
+  {
+    name: "Mike Galligan",
+    image: mike,
+    position: "Director of Strategy",
+    previously: ["KMR Systems", "University of Richmond", "3+ years in crypto"],
   },
   {
     name: "Jordan Bonilla",
@@ -88,7 +95,7 @@ export const team = [
     name: "Diego Arenas",
     image: diego,
     position: "Software Engineer",
-    previously: ["B.S. Math with Comp Sci MIT"],
+    previously: ["B.S. in Math with Computer Science - MIT", "B.B.A. in Business Analytics - MIT"],
   },
   {
     name: "Samuel Li",
