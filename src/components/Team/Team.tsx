@@ -23,6 +23,7 @@ import tom from "@/assets/team/tom.jpg";
 import sam from "@/assets/team/sam.jpg";
 import diego from "@/assets/team/diego.jpg";
 import mike from "@/assets/team/mike.jpg";
+import mitra from "@/assets/team/mitra.png";
 
 export const team = [
   {
@@ -31,6 +32,12 @@ export const team = [
     image: arrash,
     position: "Chief Executive Officer",
     previously: ["LinkedIn", "TARVIS Labs"],
+  },
+  {
+    name: "Mitra Ehsanipour",
+    image: mitra,
+    position: "Chief Financial Officer",
+    previously: ["25+ years of CPA experience"],
   },
   {
     name: "Michael Brown",
@@ -103,6 +110,7 @@ export const team = [
     position: "Software Engineer",
     previously: ["AMD", "BSE Duke University"],
   },
+
 ];
 
 export const Team = () => {
