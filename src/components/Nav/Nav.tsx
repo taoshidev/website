@@ -116,7 +116,7 @@ export const Nav = () => {
               <Menu.Item
                 onClick={() => sendEvent("contact")}
                 component="a"
-                href="mailto:knicholson@taoshi.io"
+                href="mailto:support@taoshi.io"
                 style={{
                   "&:hover": {
                     background: "red",
@@ -255,7 +255,7 @@ export const Nav = () => {
               <Menu.Item
                 onClick={() => sendEvent("contact")}
                 component="a"
-                href="mailto:knicholson@taoshi.io"
+                href="mailto:support@taoshi.io"
                 leftSection={
                   <IconMail style={{ width: rem(14), height: rem(14) }} />
                 }
