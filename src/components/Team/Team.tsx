@@ -49,7 +49,7 @@ export const team = [
     name: "Mike Galligan",
     image: mike,
     position: "Director of Strategy",
-    previously: ["KMR Systems", "University of Richmond", "3+ years in crypto"],
+    previously: ["KMR Systems", "3+ years in crypto"],
   },
   {
     name: "Jordan Bonilla",
@@ -62,7 +62,7 @@ export const team = [
     twitter: "https://twitter.com/Raleigh_CA",
     image: ken,
     position: "Growth Engineer",
-    previously: ["Vexchange", "The Graph", "7+ years in Crypto"],
+    previously: ["Vexchange", "The Graph", "7+ years in crypto"],
   },
   {
     name: "Luke Nosek",
@@ -71,7 +71,7 @@ export const team = [
     position: "Marketing & Growth Coordinator",
     previously: [
       "B.B.A in Marketing from University of Wisconsin",
-      "3+ years in Crypto",
+      "3+ years in crypto",
     ],
   },
   {
@@ -88,15 +88,14 @@ export const team = [
       "Squadformers",
       "Bitwise Industries",
       "CSUF - Professor",
-      "Competitive Capital Corp",
-      "Executive MBA - MIS",
+      "Executive MBA - Management Information Systems",
     ],
   },
   {
     name: "Tom Alperin",
     image: tom,
     position: "Staff Full Stack Engineer",
-    previously: ["Bitwise Industries", "California State University Fresno"],
+    previously: ["Bitwise Industries"],
   },
   {
     name: "Diego Arenas",
