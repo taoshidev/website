@@ -94,7 +94,7 @@ export const team = [
   {
     name: "Tom Alperin",
     image: tom,
-    position: "Staff Full Stack Engineer",
+    position: "Staff Full Stack Software Engineer",
     previously: ["Bitwise Industries"],
   },
   {

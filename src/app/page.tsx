@@ -14,13 +14,13 @@ import {
   Card,
   Container,
 } from "@mantine/core";
-import { useMediaQuery } from "@mantine/hooks";
+import {useMediaQuery} from "@mantine/hooks";
 
-import { Partners } from "@/components/Partners";
-import { Hero } from "@/components/Hero";
-import { Statistics } from "@/components/Statistics";
-import { Team } from "@/components/Team";
-import { Logo } from "@/components/Logo";
+import {Partners} from "@/components/Partners";
+import {Hero} from "@/components/Hero";
+import {Statistics} from "@/components/Statistics";
+import {Team} from "@/components/Team";
+import {Logo} from "@/components/Logo";
 
 import logo from "@/assets/logo.svg";
 import bittensor from "@/assets/bittensor.svg";
@@ -48,15 +48,13 @@ export default function Home() {
     <Container maw="1000px" h="100%" my="100">
       <Flex direction="column" justify="center">
         <Box mb={100}>
-          <Box mb={100}>
-            {!isMobile && <Logo />}
+          <Box mb={200}>
+            {!isMobile && <Logo/>}
             <Hero
               ctas={ctas}
               copy="Delivering World Class Quant Trading Signals Through the Power of Decentralized AI"
             />
           </Box>
-
-          <Statistics />
 
           <Stack gap={100}>
             <Group w="100%" gap="xl">
@@ -81,7 +79,7 @@ export default function Home() {
                   decisions in financial markets.
                 </Text>
               </Box>
-              <Center flex="1" display={{ base: "none", sm: "flex" }}>
+              <Center flex="1" display={{base: "none", sm: "flex"}}>
                 <Image
                   component={NextImage}
                   width={200}
@@ -92,44 +90,42 @@ export default function Home() {
               </Center>
             </Group>
 
-            <Card p="xl" withBorder>
-              <Group w="100%" gap="xl">
-                <Center flex="1" display={{ base: "none", sm: "flex" }}>
-                  <Image
-                    component={NextImage}
-                    width={200}
-                    height={200}
-                    src={bittensor}
-                    alt="Open Source Modeling"
-                  />
-                </Center>
-                <Box maw="600px">
-                  <Text fw="bold" mb="sm">
-                    Bittensor
-                  </Text>
+            <Group w="100%" gap="xl">
+              <Center flex="1" display={{base: "none", sm: "flex"}}>
+                <Image
+                  component={NextImage}
+                  width={200}
+                  height={200}
+                  src={bittensor}
+                  alt="Open Source Modeling"
+                />
+              </Center>
+              <Box maw="600px">
+                <Text fw="bold" mb="sm">
+                  Bittensor
+                </Text>
 
-                  <Text>
-                    Bittensor is not just a blockchain; it&apos;s a
-                    groundbreaking network that fosters decentralized
-                    intelligence, where a consensus mechanism rewards the
-                    creation and sharing of AI models. This neural network of
-                    nodes, maintained by independent miners, promotes a
-                    cooperative space for AI services to be developed and
-                    utilized worldwide. At Taoshi, we harness Bittensor&apos;s
-                    capabilities to build specialized subnetworks, like our{" "}
-                    <Anchor href="/ptn">Proprietary Trading Network</Anchor>{" "}
-                    (PTN), merging AI with blockchain for secure, transparent,
-                    and innovative applications. As part of the Bittensor
-                    ecosystem, we contribute to a decentralized AI marketplace,
-                    powered by the Bittensor token ($TAO), to ensure the
-                    seamless exchange of data and intelligence. Taoshi serves as
-                    a gateway to this new era of accessible, incentivized
-                    intelligence, where every contribution to the network&apos;s
-                    growth is valued and rewarded.
-                  </Text>
-                </Box>
-              </Group>
-            </Card>
+                <Text>
+                  Bittensor is not just a blockchain; it&apos;s a
+                  groundbreaking network that fosters decentralized
+                  intelligence, where a consensus mechanism rewards the
+                  creation and sharing of AI models. This neural network of
+                  nodes, maintained by independent miners, promotes a
+                  cooperative space for AI services to be developed and
+                  utilized worldwide. At Taoshi, we harness Bittensor&apos;s
+                  capabilities to build specialized subnetworks, like our{" "}
+                  <Anchor href="/ptn">Proprietary Trading Network</Anchor>{" "}
+                  (PTN), merging AI with blockchain for secure, transparent,
+                  and innovative applications. As part of the Bittensor
+                  ecosystem, we contribute to a decentralized AI marketplace,
+                  powered by the Bittensor token ($TAO), to ensure the
+                  seamless exchange of data and intelligence. Taoshi serves as
+                  a gateway to this new era of accessible, incentivized
+                  intelligence, where every contribution to the network&apos;s
+                  growth is valued and rewarded.
+                </Text>
+              </Box>
+            </Group>
 
             <Group w="100%" gap="xl">
               <Box maw="600px">
@@ -152,7 +148,7 @@ export default function Home() {
                   decentralized future, one subnetwork at a time.
                 </Text>
               </Box>
-              <Center flex="1" display={{ base: "none", sm: "flex" }}>
+              <Center flex="1" display={{base: "none", sm: "flex"}}>
                 <Image
                   component={NextImage}
                   width={200}
@@ -164,8 +160,8 @@ export default function Home() {
             </Group>
           </Stack>
         </Box>
-        <Team />
-        <Partners />
+        <Team/>
+        <Partners/>
       </Flex>
     </Container>
   );
