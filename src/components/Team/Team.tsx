@@ -48,7 +48,7 @@ export const team = [
   {
     name: "Mike Galligan",
     image: mike,
-    position: "Director of Strategy",
+    position: "Sr. Director of Strategy",
     previously: ["KMR Systems", "3+ years in crypto"],
   },
   {
