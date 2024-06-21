@@ -56,7 +56,7 @@ export const Footer = () => {
           </ActionIcon>
           <ActionIcon
             component="a"
-            href="https://twitter.com/taoshiio"
+            href="https://discord.gg/MKtKVYnCDh"
             target="_blank"
             variant="light"
             aria-label="Settings"
@@ -68,7 +68,7 @@ export const Footer = () => {
           </ActionIcon>
           <ActionIcon
             component="a"
-            href="https://twitter.com/taoshiio"
+            href="https://www.linkedin.com/company/taoshi/"
             target="_blank"
             variant="light"
             aria-label="Settings"
@@ -80,7 +80,7 @@ export const Footer = () => {
           </ActionIcon>
           <ActionIcon
             component="a"
-            href="https://www.linkedin.com/company/taoshi/"
+            href="https://github.com/taoshidev/proprietary-trading-network"
             target="_blank"
             variant="light"
             aria-label="Settings"
