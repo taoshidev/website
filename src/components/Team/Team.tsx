@@ -115,7 +115,7 @@ export const team = [
 export const Team = () => {
   return (
     <Box id="team" pt={48} mt={-48} mb={100}>
-      <Box mb="xl">
+      <Box mb="xl" ta='center'>
         <Text fw="bold" mb="sm" size="sm">
           Meet the team
         </Text>

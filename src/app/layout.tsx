@@ -11,7 +11,7 @@ import { Providers } from "./providers";
 export const metadata: Metadata = {
   title: "Taoshi",
   description:
-    "Delivering World Class Quant Trading Signals Through the Power of Decentralized AI",
+    "Delivering World Class Quant Signals Through the Power of Decentralized AI",
 };
 
 export default function RootLayout({
