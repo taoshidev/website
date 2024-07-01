@@ -1,30 +1,19 @@
 "use client";
 
-import NextImage from "next/image";
-
 import {
   Flex,
   Box,
   Text,
-  Image,
-  Center,
   Group,
-  Stack,
   Anchor,
-  Card,
-  Container,
+  Container, Button,
 } from "@mantine/core";
 import {useMediaQuery} from "@mantine/hooks";
 
 import {Partners} from "@/components/Partners";
-import {Hero} from "@/components/Hero";
-import {Statistics} from "@/components/Statistics";
 import {Team} from "@/components/Team";
 import {Logo} from "@/components/Logo";
-
-import logo from "@/assets/logo.svg";
-import bittensor from "@/assets/bittensor.svg";
-import intraday from "@/assets/intraday.svg";
+import {usePlausible} from "next-plausible";
 
 const ctas = [
   {
@@ -43,17 +32,18 @@ const ctas = [
 
 export default function Home() {
   const isMobile = useMediaQuery("(max-width: 768px)");
+  const plausible = usePlausible();
+
+  const sendEvent = (eventName: string) => {
+    plausible(eventName);
+  };
 
   return (
     <Container maw="1000px" h="100%" my="100">
       <Flex direction="column" justify="center">
-        <Box mb={100}>
+        <Box mb={50}>
           <Box mb={100}>
             {!isMobile && <Logo/>}
-            <Hero
-              ctas={ctas}
-              copy="Delivering World Class Quant Trading Signals Through the Power of Decentralized AI"
-            />
           </Box>
 
           <Box>
@@ -74,6 +64,22 @@ export default function Home() {
             </Text>
           </Box>
         </Box>
+
+        <Group justify="center" mb={200}>
+          {ctas?.length &&
+            ctas.map((cta) => (
+              <Anchor
+                key={cta.event}
+                onClick={() => sendEvent(cta.event)}
+                href={cta.href}
+              >
+                <Button variant="primary" size="sm" w="200px">
+                  {cta.text}
+                </Button>
+              </Anchor>
+            ))}
+        </Group>
+
 
         <Team/>
         <Partners/>
