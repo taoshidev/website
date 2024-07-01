@@ -17,8 +17,8 @@ import rt21 from "@/assets/partners/roundtable21.png";
 
 export const Partners = () => {
   return (
-    <Box mb={100}>
-      <Box mb="xl">
+    <Box>
+      <Box mb="xl" ta='center'>
         <Text fw="bold" mb="sm" size="sm">
           Supported by the best
         </Text>
