@@ -48,19 +48,7 @@ export default function Home() {
 
           <Box>
             <Text ta='center'>
-              At Taoshi, we&apos;re pioneering the Bittensor revolution with
-              a keen focus on the future of trading financial markets. We
-              craft dynamic subnetworks, where decentralized AI and machine
-              learning power the world&apos;s most complete trading signals
-              across various asset classes. By integrating cutting-edge AI &
-              machine learning technology with the blockchain, we provide
-              miners, traders, and developers with a fertile ground for
-              innovation, where their contributions yield tangible,
-              lucrative rewards. As a cornerstone of the Bittensor
-              ecosystem, we&apos;re not just participating in the blockchain
-              revolution; we&apos;re leading it by delivering sophisticated
-              tools and insights that empower users to make informed
-              decisions in financial markets.
+              At Taoshi, we&apos;re pioneering the Bittensor revolution. We craft dynamic subnetworks where decentralized AI and machine learning power quantitative data across various asset classes. By integrating cutting-edge AI and machine learning technology with the blockchain, we provide miners and developers with fertile ground for innovation, where their contributions yield tangible, lucrative rewards. As a cornerstone of the Bittensor ecosystem, we&apos;re not just participating in the blockchain revolution; we&apos;re leading it by delivering sophisticated data that empower users to make informed decisions in financial markets.
             </Text>
           </Box>
         </Box>
