@@ -99,7 +99,7 @@ export const Footer = () => {
           </Text>
           <Stack gap="xs">
             <Anchor size="sm" href="/ptn" c="black">
-              Proprietary Trading Network
+              PTN
             </Anchor>
             <Anchor
               size="sm"
