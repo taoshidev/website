@@ -54,7 +54,7 @@ export const team = [
   {
     name: "Jordan Bonilla",
     image: jordan,
-    position: "Sr Staff Software Engineer",
+    position: "Sr. Staff Software Engineer",
     previously: ["Tesla", "LinkedIn", "B.S. Comp Sci Caltech"],
   },
   {
@@ -83,7 +83,7 @@ export const team = [
   {
     name: "Lucas Phan",
     image: lucas,
-    position: "Sr Staff Full-Stack Software Engineer",
+    position: "Sr. Staff Full-Stack Software Engineer",
     previously: [
       "Squadformers",
       "Bitwise Industries",
