@@ -9,7 +9,7 @@ import {
   Image,
   Card,
   Anchor,
-  Container,
+  Container, Button,
 } from "@mantine/core";
 
 import { AssetList } from "@/components/AssetList";
@@ -37,47 +37,31 @@ export default function Page() {
 
           <Box mb={200}>
             <Hero
-              title="Taoshi's Proprietary Trading Network (PTN)"
+              title="Subnet 8 on Bittensor: Taoshi’s PTN"
               ctas={ctas}
-              copy="Revolutionizing Proprietary Trading with Decentralized AI"
+              copy="Revolutionizing Financial Markets with Decentralized AI"
             />
           </Box>
           <Card mb={75} withBorder>
             <Text>
-              Taoshi&apos;s Proprietary Trading Network (PTN) spearheads a
-              trading revolution, merging cutting-edge decentralized technology
-              with sophisticated trading strategies. By leveraging the power of
-              AI and the collective intelligence of data scientists, traders,
-              and machine learning teams, PTN offers a unique synergy of
-              proprietary trading, decentralized AI, and quant trading signals,
-              empowering all users to navigate financial markets confidently.
+              Taoshi&apos;s PTN is at the forefront of innovation, merging cutting-edge decentralized technology with sophisticated strategies. By harnessing AI with the combined expertise of data scientists, traders, and machine learning teams, PTN creates a unique synergy between decentralized AI and quantitative strategies, empowering users to navigate financial markets with confidence.
             </Text>
           </Card>
           <Box mb={75}>
             <Text fw="bold" mb="sm">
-              How Taoshi&apos;s Proprietary Trading Network Functions
+              How Taoshi&apos;s PTN Functions
             </Text>
             <Text>
-              Traders, data scientists, and machine learning teams—all of whom
-              are &apos;miners&apos;—contribute their algorithmic or manual
-              trading signals across various financial markets, creating
-              actionable signals for clients. These signals are available on
-              Taoshi&apos;s Request Network, where users can purchase them based
-              on their trading needs. This collaborative ecosystem democratizes
-              access to high-level trading strategies and incentivizes miners
-              through a tokenized reward system, aligning the interests of all
-              participants.
+              Miners contribute algorithmic or manual quant signals across various financial markets, creating actionable insights for clients. These signals are available on Taoshi&apos;s Request Network, where users can purchase them based on their individual needs. This collaborative ecosystem democratizes access to advanced quant strategies and incentivizes miners through a tokenized reward system, aligning the interests of all participants.
             </Text>
           </Box>
           <Box mb={75}>
             <Box mb="xl">
               <Text fw="bold" mb="sm">
-                Why Mine or Purchase Signals on Proprietary Trading Network?
+                Why Mine or Purchase Signals on PTN?
               </Text>
               <Text mb="md">
-                Taoshi&apos;s PTN leads the industry in decentralized
-                proprietary trading, and offers the following, unparalleled
-                benefits for miners and users of its outputs:
+                Taoshi&apos;s PTN is a first-of-its-kind decentralized prop firm, offering unparalleled benefits for both miners and users:
               </Text>
             </Box>
 
@@ -89,11 +73,9 @@ export default function Page() {
                 <List.Item mb="md">
                   <Text>
                     <Text fw={700} component="span">
-                      World&apos;s Largest Incentivized Mining Pool for Trading
-                      Signals:
+                      World&apos;s Largest Incentivized Mining Pool for Quant Signals:
                     </Text>{" "}
-                    PTN rewards miners with $TAO for their contributions,
-                    fostering a cycle of innovation.
+                    PTN rewards miners with $TAO for contributing their top-notch strategies, fostering a cycle of innovation.
                   </Text>
                 </List.Item>
                 <List.Item mb="md">
@@ -101,8 +83,7 @@ export default function Page() {
                     <Text fw={700} component="span">
                       Diverse Financial Markets:
                     </Text>{" "}
-                    Miners trade across various markets, leveraging AI to build
-                    sophisticated trading strategies.
+                    Miners can apply their strategies across a range of financial markets.
                   </Text>
                   <AssetList />
                 </List.Item>
@@ -111,10 +92,7 @@ export default function Page() {
                     <Text fw={700} component="span">
                       Rapid Payouts:
                     </Text>{" "}
-                    In traditional proprietary trading firms, traders often face
-                    rigorous challenges, sometimes spanning two phases. However,
-                    on PTN, miners can start receiving incentives right after
-                    their first trade.
+                    Unlike traditional prop firms, where miners often face multiple phases and challenges, PTN offers the opportunity to start receiving incentives right after contributing the first signal to the network.
                   </Text>
                 </List.Item>
               </List>
@@ -128,14 +106,9 @@ export default function Page() {
                 <List.Item mb="md">
                   <Text>
                     <Text fw={700} component="span">
-                      Access to Highly Performant Trading Signals:
+                      Access to Highly Performant Quant Signals:
                     </Text>{" "}
-                    Purchasing PTN&apos;s outputs grants access to
-                    institutional-grade insights, empowering users to make the
-                    most informed decisions. Institutions can leverage the vast
-                    network&apos;s collective intelligence to complement
-                    existing strategies, reduce research overheads, and enhance
-                    portfolio performance.
+                    Purchasing PTN’s signals provides institutional-grade insights, helping users make informed decisions. Institutions can also leverage the vast network’s collective intelligence to complement existing strategies, reduce research overheads, and enhance portfolio performance.
                   </Text>
                 </List.Item>
                 <List.Item mb="md">
@@ -153,77 +126,43 @@ export default function Page() {
                     <Text fw={700} component="span">
                       Transparent, Easy-to-Use Marketplace:
                     </Text>{" "}
-                    The PTN marketplace operates with full transparency,
-                    ensuring the quality and performance of trading signals are
-                    openly available, fostering trust and reliability. Payments
-                    are simple; pay in stablecoins and start utilizing signals!
+                    The PTN marketplace operates with full transparency, ensuring the quality and performance of signals are clearly visible, fostering trust and reliability. Payments are straightforward—use Stripe or PayPal to purchase signals and start using them immediately.
                   </Text>
                 </List.Item>
               </List>
             </Box>
           </Box>
 
-          <Card style={{ border: "1px dashed black" }}>
-            <Text fw="bold" mb="sm">
-              Get Started: Mining on Proprietary Trading Network
-            </Text>
-            <Text>
-              Ready to contribute? Start your journey as a miner on PTN with our
-              README on GitHub. Starting Friday, March 22, 2024, follow our
-              guide, contribute signals, and earn rewards after closing your
-              first trade. We also recommend joining our Community Hub on
-              Discord, a collaborative space for miners.
-            </Text>
-          </Card>
+          <Box mb={75}>
+            <Card style={{ border: "1px dashed black" }}>
+              <Text fw="bold" mb="sm">
+                Get Started: Mining on PTN
+              </Text>
+              <Text>
+                Ready to contribute? Start your journey as a miner on PTN with our README on GitHub. Follow the guide to contribute signals and start earning rewards from day 1. We also recommend joining our Community Hub on Discord, where miners collaborate and share insights.
+              </Text>
+            </Card>
+          </Box>
 
-          <Center my="xl">
-            <Divider
-              bg="black"
-              color="#F7F6F3"
-              orientation="vertical"
-              h={50}
-              variant="dashed"
-            />
-          </Center>
-
-          <Image
-            mb={100}
-            h="auto"
-            w="100%"
-            fit="contain"
-            src="/flow.png"
-            alt="taoshi logo"
-          />
 
           <Box mb={75}>
             <Text fw="bold" mb="sm">
-              Interested in Purchasing PTN&apos;s Trading Outputs?
+              Interested in Purchasing PTN’s Outputs?
             </Text>
+              <Text mb="sm">
+                To access the full range of outputs generated by PTN, visit our Request Network to purchase signals.{" "}
+                <Anchor href="request.taoshi.io">Request Network</Anchor>
+              </Text>
+
+
             <Text mb="sm">
-              Retail traders and institutional clients will find PTN&apos;s
-              outputs exceptionally valuable. With PTN, every trader and
-              institution can optimize their trading outcomes using AI.
-            </Text>
-            <Text mb="sm">
-              If you&apos;re interested in access to the full range of trading
-              outputs generated by PTN, please stay tuned as Taoshi&apos;s
-              Request Network is under development. We aim to release it in
-              April 2024.
+              Additionally, our partners at Timeless offer access to PTN’s signals from top miners through their signal service, allowing users to manually execute strategies on their own accounts.
             </Text>
             <Text>
-              Additionally, our partners at Timeless are democratizing access to
-              PTN’s signals from some of the top miners. This includes a signals
-              service, where users can manually execute informed trades. To
-              access their signal service, please visit their{" "}
+              For more details, visit their {" "}
               <Anchor href="https://twitter.com/Timeless_io" target="_blank">
                 Twitter
               </Anchor>{" "}
-              for more information. Timeless is also working on an auto trading
-              service; please complete their{" "}
-              <Anchor href="https://docs.google.com/forms/d/e/1FAIpQLSfQ2JwLH9d6MLKKA59jY4CytLlxfR1luwsxwRxsFXRlQe2iIw/viewform">
-                AT Interest Form
-              </Anchor>{" "}
-              to stay in the loop!
             </Text>
           </Box>
         </Box>

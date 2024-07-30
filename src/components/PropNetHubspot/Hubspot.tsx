@@ -15,9 +15,7 @@ export const Hubspot = () => {
           Stay Informed
         </Text>
         <Text mb="xl">
-          If you&apos;re a trader interested in mining on PTN, please fill out
-          the form below for updates. We&apos;ll keep you updated on all of
-          PTN&apos;s developments - your trading journey begins here!
+          If you&apos;re interested in mining on PTN, please fill out the form below for updates. We’ll keep you informed about all developments—your financial journey starts here!
         </Text>
       </Box>
 

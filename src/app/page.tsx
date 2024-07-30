@@ -36,7 +36,7 @@ const ctas = [
   {
     event: "docs",
     text: "Documentation",
-    href: "https://github.com/taoshidev/proprietary-trading-network",
+    href: "https://docs.taoshi.io",
     isExternal: true,
   },
 ];
@@ -52,7 +52,7 @@ export default function Home() {
             {!isMobile && <Logo/>}
             <Hero
               ctas={ctas}
-              copy="Delivering World Class Quant Trading Signals Through the Power of Decentralized AI"
+              copy="Revolutionizing Wealth Generation with Decentralized AI"
             />
           </Box>
 
@@ -64,19 +64,7 @@ export default function Home() {
                 </Text>
 
                 <Text>
-                  At Taoshi, we&apos;re pioneering the Bittensor revolution with
-                  a keen focus on the future of trading financial markets. We
-                  craft dynamic subnetworks, where decentralized AI and machine
-                  learning power the world&apos;s most complete trading signals
-                  across various asset classes. By integrating cutting-edge AI &
-                  machine learning technology with the blockchain, we provide
-                  miners, traders, and developers with a fertile ground for
-                  innovation, where their contributions yield tangible,
-                  lucrative rewards. As a cornerstone of the Bittensor
-                  ecosystem, we&apos;re not just participating in the blockchain
-                  revolution; we&apos;re leading it by delivering sophisticated
-                  tools and insights that empower users to make informed
-                  decisions in financial markets.
+                  At Taoshi, we’re at the forefront of the Bittensor revolution. Since our founding in 2023, we’ve been dedicated to transforming the future of finance. We develop dynamic subnetworks where decentralized AI and machine learning analyze data across various asset classes. As a pivotal part of the Bittensor ecosystem, we’re not just engaging with the blockchain revolution; we’re leading it by delivering advanced data that empowers users to make informed financial decisions.
                 </Text>
               </Box>
               <Center flex="1" display={{base: "none", sm: "flex"}}>
@@ -90,16 +78,29 @@ export default function Home() {
               </Center>
             </Group>
 
+
             <Group w="100%" gap="xl">
               <Center flex="1" display={{base: "none", sm: "flex"}}>
                 <Image
                   component={NextImage}
                   width={200}
                   height={200}
-                  src={bittensor}
-                  alt="Open Source Modeling"
+                  src={intraday}
+                  alt="Taoshi's Mission"
                 />
               </Center>
+              <Box maw="600px">
+                <Text fw="bold" mb="sm">
+                  Our Mission
+                </Text>
+
+                <Text>
+                  Our mission is to break down financial barriers and empower everyone to confidently navigate their financial futures. We aim to democratize access to wealth generation opportunities that have traditionally been reserved for the financially privileged. Committed to ongoing innovation, we strive to disrupt financial markets by providing sophisticated yet intuitive products that offer world-class growth opportunities for all.
+                </Text>
+              </Box>
+            </Group>
+
+            <Group w="100%" gap="xl">
               <Box maw="600px">
                 <Text fw="bold" mb="sm">
                   Bittensor
@@ -125,36 +126,13 @@ export default function Home() {
                   growth is valued and rewarded.
                 </Text>
               </Box>
-            </Group>
-
-            <Group w="100%" gap="xl">
-              <Box maw="600px">
-                <Text fw="bold" mb="sm">
-                  Our Mission
-                </Text>
-
-                <Text>
-                  At Taoshi, our mission is two-fold. Firstly, we aim to
-                  democratize access to sophisticated quant signals,
-                  traditionally limited to industry elites. Secondly, we strive
-                  to demystify the world of financial markets, making it
-                  accessible to everyone—from AI enthusiasts, to data
-                  scientists, to visionary entrepreneurs. We&apos;re dedicated
-                  to providing an intuitive, user-friendly environment that
-                  encourages exploration, innovation, and success within the
-                  Bittensor ecosystem. Join us at Taoshi, where we&apos;re not
-                  just participants in the blockchain space; we&apos;re
-                  trailblazers building a brighter, more informed, and
-                  decentralized future, one subnetwork at a time.
-                </Text>
-              </Box>
               <Center flex="1" display={{base: "none", sm: "flex"}}>
                 <Image
                   component={NextImage}
                   width={200}
                   height={200}
-                  src={intraday}
-                  alt="Taoshi's Mission"
+                  src={bittensor}
+                  alt="Open Source Modeling"
                 />
               </Center>
             </Group>
