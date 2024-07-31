@@ -167,7 +167,7 @@ export default function Page() {
               Additionally, our partners at Timeless offer access to PTN’s signals from top miners through their signal service, allowing users to manually execute strategies on their own accounts. For more details, visit their{" "}
               <Anchor href="https://twitter.com/Timeless_io" target="_blank">
                 Twitter
-              </Anchor>
+              </Anchor>.
             </Text>
             <Text>
 
