@@ -34,7 +34,6 @@ export default function Page() {
           <Box mb="lg">
             <PTNHero />
           </Box>
-
           <Box mb={200}>
             <Hero
               title="Subnet 8 on Bittensor: Taoshi’s PTN"

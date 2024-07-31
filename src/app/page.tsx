@@ -11,14 +11,12 @@ import {
   Group,
   Stack,
   Anchor,
-  Card,
   Container,
 } from "@mantine/core";
 import {useMediaQuery} from "@mantine/hooks";
 
 import {Partners} from "@/components/Partners";
 import {Hero} from "@/components/Hero";
-import {Statistics} from "@/components/Statistics";
 import {Team} from "@/components/Team";
 import {Logo} from "@/components/Logo";
 
@@ -50,7 +48,9 @@ export default function Home() {
         <Box mb={100}>
           <Box mb={200}>
             {!isMobile && <Logo/>}
+
             <Hero
+              wordmark
               ctas={ctas}
               copy="Revolutionizing Wealth Generation with Decentralized AI"
             />

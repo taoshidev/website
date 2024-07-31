@@ -9,8 +9,11 @@ import {
   Stack,
   Anchor,
   Image,
+  Center,
 } from "@mantine/core";
 import { usePlausible } from "next-plausible";
+import logo from "@/assets/wordmark.png";
+
 export interface CTA {
   text: string;
   href: string;
@@ -23,9 +26,10 @@ export interface HeroProps {
   ctas?: CTA[];
   title?: string;
   image?: string;
+  wordmark?: boolean;
 }
 
-export const Hero = ({ title, copy, ctas, image }: HeroProps) => {
+export const Hero = ({ title, copy, ctas, image, wordmark }: HeroProps) => {
   const plausible = usePlausible();
 
   const sendEvent = (eventName: string) => {
@@ -35,7 +39,7 @@ export const Hero = ({ title, copy, ctas, image }: HeroProps) => {
   return (
     <Box>
       <Box ta="center">
-        <Stack mb="lg" align="center">
+        <Stack mb={wordmark ? '0' : 'lg'} align="center">
           {image && (
             <Image
               component={NextImage}
@@ -48,11 +52,25 @@ export const Hero = ({ title, copy, ctas, image }: HeroProps) => {
 
           {title && <Text>{title}</Text>}
         </Stack>
+
+        { wordmark ? (
+          <Center mb='70'>
+            <Image
+              component={NextImage}
+              w={150}
+              h='auto'
+              src={logo}
+              alt="Taoshi Logo"
+            />
+          </Center>
+        ) : null}
+
         {copy && (
           <Title order={2} mb="xl">
             {copy}
           </Title>
         )}
+
         <Group justify="center">
           {ctas?.length &&
             ctas.map((cta) => (
