@@ -107,23 +107,7 @@ export default function Home() {
                 </Text>
 
                 <Text>
-                  Bittensor is not just a blockchain; it&apos;s a
-                  groundbreaking network that fosters decentralized
-                  intelligence, where a consensus mechanism rewards the
-                  creation and sharing of AI models. This neural network of
-                  nodes, maintained by independent miners, promotes a
-                  cooperative space for AI services to be developed and
-                  utilized worldwide. At Taoshi, we harness Bittensor&apos;s
-                  capabilities to build specialized subnetworks, like our{" "}
-                  <Anchor href="/ptn">Proprietary Trading Network</Anchor>{" "}
-                  (PTN), merging AI with blockchain for secure, transparent,
-                  and innovative applications. As part of the Bittensor
-                  ecosystem, we contribute to a decentralized AI marketplace,
-                  powered by the Bittensor token ($TAO), to ensure the
-                  seamless exchange of data and intelligence. Taoshi serves as
-                  a gateway to this new era of accessible, incentivized
-                  intelligence, where every contribution to the network&apos;s
-                  growth is valued and rewarded.
+                  Bittensor is more than just a blockchain; it&apos;s a groundbreaking network that fosters decentralized intelligence. Its consensus mechanism rewards the creation and sharing of AI models. This neural network of nodes, maintained by independent miners, promotes a cooperative environment for AI services to be developed and utilized worldwide. At Taoshi, we harness Bittensor&apos;s capabilities through our specialized subnet (PTN). As part of the Bittensor ecosystem, we contribute to a decentralized AI marketplace, powered by the Bittensor token ($TAO), ensuring the seamless exchange of data and intelligence. Taoshi acts as a gateway to a new era of accessible, incentivized intelligence, where every contribution to the network&apos;s growth is valued and rewarded.
                 </Text>
               </Box>
               <Center flex="1" display={{base: "none", sm: "flex"}}>
