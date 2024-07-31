@@ -138,7 +138,7 @@ export default function Page() {
                 Get Started: Mining on PTN
               </Text>
               <Text>
-                Ready to contribute? Start your journey as a miner on PTN with our README on GitHub. Follow the guide to contribute signals and start earning rewards from day 1. We also recommend joining our Community Hub on Discord, where miners collaborate and share insights.
+                Ready to contribute? Start your journey as a miner on PTN with our <Anchor href='https://github.com/taoshidev/proprietary-trading-network' target='_blank'>README on GitHub</Anchor>. Follow the guide to contribute signals and start earning rewards from day 1. We also recommend joining our <Anchor href='https://discord.gg/MKtKVYnCDh' target='_blank'>Community Hub on Discord</Anchor>, where miners collaborate and share insights.
               </Text>
             </Card>
           </Box>
