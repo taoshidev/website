@@ -77,7 +77,7 @@ export const team = [
   {
     name: "Thomas Dougherty",
     image: thomas,
-    position: "Staff ML Scientist",
+    position: "Manager, Research & Development",
     previously: ["PhD Stanford University"],
   },
   {
