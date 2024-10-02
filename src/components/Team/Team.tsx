@@ -24,6 +24,8 @@ import sam from "@/assets/team/sam.jpg";
 import diego from "@/assets/team/diego.jpg";
 import mike from "@/assets/team/mike.jpg";
 import mitra from "@/assets/team/mitra.png";
+import wallert from "@/assets/team/michael-wallert.jpg";
+import derek from "@/assets/team/derek.jpg";
 
 export const team = [
   {
@@ -101,7 +103,10 @@ export const team = [
     name: "Diego Arenas",
     image: diego,
     position: "Software Engineer",
-    previously: ["B.S. in Math with Computer Science - MIT", "B.B.A. in Business Analytics - MIT"],
+    previously: [
+      "B.S. in Math with Computer Science - MIT",
+      "B.B.A. in Business Analytics - MIT",
+    ],
   },
   {
     name: "Samuel Li",
@@ -109,7 +114,17 @@ export const team = [
     position: "Software Engineer",
     previously: ["AMD", "BSE Duke University"],
   },
-
+  {
+    name: "Derek Awender",
+    image: derek,
+    position: "Research Engineer",
+    previously: ["B.A. Computer Science UC Berkeley"],
+  },
+  {
+    name: "Michael Wallert",
+    image: wallert,
+    position: "Staff DevOps Engineer",
+  },
 ];
 
 export const Team = () => {
@@ -159,21 +174,25 @@ export const Team = () => {
                   <Text mb="xs" size="xs">
                     {member.position}
                   </Text>
-                  <Text size="sm" fw="bold">
-                    Experience / Education
-                  </Text>
-                  <List
-                    size="xs"
-                    icon={
-                      <Text size="xs" c="orange">
-                        -
+                  {member.previously && member.previously.length > 0 && (
+                    <Box>
+                      <Text size="sm" fw="bold">
+                        Experience / Education
                       </Text>
-                    }
-                  >
-                    {member.previously.map((item) => (
-                      <List.Item key={item}>{item}</List.Item>
-                    ))}
-                  </List>
+                      <List
+                        size="xs"
+                        icon={
+                          <Text size="xs" c="orange">
+                            -
+                          </Text>
+                        }
+                      >
+                        {member.previously?.map((item) => (
+                          <List.Item key={item}>{item}</List.Item>
+                        ))}
+                      </List>
+                    </Box>
+                  )}
                 </Box>
               </Group>
             </Card>
