@@ -1,7 +1,7 @@
 "use client";
 
 import { ReactNode } from "react";
-import { AppShell, Container } from "@mantine/core";
+import { AppShell, Container, Box } from "@mantine/core";
 
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
