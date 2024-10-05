@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import type { Metadata } from "next";
 import {
@@ -25,24 +26,11 @@ import newsroomMobile from "@/assets/newsroom-mobile.png";
 import newsroom from "@/assets/newsroom.png";
 
 export default function Page() {
-  const mobile = useMediaQuery("(max-width: 40em)", true, {
-    getInitialValueInEffect: false,
-  });
-
   return (
-    <Container maw="1000px" display="flex">
-      <Box mt="100px">
+    <Container maw="1000px" display="flex" my="100px">
+      <Box>
         <Center>
-          {mobile ? (
-            <Image
-              priority
-              src={newsroomMobile}
-              alt="taoshi newsroom"
-              width={300}
-            />
-          ) : (
-            <Image priority src={newsroom} alt="taoshi newsroom" width={400} />
-          )}
+          <Title my="60px">Newsroom</Title>
         </Center>
 
         <Box ta="center" mb="40px">
@@ -69,11 +57,9 @@ export default function Page() {
 
               <Flex justify="center">
                 <Button
-                  component="a"
+                  component={Link}
                   variant="secondary"
-                  href="https://blockworks.co/event/permissionless-iii"
-                  target="_blank"
-                  rightSection={<IconArrowUpRight size={14} />}
+                  href="/newsroom/permissionless"
                 >
                   Learn More
                 </Button>
@@ -97,11 +83,9 @@ export default function Page() {
             </Stack>
             <Flex justify="center">
               <Button
-                component="a"
+                component={Link}
                 variant="secondary"
-                href="https://blockworks.co/event/permissionless-iii"
-                target="_blank"
-                rightSection={<IconArrowUpRight size={14} />}
+                href="/newsroom/permissionless"
               >
                 Learn More
               </Button>
@@ -123,11 +107,9 @@ export default function Page() {
 
               <Flex justify="center">
                 <Button
-                  component="a"
+                  component={Link}
                   variant="secondary"
-                  href="https://blockworks.co/event/permissionless-iii"
-                  target="_blank"
-                  rightSection={<IconArrowUpRight size={14} />}
+                  href="/newsroom/permissionless"
                 >
                   Learn More
                 </Button>
