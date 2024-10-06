@@ -36,11 +36,13 @@ export default function Page() {
     <Container maw="1000px" my="100px">
       <Box>
         <Group mb="xl">
-          <div>October 08, 2024</div>
+          <div>October 8, 2024</div>
           <Divider orientation="vertical" />
           <div>Press Release </div>
         </Group>
-        <Title mb="xl">{title}</Title>
+        <Text size="34px" fw={900} mb="xl">
+          {title}
+        </Text>
         {!isEmpty(url) && (
           <Group gap="xl">
             <Button component={TwitterShareButton} url={url} title={title}>

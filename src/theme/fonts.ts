@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import { DM_Sans } from "next/font/google";
 
-const DMSans = DM_Sans({ subsets: ["latin"] });
+const DMSans = DM_Sans({ subsets: ["latin"], weight: ["400", "900"] });
 
 export const ADLaMDisplay = localFont({
   src: "../fonts/ADLaMDisplay-Regular.ttf",
