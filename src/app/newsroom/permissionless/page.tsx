@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import {
   Anchor,
   Button,
@@ -16,13 +17,20 @@ import {
   LinkedinShareButton,
   TwitterShareButton,
 } from "react-share";
+import { isEmpty } from "lodash";
 import { IconBrandX, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 
 export default function Page() {
-  const url = window.location.href;
+  const [url, setUrl] = useState("");
 
   const title =
     "Taoshi to Showcase World&apos;s First Decentralized and Fair Proprietary Trading Challenge, Built on Bittensor, at Permissionless III";
+
+  useEffect(() => {
+    const _url = window.location.href;
+
+    setUrl(_url);
+  }, []);
 
   return (
     <Container maw="1000px" my="100px">
@@ -33,17 +41,19 @@ export default function Page() {
           <div>Press Release </div>
         </Group>
         <Title mb="xl">{title}</Title>
-        <Group gap="xl">
-          <Button component={TwitterShareButton} url={url} title={title}>
-            <IconBrandX size={20} />
-          </Button>
-          <Button component={LinkedinShareButton} url={url} title={title}>
-            <IconBrandLinkedin size={20} />
-          </Button>
-          <Button component={EmailShareButton} url={url} subject={title}>
-            <IconMail size={20} />
-          </Button>
-        </Group>
+        {!isEmpty(url) && (
+          <Group gap="xl">
+            <Button component={TwitterShareButton} url={url} title={title}>
+              <IconBrandX size={20} />
+            </Button>
+            <Button component={LinkedinShareButton} url={url} title={title}>
+              <IconBrandLinkedin size={20} />
+            </Button>
+            <Button component={EmailShareButton} url={url} subject={title}>
+              <IconMail size={20} />
+            </Button>
+          </Group>
+        )}
       </Box>
       <Divider mt="xl" mb="60px" />
       <Box mb="xl">
