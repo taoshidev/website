@@ -24,7 +24,7 @@ export default function Page() {
   const [url, setUrl] = useState("");
 
   const title =
-    "Taoshi to Showcase World&apos;s First Decentralized and Fair Proprietary Trading Challenge, Built on Bittensor, at Permissionless III";
+    "Taoshi to Showcase World's First Decentralized and Fair Proprietary Trading Challenge, Built on Bittensor, at Permissionless III";
 
   useEffect(() => {
     const _url = window.location.href;
@@ -57,9 +57,6 @@ export default function Page() {
       </Box>
       <Divider mt="xl" mb="60px" />
       <Box mb="xl">
-        <Text tt="uppercase" fw="bold" mb="xl">
-          For immediate release:
-        </Text>
         <Text mb="lg">
           <Text fw="bold" component="span">
             SAN FRANCISCO, October 8, 2024 –
