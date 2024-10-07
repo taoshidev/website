@@ -1,9 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 
-import type { Metadata } from "next";
 import {
   Box,
   Container,
@@ -17,13 +15,8 @@ import {
   Title,
   Text,
   Flex,
-  SimpleGrid,
 } from "@mantine/core";
 import { IconArrowUpRight } from "@tabler/icons-react";
-import { useMediaQuery } from "@mantine/hooks";
-
-import newsroomMobile from "@/assets/newsroom-mobile.png";
-import newsroom from "@/assets/newsroom.png";
 
 export default function Page() {
   return (
