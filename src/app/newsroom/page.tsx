@@ -40,68 +40,33 @@ export default function Page() {
           <Text>Check out the latest updates on Taoshi.</Text>
         </Box>
 
-        <SimpleGrid cols={{ base: 1, sm: 3 }} mb="100px">
+        <Box mb="100px">
           <Card withBorder>
             <Stack h="100%" gap="xl">
               <Box flex="1">
-                <Text c="orange" fw="bold" size="lg" mb="md">
-                  Pariatur imitt
-                </Text>
-                <Text>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Pellentesque eget nunc nec nisl ultricies ultricies. Donec nec
-                  nunc nec nisl ultricies ultricies. Donec nec nunc nec nisl
-                  ultricies ultricies.
-                </Text>
-              </Box>
-
-              <Flex justify="center">
-                <Button
-                  component={Link}
-                  variant="secondary"
-                  href="/newsroom/permissionless"
-                >
-                  Learn More
-                </Button>
-              </Flex>
-            </Stack>
-          </Card>
-
-          <Card display="flex" withBorder>
-            <Stack h="100%" gap="xl">
-              <Box flex="1">
-                <Text c="orange" fw="bold" size="lg" mb="md">
-                  Pariatur imit
-                </Text>
-                <Text>
-                  Sit eu officia enim anim id laborum ad pariatur dolore nisi
-                  sunt deserunt Lorem. Quis dolor sunt laborum et mollit qui
-                  elit nostrud eiusmod labore irure proident nulla consequat.
-                  Qui ipsum magna aliquip aliqua.
-                </Text>
-              </Box>
-            </Stack>
-            <Flex justify="center">
-              <Button
-                component={Link}
-                variant="secondary"
-                href="/newsroom/permissionless"
-              >
-                Learn More
-              </Button>
-            </Flex>
-          </Card>
-
-          <Card display="flex" withBorder>
-            <Stack h="100%" gap="xl">
-              <Box flex="1">
-                <Text c="orange" fw="bold" size="lg" mb="md">
-                  Pariatur imit
-                </Text>
-                <Text>
-                  Reprehenderit sit aliquip consequat ut nisi culpa aliqua. Duis
-                  laborum nostrud eiusmod. Duis aliquip fugiat dolore Lorem
-                  labore cillum.
+                <Group justify="space-between" align="flex-start">
+                  <Box flex="1">
+                    <Text c="orange" fw="bold" size="lg">
+                      Taoshi to Showcase World&apos;s First Decentralized and
+                      Fair Proprietary Trading Challenge, Built on Bittensor, at
+                      Permissionless III
+                    </Text>
+                  </Box>
+                  <Box>
+                    <Badge radius="xs" variant="light" color="orange">
+                      Press Release
+                    </Badge>
+                  </Box>
+                </Group>
+                <Divider my="lg" />
+                <Text mb="lg">
+                  <Text fw="bold" component="span">
+                    SAN FRANCISCO, October 8, 2024 –
+                  </Text>
+                  Taoshi, a forefront innovator in decentralized finance, will
+                  showcase its Proprietary Trading Network (PTN) at the upcoming
+                  Permissionless III conference in Salt Lake City, Utah, from
+                  October 9 to 11, 2024.{" "}
                 </Text>
               </Box>
 
@@ -116,7 +81,7 @@ export default function Page() {
               </Flex>
             </Stack>
           </Card>
-        </SimpleGrid>
+        </Box>
 
         <Box mb="160px">
           <Box ta="center" mb="40px">
@@ -127,21 +92,21 @@ export default function Page() {
           </Box>
 
           <Card withBorder>
-            <Group justify="space-between" align="flex-start" mb="xs">
-              <Text c="orange" fw="bold" size="lg" mb="md">
+            <Group justify="space-between" align="flex-start">
+              <Text c="orange" fw="bold" size="lg">
                 Permissionless III
               </Text>
               <Badge radius="xs" variant="light" color="orange">
                 Conference
               </Badge>
             </Group>
+            <Divider my="lg" />
             <Text mb="lg">
               Taoshi will provide insights into our revolutionary subnet on
               Bittensor, the Proprietary Trading Network (PTN), and our upcoming
               Theta token, which will be launched as part of Bittensor’s dynamic
               TAO release.
             </Text>
-            <Divider my="md" />
             <Box mb="xl">
               <Group gap="xs">
                 <Text fw="bold">Location:</Text>
