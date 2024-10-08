@@ -117,8 +117,13 @@ export const Footer = () => {
             >
               Dashboard
             </Anchor>
-            <Anchor size="sm" href="/faq" c="black">
-              FAQ
+            <Anchor
+              size="sm"
+              href="https://github.com/taoshidev/proprietary-trading-network"
+              c="black"
+              target="_blank"
+            >
+              Github
             </Anchor>
           </Stack>
         </Box>

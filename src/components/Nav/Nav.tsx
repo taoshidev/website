@@ -86,20 +86,6 @@ export const Nav = () => {
               >
                 Dashboard
               </Menu.Item>
-              <Menu.Item
-                onClick={() => sendEvent("faq")}
-                component="a"
-                href="/faw"
-                leftSection={
-                  <IconQuestionMark
-                    style={{ width: rem(14), height: rem(14) }}
-                  />
-                }
-              >
-                FAQ
-              </Menu.Item>
-
-              <Menu.Divider variant="dashed" />
 
               <Menu.Item
                 onClick={() => sendEvent("github")}
@@ -113,6 +99,8 @@ export const Nav = () => {
               >
                 GitHub
               </Menu.Item>
+
+              <Menu.Divider variant="dashed" />
 
               <Menu.Item
                 onClick={() => sendEvent("contact")}
@@ -220,11 +208,11 @@ export const Nav = () => {
           </Anchor>
           <Anchor
             size="sm"
-            onClick={() => sendEvent("faq")}
-            href="/faq"
+            onClick={() => sendEvent("github")}
+            href="https://github.com/taoshidev/proprietary-trading-network"
             c="black"
           >
-            FAQ
+            Github
           </Anchor>
 
           <Menu
@@ -250,19 +238,6 @@ export const Nav = () => {
             </Menu.Target>
 
             <Menu.Dropdown>
-              <Menu.Item
-                onClick={() => sendEvent("github")}
-                component="a"
-                href="https://github.com/taoshidev/proprietary-trading-network"
-                leftSection={
-                  <IconBrandGithub
-                    style={{ width: rem(14), height: rem(14) }}
-                  />
-                }
-              >
-                GitHub
-              </Menu.Item>
-
               <Menu.Item
                 onClick={() => sendEvent("contact")}
                 component="a"
