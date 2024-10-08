@@ -54,7 +54,7 @@ export default function Page() {
                 <Divider my="lg" />
                 <Text mb="lg">
                   <Text fw="bold" component="span">
-                    SAN FRANCISCO, October 8, 2024 –
+                    SAN FRANCISCO, October 8, 2024 –{" "}
                   </Text>
                   Taoshi, a forefront innovator in decentralized finance, will
                   showcase its Proprietary Trading Network (PTN) at the upcoming
