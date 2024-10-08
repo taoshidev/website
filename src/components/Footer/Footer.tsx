@@ -137,6 +137,9 @@ export const Footer = () => {
             <Anchor size="sm" href="mailto:support@taoshi.io" c="black">
               Contact Us
             </Anchor>
+            <Anchor size="sm" href="/newsroom" c="black">
+              Newsroom
+            </Anchor>
           </Stack>
         </Box>
       </Group>

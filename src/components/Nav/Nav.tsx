@@ -15,6 +15,7 @@ import {
   IconGraph,
   IconHandLoveYou,
   IconQuestionMark,
+  IconArticle,
 } from "@tabler/icons-react";
 import { usePlausible } from "next-plausible";
 
@@ -54,7 +55,7 @@ export const Nav = () => {
               </Button>
             </Menu.Target>
 
-            <Menu.Dropdown style={{ border: "1px dashed black" }}>
+            <Menu.Dropdown>
               <Menu.Item
                 onClick={() => sendEvent("ptn")}
                 component="a"
@@ -177,6 +178,16 @@ export const Nav = () => {
                 }
               >
                 LinkedIn
+              </Menu.Item>
+              <Menu.Item
+                onClick={() => sendEvent("newsroom")}
+                component="a"
+                href="/newsroom/"
+                leftSection={
+                  <IconArticle style={{ width: rem(14), height: rem(14) }} />
+                }
+              >
+                Newsroom
               </Menu.Item>
             </Menu.Dropdown>
           </Menu>
@@ -311,6 +322,16 @@ export const Nav = () => {
                 }
               >
                 LinkedIn
+              </Menu.Item>
+              <Menu.Item
+                onClick={() => sendEvent("newsroom")}
+                component="a"
+                href="/newsroom"
+                leftSection={
+                  <IconArticle style={{ width: rem(14), height: rem(14) }} />
+                }
+              >
+                Newsroom
               </Menu.Item>
             </Menu.Dropdown>
           </Menu>
