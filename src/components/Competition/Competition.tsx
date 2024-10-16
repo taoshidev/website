@@ -179,7 +179,7 @@ export const Competition = ({ leaderboard }: CompetitionProps) => {
                           ? null
                           : flexRender(
                               header.column.columnDef.header,
-                              header.getContext()
+                              header.getContext(),
                             )}
                       </Table.Th>
                     ))}
@@ -338,7 +338,7 @@ export const Competition = ({ leaderboard }: CompetitionProps) => {
             </Anchor>
             ,{" "}
             <Anchor
-              href="https://www.linkedin.com/company/taoshi/"
+              href="https://www.linkedin.com/company/taoshiio"
               target="_blank"
             >
               LinkedIn

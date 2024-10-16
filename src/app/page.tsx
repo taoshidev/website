@@ -13,12 +13,12 @@ import {
   Anchor,
   Container,
 } from "@mantine/core";
-import {useMediaQuery} from "@mantine/hooks";
+import { useMediaQuery } from "@mantine/hooks";
 
-import {Partners} from "@/components/Partners";
-import {Hero} from "@/components/Hero";
-import {Team} from "@/components/Team";
-import {Logo} from "@/components/Logo";
+import { Partners } from "@/components/Partners";
+import { Hero } from "@/components/Hero";
+import { Team } from "@/components/Team";
+import { Logo } from "@/components/Logo";
 
 import logo from "@/assets/logo.svg";
 import bittensor from "@/assets/bittensor.svg";
@@ -47,7 +47,7 @@ export default function Home() {
       <Flex direction="column" justify="center">
         <Box mb={100}>
           <Box mb={200}>
-            {!isMobile && <Logo/>}
+            {!isMobile && <Logo />}
 
             <Hero
               wordmark
@@ -64,10 +64,17 @@ export default function Home() {
                 </Text>
 
                 <Text>
-                  At Taoshi, we’re at the forefront of the Bittensor revolution. Since our founding in 2023, we’ve been dedicated to transforming the future of finance. We develop dynamic subnetworks where decentralized AI and machine learning analyze data across various asset classes. As a pivotal part of the Bittensor ecosystem, we’re not just engaging with the blockchain revolution; we’re leading it by delivering advanced data that empowers users to make informed financial decisions.
+                  At Taoshi, we’re at the forefront of the Bittensor revolution.
+                  Since our founding in 2023, we’ve been dedicated to
+                  transforming the future of finance. We develop dynamic
+                  subnetworks where decentralized AI and machine learning
+                  analyze data across various asset classes. As a pivotal part
+                  of the Bittensor ecosystem, we’re not just engaging with the
+                  blockchain revolution; we’re leading it by delivering advanced
+                  data that empowers users to make informed financial decisions.
                 </Text>
               </Box>
-              <Center flex="1" display={{base: "none", sm: "flex"}}>
+              <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
                   component={NextImage}
                   width={200}
@@ -78,9 +85,8 @@ export default function Home() {
               </Center>
             </Group>
 
-
             <Group w="100%" gap="xl">
-              <Center flex="1" display={{base: "none", sm: "flex"}}>
+              <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
                   component={NextImage}
                   width={200}
@@ -95,7 +101,8 @@ export default function Home() {
                 </Text>
 
                 <Text>
-                  Our mission is to break down financial barriers and empower everyone to confidently navigate their financial futures. We aim to democratize access to wealth generation opportunities that have traditionally been reserved for the financially privileged. Committed to ongoing innovation, we strive to disrupt financial markets by providing sophisticated yet intuitive products that offer world-class growth opportunities for all.
+                  We aim to disrupt financial market trading by democratizing
+                  access to sophisticated and ever-evolving trading strategies.
                 </Text>
               </Box>
             </Group>
@@ -107,10 +114,23 @@ export default function Home() {
                 </Text>
 
                 <Text>
-                  Bittensor is more than just a blockchain; it&apos;s a groundbreaking network that fosters decentralized intelligence. Its consensus mechanism rewards the creation and sharing of AI models. This neural network of nodes, maintained by independent miners, promotes a cooperative environment for AI services to be developed and utilized worldwide. At Taoshi, we harness Bittensor&apos;s capabilities through our specialized subnet (PTN). As part of the Bittensor ecosystem, we contribute to a decentralized AI marketplace, powered by the Bittensor token ($TAO), ensuring the seamless exchange of data and intelligence. Taoshi acts as a gateway to a new era of accessible, incentivized intelligence, where every contribution to the network&apos;s growth is valued and rewarded.
+                  Bittensor is more than just a blockchain; it&apos;s a
+                  groundbreaking network that fosters decentralized
+                  intelligence. Its consensus mechanism rewards the creation and
+                  sharing of AI models. This neural network of nodes, maintained
+                  by independent miners, promotes a cooperative environment for
+                  AI services to be developed and utilized worldwide. At Taoshi,
+                  we harness Bittensor&apos;s capabilities through our
+                  specialized subnet (PTN). As part of the Bittensor ecosystem,
+                  we contribute to a decentralized AI marketplace, powered by
+                  the Bittensor token ($TAO), ensuring the seamless exchange of
+                  data and intelligence. Taoshi acts as a gateway to a new era
+                  of accessible, incentivized intelligence, where every
+                  contribution to the network&apos;s growth is valued and
+                  rewarded.
                 </Text>
               </Box>
-              <Center flex="1" display={{base: "none", sm: "flex"}}>
+              <Center flex="1" display={{ base: "none", sm: "flex" }}>
                 <Image
                   component={NextImage}
                   width={200}
@@ -122,7 +142,7 @@ export default function Home() {
             </Group>
           </Stack>
         </Box>
-        <Team/>
+        <Team />
       </Flex>
     </Container>
   );

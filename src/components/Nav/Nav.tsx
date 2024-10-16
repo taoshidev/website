@@ -158,7 +158,7 @@ export const Nav = () => {
               <Menu.Item
                 onClick={() => sendEvent("linkedin")}
                 component="a"
-                href="https://www.linkedin.com/company/taoshi/"
+                href="https://www.linkedin.com/company/taoshiio/"
                 leftSection={
                   <IconBrandLinkedin
                     style={{ width: rem(14), height: rem(14) }}
@@ -289,7 +289,7 @@ export const Nav = () => {
               <Menu.Item
                 onClick={() => sendEvent("linkedin")}
                 component="a"
-                href="https://www.linkedin.com/company/taoshi/"
+                href="https://www.linkedin.com/company/taoshiio/"
                 leftSection={
                   <IconBrandLinkedin
                     style={{ width: rem(14), height: rem(14) }}

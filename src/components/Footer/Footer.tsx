@@ -68,7 +68,7 @@ export const Footer = () => {
           </ActionIcon>
           <ActionIcon
             component="a"
-            href="https://www.linkedin.com/company/taoshi/"
+            href="https://www.linkedin.com/company/taoshiio"
             target="_blank"
             variant="light"
             aria-label="Settings"
