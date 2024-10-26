@@ -34,46 +34,89 @@ export default function Page() {
         </Box>
 
         <Box mb="100px">
-          <Card withBorder>
-            <Stack h="100%" gap="xl">
-              <Box flex="1">
-                <Group justify="space-between" align="flex-start">
-                  <Box flex="1">
-                    <Text c="orange" fw="bold" size="lg">
-                      Taoshi to Showcase World&apos;s First Decentralized and
-                      Fair Proprietary Trading Challenge, Built on Bittensor, at
-                      Permissionless III
+          <Stack>
+            <Card withBorder flex="1">
+              <Stack h="100%" gap="xl">
+                <Box flex="1">
+                  <Group justify="space-between" align="flex-start">
+                    <Box flex="1">
+                      <Text c="orange" fw="bold" size="lg">
+                        Taoshi to Showcase World&apos;s First Decentralized and
+                        Fair Proprietary Trading Challenge, Built on Bittensor,
+                        at Permissionless III
+                      </Text>
+                    </Box>
+                    <Box>
+                      <Badge radius="xs" variant="light" color="orange">
+                        Press Release
+                      </Badge>
+                    </Box>
+                  </Group>
+                  <Divider my="lg" />
+                  <Text mb="lg">
+                    <Text fw="bold" component="span">
+                      SAN FRANCISCO, October 8, 2024 –{" "}
                     </Text>
-                  </Box>
-                  <Box>
-                    <Badge radius="xs" variant="light" color="orange">
-                      Press Release
-                    </Badge>
-                  </Box>
-                </Group>
-                <Divider my="lg" />
-                <Text mb="lg">
-                  <Text fw="bold" component="span">
-                    SAN FRANCISCO, October 8, 2024 –{" "}
+                    Taoshi, a forefront innovator in decentralized finance, will
+                    showcase its Proprietary Trading Network (PTN) at the
+                    upcoming Permissionless III conference in Salt Lake City,
+                    Utah, from October 9 to 11, 2024.{" "}
                   </Text>
-                  Taoshi, a forefront innovator in decentralized finance, will
-                  showcase its Proprietary Trading Network (PTN) at the upcoming
-                  Permissionless III conference in Salt Lake City, Utah, from
-                  October 9 to 11, 2024.{" "}
-                </Text>
-              </Box>
+                </Box>
 
-              <Flex justify="center">
-                <Button
-                  component={Link}
-                  variant="secondary"
-                  href="/newsroom/permissionless"
-                >
-                  Learn More
-                </Button>
-              </Flex>
-            </Stack>
-          </Card>
+                <Flex justify="center">
+                  <Button
+                    component={Link}
+                    variant="secondary"
+                    href="/newsroom/permissionless"
+                  >
+                    Learn More
+                  </Button>
+                </Flex>
+              </Stack>
+            </Card>
+            <Card withBorder flex="1">
+              <Stack h="100%" gap="xl">
+                <Box flex="1">
+                  <Group justify="space-between" align="flex-start">
+                    <Box flex="1">
+                      <Text c="orange" fw="bold" size="lg">
+                        Taoshi Launches New Subsidiary, Glitch: A Revolutionary
+                        Wealth Generating Platform with AI-Powered Trading
+                        Strategies for the Masses
+                      </Text>
+                    </Box>
+                    <Box>
+                      <Badge radius="xs" variant="light" color="orange">
+                        Press Release
+                      </Badge>
+                    </Box>
+                  </Group>
+                  <Divider my="lg" />
+                  <Text mb="lg">
+                    <Text fw="bold" component="span">
+                      SAN FRANCISCO, October 25, 2024 –{" "}
+                    </Text>
+                    Taoshi, a leader in decentralized finance, today announced
+                    the launch of Glitch, a first-of-its-kind SaaS platform
+                    poised to revolutionize financial trading with advanced
+                    AI-based strategies that provide everyday individuals with
+                    automated wealth generation opportunities.
+                  </Text>
+                </Box>
+
+                <Flex justify="center">
+                  <Button
+                    component={Link}
+                    variant="secondary"
+                    href="/newsroom/glitch"
+                  >
+                    Learn More
+                  </Button>
+                </Flex>
+              </Stack>
+            </Card>
+          </Stack>
         </Box>
 
         <Box mb="160px">
