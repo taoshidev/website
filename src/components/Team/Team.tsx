@@ -21,11 +21,12 @@ import michael from "@/assets/team/michael.jpg";
 import lucas from "@/assets/team/lucas.jpg";
 import tom from "@/assets/team/tom.jpg";
 import sam from "@/assets/team/sam.jpg";
-import diego from "@/assets/team/diego.jpg";
 import mike from "@/assets/team/mike.jpg";
 import mitra from "@/assets/team/mitra.png";
 import wallert from "@/assets/team/michael-wallert.jpg";
 import derek from "@/assets/team/derek.jpg";
+import paul from "@/assets/team/paul.jpg";
+import austin from "@/assets/team/austin.png";
 
 export const team = [
   {
@@ -52,6 +53,31 @@ export const team = [
     image: mike,
     position: "Sr. Director of Strategy",
     previously: ["KMR Systems", "3+ years in crypto"],
+  },
+  {
+    name: "Paul K. Lieberman",
+    image: paul,
+    position: "Principal Quant Researcher",
+    previously: [
+      "20 years in quantitative research",
+      "CIO at Qraft Technologies",
+      "Quantitative Portfolio Manager at Ramius Capital",
+      "Head of Equity Derivatives Strategy at BNP Paribas",
+      "Experienced AI Practitioner.",
+      "BA from the University of Chicago",
+      "Masters in Financial Engineering from MIT Sloan School of Management",
+    ],
+  },
+  {
+    name: "Lucas Phan",
+    image: lucas,
+    position: "Sr Staff Full-Stack Software Engineer",
+    previously: [
+      "Squadformers",
+      "Bitwise Industries",
+      "CSUF - Professor",
+      "Executive MBA - Management Information Systems",
+    ],
   },
   {
     name: "Jordan Bonilla",
@@ -83,30 +109,10 @@ export const team = [
     previously: ["PhD Stanford University"],
   },
   {
-    name: "Lucas Phan",
-    image: lucas,
-    position: "Sr Staff Full-Stack Software Engineer",
-    previously: [
-      "Squadformers",
-      "Bitwise Industries",
-      "CSUF - Professor",
-      "Executive MBA - Management Information Systems",
-    ],
-  },
-  {
     name: "Tom Alperin",
     image: tom,
     position: "Staff Full Stack Software Engineer",
     previously: ["Bitwise Industries"],
-  },
-  {
-    name: "Diego Arenas",
-    image: diego,
-    position: "Software Engineer",
-    previously: [
-      "B.S. in Math with Computer Science - MIT",
-      "B.B.A. in Business Analytics - MIT",
-    ],
   },
   {
     name: "Samuel Li",
@@ -124,6 +130,12 @@ export const team = [
     name: "Michael Wallert",
     image: wallert,
     position: "Staff DevOps Engineer",
+  },
+  {
+    name: "Austin Sigsworth",
+    image: austin,
+    position: "Sr. Customer Success Manager",
+    previously: ["3+ Years at Uphold Institutional", "5+ Years in Crypto"],
   },
 ];
 
@@ -179,14 +191,7 @@ export const Team = () => {
                       <Text size="sm" fw="bold">
                         Experience / Education
                       </Text>
-                      <List
-                        size="xs"
-                        icon={
-                          <Text size="xs" c="orange">
-                            -
-                          </Text>
-                        }
-                      >
+                      <List size="xs">
                         {member.previously?.map((item) => (
                           <List.Item key={item}>{item}</List.Item>
                         ))}
