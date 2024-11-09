@@ -52,7 +52,7 @@ const partners = [
   },
   {
     label: "Timeless",
-    website: "https://timeless.io/",
+    website: "https://timeless.trading/",
     twitter: "https://twitter.com/Timeless_io",
     image: timeless,
     description: (
