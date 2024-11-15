@@ -27,6 +27,7 @@ import wallert from "@/assets/team/michael-wallert.jpg";
 import derek from "@/assets/team/derek.jpg";
 import paul from "@/assets/team/paul.jpg";
 import austin from "@/assets/team/austin.png";
+import vince from "@/assets/team/vince.jpg";
 
 export const team = [
   {
@@ -37,10 +38,10 @@ export const team = [
     previously: ["LinkedIn", "TARVIS Labs"],
   },
   {
-    name: "Mitra Ehsanipour",
-    image: mitra,
-    position: "Chief Financial Officer",
-    previously: ["25+ years of CPA experience"],
+    name: "Mike Galligan",
+    image: mike,
+    position: "Sr. Director of Strategy",
+    previously: ["KMR Systems", "3+ years in crypto"],
   },
   {
     name: "Michael Brown",
@@ -49,10 +50,16 @@ export const team = [
     previously: ["NASA", "TARVIS Labs"],
   },
   {
-    name: "Mike Galligan",
-    image: mike,
-    position: "Sr. Director of Strategy",
-    previously: ["KMR Systems", "3+ years in crypto"],
+    name: "Vince Wang",
+    image: vince,
+    position: "Sr. Quant Researcher",
+    previously: [
+      "4+ years in quantitative research and trading",
+      "2+ years in VC",
+      "4+ years in crypto",
+      "M.S. in Actuarial Science, Columbia University",
+      "B.S. in Finance and Business Analytics & Information Technology (BAIT), minor in Mathematics, Rutgers University",
+    ],
   },
   {
     name: "Paul K. Lieberman",
@@ -67,6 +74,12 @@ export const team = [
       "BA from the University of Chicago",
       "Masters in Financial Engineering from MIT Sloan School of Management",
     ],
+  },
+  {
+    name: "Mitra Ehsanipour",
+    image: mitra,
+    position: "Chief Financial Officer",
+    previously: ["25+ years of CPA experience"],
   },
   {
     name: "Lucas Phan",
