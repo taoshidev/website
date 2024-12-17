@@ -28,6 +28,7 @@ import derek from "@/assets/team/derek.jpg";
 import paul from "@/assets/team/paul.jpg";
 import austin from "@/assets/team/austin.png";
 import vince from "@/assets/team/vince.jpg";
+import jacqueline from "@/assets/team/jacqueline.jpeg";
 
 export const team = [
   {
@@ -73,6 +74,17 @@ export const team = [
       "Experienced AI Practitioner.",
       "BA from the University of Chicago",
       "Masters in Financial Engineering from MIT Sloan School of Management",
+    ],
+  },
+  {
+    name: "Jacqueline Dennington",
+    image: jacqueline,
+    position: "Sr. Director of Marketing",
+    previously: [
+      "3+ Years Fintech Marketing",
+      "5+ Years B2B/B2C Startup Branding",
+      "VC Marketing Advisor",
+      "MBA Pepperdine University",
     ],
   },
   {

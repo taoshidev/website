@@ -88,12 +88,6 @@ const questions = [
           "Forex/indices fees are generally lower and based on swap fees. Crypto fees are based on typical exchange fees and funding rates. We recommend reviewing the fees of each market against exchanges, what they typically are, and how they compare against our rates. You'll see strong alignment.",
       },
       {
-        value:
-          "The registration fee will be dynamically adjusted, but the floor price is 5 TAO?",
-        description:
-          "Yes, the floor fee to register will be 5 TAO. We suspect only the best trading strategies will enter due to the nature of the subnet; therefore, we won't see continuous registration pressure. We expect the floor to be the price to enter at most times. Because of this, there needs to be a higher floor fee to disincentivize miners from joining & taking aggressive trading strategies to try and gain an advantage. The goal is to get miners who produce trading strategies with steady gains and proper R/R models.",
-      },
-      {
         value: "How often are the incentives granted to miners?",
         description:
           "Incentives are granted every 30 minutes, based on a 30-day rolling lookback period (can be found in the source code). Miners are entitled to receive rewards after closing their first trade.",
@@ -159,13 +153,6 @@ const questions = [
                 </Text>
               </List.Item>
             </List>
-            <Text size="sm">
-              This isn&apos;t to say TSPS will never exist as an SN in the
-              future, but with the limited number of slots and how important it
-              is to drive as much value as possible now to showcase & drive the
-              value of TAO, evolving TSPS to PTN was clearly best for the
-              network.
-            </Text>
           </Box>
         ),
       },

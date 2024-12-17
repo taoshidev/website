@@ -106,40 +106,6 @@ export default function Home() {
                 </Text>
               </Box>
             </Group>
-
-            <Group w="100%" gap="xl">
-              <Box maw="600px">
-                <Text fw="bold" mb="sm">
-                  Bittensor
-                </Text>
-
-                <Text>
-                  Bittensor is more than just a blockchain; it&apos;s a
-                  groundbreaking network that fosters decentralized
-                  intelligence. Its consensus mechanism rewards the creation and
-                  sharing of AI models. This neural network of nodes, maintained
-                  by independent miners, promotes a cooperative environment for
-                  AI services to be developed and utilized worldwide. At Taoshi,
-                  we harness Bittensor&apos;s capabilities through our
-                  specialized subnet (PTN). As part of the Bittensor ecosystem,
-                  we contribute to a decentralized AI marketplace, powered by
-                  the Bittensor token ($TAO), ensuring the seamless exchange of
-                  data and intelligence. Taoshi acts as a gateway to a new era
-                  of accessible, incentivized intelligence, where every
-                  contribution to the network&apos;s growth is valued and
-                  rewarded.
-                </Text>
-              </Box>
-              <Center flex="1" display={{ base: "none", sm: "flex" }}>
-                <Image
-                  component={NextImage}
-                  width={200}
-                  height={200}
-                  src={bittensor}
-                  alt="Open Source Modeling"
-                />
-              </Center>
-            </Group>
           </Stack>
         </Box>
         <Team />

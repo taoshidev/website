@@ -139,9 +139,7 @@ export default function Page() {
             <Divider my="lg" />
             <Text mb="lg">
               Taoshi will provide insights into our revolutionary subnet on
-              Bittensor, the Proprietary Trading Network (PTN), and our upcoming
-              Theta token, which will be launched as part of Bittensor’s dynamic
-              TAO release.
+              Bittensor, the Proprietary Trading Network (PTN).
             </Text>
             <Box mb="xl">
               <Group gap="xs">

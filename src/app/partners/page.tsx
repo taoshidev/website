@@ -43,10 +43,7 @@ const partners = [
         Network, designed to empower subnet owners by streamlining interactions
         between validators and clients. This initiative will introduce a
         marketplace dynamic to the Bittensor ecosystem, enabling seamless data
-        transactions using stablecoins. Additionally, we commend RoundTable21
-        for their exceptional validator program and encourage our community to
-        explore and support our open-source endeavors by delegating $TAO to
-        RoundTable21.
+        transactions using stablecoins.
       </Text>
     ),
   },
@@ -93,21 +90,6 @@ const partners = [
           link
         </Anchor>
         .
-      </Text>
-    ),
-  },
-  {
-    label: "Uphold",
-    website: "https://uphold.com/",
-    twitter: "https://twitter.com/UpholdInc",
-    image: uphold,
-    description: (
-      <Text size="xs">
-        Uphold will be an integral part of Taoshi’s Request Network, as they’ll
-        be fulfilling client orders by converting stablecoins to $TAO. Clients
-        and users will pay validators in stablecoins through the Request
-        Network, and validators will automatically be able to convert payments
-        to $TAO through our partnership with Uphold.
       </Text>
     ),
   },
