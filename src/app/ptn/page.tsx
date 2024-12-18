@@ -87,11 +87,10 @@ export default function Page() {
                 <List.Item mb="md">
                   <Text>
                     <Text fw={700} component="span">
-                      World&apos;s Largest Incentivized Mining Pool for Quant
-                      Signals:
+                      World&apos;s Largest Pool for Quant Signals:
                     </Text>{" "}
-                    PTN rewards miners with for contributing their top-notch
-                    strategies, fostering a cycle of innovation.
+                    On PTN, miners provide their world-class trading strategies,
+                    contributing to a sophisticated network model.
                   </Text>
                 </List.Item>
                 <List.Item mb="md">
