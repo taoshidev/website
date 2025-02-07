@@ -68,16 +68,6 @@ export const Nav = () => {
                 PTN
               </Menu.Item>
               <Menu.Item
-                onClick={() => sendEvent("request-network")}
-                component="a"
-                href="https://request.taoshi.io/"
-                leftSection={
-                  <IconDashboard style={{ width: rem(14), height: rem(14) }} />
-                }
-              >
-                Request Network
-              </Menu.Item>
-              <Menu.Item
                 component="a"
                 href="/theta"
                 leftSection={
@@ -89,9 +79,19 @@ export const Nav = () => {
                     src={rnLogo}
                     alt="Hero Image"
                   />
-              }
+                }
               >
                 Theta Token
+              </Menu.Item>
+              <Menu.Item
+                onClick={() => sendEvent("request-network")}
+                component="a"
+                href="https://request.taoshi.io/"
+                leftSection={
+                  <IconDashboard style={{ width: rem(14), height: rem(14) }} />
+                }
+              >
+                Request Network
               </Menu.Item>
               <Menu.Item
                 onClick={() => sendEvent("dashboard")}
@@ -209,18 +209,18 @@ export const Nav = () => {
           </Anchor>
           <Anchor
             size="sm"
+            href="/theta"
+            c="orange"
+          >
+            Theta Token
+          </Anchor>
+          <Anchor
+            size="sm"
             onClick={() => sendEvent("request-network")}
             href="https://request.taoshi.io"
             c="black"
           >
             Request Network
-          </Anchor>
-          <Anchor
-            size="sm"
-            href="/theta"
-            c="orange"
-          >
-            Theta Token
           </Anchor>
           <Anchor
             size="sm"
