@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Box, Anchor, Menu, Button, rem, Group } from "@mantine/core";
+import {Box, Anchor, Menu, Button, rem, Group, Image} from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import {
   IconMail,
@@ -14,10 +14,11 @@ import {
   IconDashboard,
   IconGraph,
   IconHandLoveYou,
-  IconQuestionMark,
   IconArticle,
 } from "@tabler/icons-react";
 import { usePlausible } from "next-plausible";
+import NextImage from "next/image";
+import rnLogo from "@/assets/rn/logo.svg";
 
 export const Nav = () => {
   const [menuOpened, setMenuOpened] = useState(false);
@@ -65,6 +66,22 @@ export const Nav = () => {
                 }
               >
                 PTN
+              </Menu.Item>
+              <Menu.Item
+                component="a"
+                href="/theta"
+                leftSection={
+                  <Image
+                    component={NextImage}
+                    w={rem(8)}
+                    h="auto"
+                    fit="contain"
+                    src={rnLogo}
+                    alt="Hero Image"
+                  />
+                }
+              >
+                Theta Token
               </Menu.Item>
               <Menu.Item
                 onClick={() => sendEvent("request-network")}
@@ -192,9 +209,16 @@ export const Nav = () => {
           </Anchor>
           <Anchor
             size="sm"
+            href="/theta"
+            c="orange"
+          >
+            Theta Token
+          </Anchor>
+          <Anchor
+            size="sm"
             onClick={() => sendEvent("request-network")}
             href="https://request.taoshi.io"
-            c="orange"
+            c="black"
           >
             Request Network
           </Anchor>
