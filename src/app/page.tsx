@@ -10,18 +10,14 @@ import {
   Center,
   Group,
   Stack,
-  Anchor,
   Container,
 } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 
-import { Partners } from "@/components/Partners";
 import { Hero } from "@/components/Hero";
-import { Team } from "@/components/Team";
 import { Logo } from "@/components/Logo";
 
 import logo from "@/assets/logo.svg";
-import bittensor from "@/assets/bittensor.svg";
 import intraday from "@/assets/intraday.svg";
 
 const ctas = [
@@ -108,7 +104,6 @@ export default function Home() {
             </Group>
           </Stack>
         </Box>
-        <Team />
       </Flex>
     </Container>
   );
