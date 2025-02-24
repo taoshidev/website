@@ -9,7 +9,7 @@ import {
   Text,
   Image,
   Divider,
-  List,
+  AspectRatio,
   Flex,
   Group,
   Button,
@@ -56,12 +56,12 @@ export default function Page() {
             </Text>
           </Box>
 
-          <Divider mt={{ base: '50px', md: '75px'}} />
+          <Divider mt={{ base: '50px', md: '75px' }} />
 
         </Container>
       </Box>
 
-      <Box mb={{ base: '50px', sm: '75px'}}>
+      <Box mb={{ base: '50px', sm: '75px' }}>
         <Container
           maw="1000px"
           w="100%"
@@ -82,12 +82,12 @@ export default function Page() {
             </Box>
           </Flex>
 
-          <Divider mt={{ base: '50px', md: '75px'}} />
+          <Divider mt={{ base: '50px', md: '75px' }} />
 
         </Container>
       </Box>
 
-      <Box mb={{ base: '50px', sm: '75px'}}>
+      <Box mb={{ base: '50px', sm: '75px' }}>
         <Container
           maw="1000px"
           w="100%"
@@ -105,7 +105,7 @@ export default function Page() {
                 Bittensor&apos;s dTAO represents a major leap forward in blockchain governance and tokenomics, shifting value assignment from centralized validators to the broader community. This means:
               </Text>
 
-              <SimpleGrid cols={{ base: 2, md: 3 }} mb='xl'>
+              <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} mb='xl'>
                 <Card withBorder>
                   <Text fw='bold'>Subnet-Specific Tokens</Text>
                   <Text>
@@ -132,16 +132,16 @@ export default function Page() {
             </Box>
           </Flex>
 
-          <Divider mt={{ base: '50px', md: '75px'}} />
+          <Divider mt={{ base: '50px', md: '75px' }} />
 
         </Container>
       </Box>
 
-      <Box mb={{ base: '50px', sm: '75px'}}>
+      <Box mb={{ base: '50px', sm: '75px' }}>
         <Container
           maw="1000px"
           w="100%"
-          px={{sm: 20}}
+          px={{ sm: 20 }}
         >
           <Box>
             <Box>
@@ -178,7 +178,7 @@ export default function Page() {
                   </Box>
                 </Box>
 
-                <Center mb="lg" flex="1" display={{ base: 'none', sm: 'flex'}}>
+                <Center mb="lg" flex="1" display={{ base: 'none', sm: 'flex' }}>
                   <Image
                     component={NextImage}
                     w={400}
@@ -236,11 +236,20 @@ export default function Page() {
                 <Title ta="center" c="white" order={3} mb="sm">
                   How to Acquire the Theta Token
                 </Title>
-                <Center mx="auto">
+                <Center mx="auto" mb='xl'>
                   <Text ta="center" c="white" size="sm">
-                    The Taoshi team will publish details on how to acquire the Theta token as soon as they become available.
+                    Check out our tutorial explaining three ways you can swap $TAO for Theta:
                   </Text>
                 </Center>
+                <AspectRatio ratio={560 / 315} maw={560} mx="auto">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/qx2sU8222x0?si=nSsNUE3KJjmHrMPE"
+                    title="How to Get Started with Dynamic Tao (dTao) on Bittensor"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  />
+                </AspectRatio>
               </Box>
             </Flex>
           </Container>
