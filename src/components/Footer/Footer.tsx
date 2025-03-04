@@ -145,6 +145,7 @@ export const Footer = () => {
             <Anchor size="sm" href="/newsroom" c="black">
               Newsroom
             </Anchor>
+            <Anchor size="sm" href="https://www.linkedin.com/company/taoshiio/jobs/" c="black" target="_blank">Jobs</Anchor>
           </Stack>
         </Box>
       </Group>

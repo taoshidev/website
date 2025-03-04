@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import {Box, Anchor, Menu, Button, rem, Group, Image} from "@mantine/core";
+import { Box, Anchor, Menu, Button, rem, Group, Image } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import {
   IconMail,
@@ -15,6 +15,7 @@ import {
   IconGraph,
   IconHandLoveYou,
   IconArticle,
+  IconBriefcase2
 } from "@tabler/icons-react";
 import { usePlausible } from "next-plausible";
 import NextImage from "next/image";
@@ -331,6 +332,18 @@ export const Nav = () => {
                 }
               >
                 Newsroom
+              </Menu.Item>
+
+              <Menu.Item
+                onClick={() => sendEvent("jobs")}
+                component="a"
+                href="https://www.linkedin.com/company/taoshiio/jobs/"
+                target="_blank"
+                leftSection={
+                  <IconBriefcase2 style={{ width: rem(14), height: rem(14) }} />
+                }
+              >
+                Jobs
               </Menu.Item>
             </Menu.Dropdown>
           </Menu>
