@@ -31,7 +31,7 @@ export default function RootLayout({
       <body>
         <NextTopLoader color="#E35F25" showSpinner={false} shadow={false} />
         <Providers>{children}</Providers>
-        <GoogleTagManager gtmId="AW-16481835690" />
+        <GoogleTagManager gtmId="G-00040SBXDP" />
         {/* <!-- Start of HubSpot Embed Code --> */}
         <script
           type="text/javascript"
