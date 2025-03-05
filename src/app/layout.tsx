@@ -7,6 +7,7 @@ import { GoogleTagManager } from "@next/third-parties/google";
 import PlausibleProvider from "next-plausible";
 
 import { Providers } from "./providers";
+import {GoogleAnalytics} from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "Taoshi",
@@ -31,7 +32,8 @@ export default function RootLayout({
       <body>
         <NextTopLoader color="#E35F25" showSpinner={false} shadow={false} />
         <Providers>{children}</Providers>
-        <GoogleTagManager gtmId="AW-16481835690" />
+        <GoogleTagManager gtmId="G-00040SBXDP" />
+        <GoogleAnalytics />
         {/* <!-- Start of HubSpot Embed Code --> */}
         <script
           type="text/javascript"
