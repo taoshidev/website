@@ -14,8 +14,12 @@ import {
   List,
   SimpleGrid,
   Card,
+  Image,
 } from "@mantine/core";
+import NextImage from "next/image";
 import { useCallback } from 'react';
+
+import minerDash from "/public/miner-dash.png";
 
 export default function Page() {
   const trackEvent = useCallback((action: string, category: string, label: string) => {
@@ -74,7 +78,7 @@ export default function Page() {
                 <Group gap='md'>
                   <Button 
                     component={Link} 
-                    href="#"
+                    href="https://share.hsforms.com/1dk2NSACxQ5esOnY4wyho0Qqsppf"
                     onClick={() => trackEvent('click', 'trader_page', 'apply_to_challenge')}
                   >
                     Apply to $40k Challenge
@@ -84,7 +88,7 @@ export default function Page() {
                     href="https://github.com/taoshidev/proprietary-trading-network/blob/main/docs/miner.md"
                     onClick={() => trackEvent('click', 'trader_page', 'join_network')}
                   >
-                    Join the Network
+                    Start Trading on PTN
                   </Button>
                 </Group>
               </Center>
@@ -104,36 +108,64 @@ export default function Page() {
             direction={{ base: "column", sm: "row" }}
           >
             <Box flex="1">
-              <Title order={3} mb="xl">
+              <Title order={3} mb="md">
                 Why Compete on Taoshi&apos;s PTN?
               </Title>
 
-              <SimpleGrid cols={{ base: 1, sm: 2, md: 4 }} mb='xl'>
+              <SimpleGrid cols={{ base: 1, sm: 2, md: 4 }} mb='md'>
                 <Card withBorder>
-                  <Text mb='sm' fw='bold'>Decentralized, & Fair Ecosystem:</Text>
+                  <Box h={60} display="flex">
+                    <Text fw='bold'>Decentralized & Fair Ecosystem:</Text>
+                  </Box>
                   <Text size='sm'>
                     Our traders compete against each other for rewards and are graded fairly on their risk-adjusted returns.
                   </Text>
                 </Card>
                 <Card withBorder>
-                  <Text mb='sm' fw='bold'>Diverse Asset Classes:</Text>
+                  <Box h={60} display="flex">
+                    <Text fw='bold'>Diverse Asset Classes:</Text>
+                  </Box>
                   <Text size='sm'>
                     Traders operate on a variety of highly liquid assets across crypto, equities, commodities, and forex, creating ample opportunity to trade with success.
                   </Text>
                 </Card>
                 <Card withBorder>
-                  <Text mb='sm' fw='bold'>Advanced Scoring Analytics:</Text>
+                  <Box h={60} display="flex">
+                    <Text fw='bold'>Advanced Scoring Analytics:</Text>
+                  </Box>
                   <Text size='sm'>
                     We leverage a suite of risk-adjusted return metrics to determine the quality of outputs from traders and ensure risk is appropriately managed.
                   </Text>
                 </Card>
                 <Card withBorder>
-                  <Text mb='sm' fw='bold'>Low Barrier to Entry:</Text>
+                  <Box h={60} display="flex">
+                    <Text fw='bold'>Low Barrier to Entry:</Text>
+                  </Box>
                   <Text size='sm'>
                     Simply register with Bittensor&apos;s native token, $TAO, to trade within our open-source ecosystem.
                   </Text>
                 </Card>
               </SimpleGrid>
+              <Box>
+                <Card withBorder>
+                  <Image
+                    mb='md'
+                    alt="Taoshi"
+                    w={960}
+                    h="auto"
+                    fit="contain"
+                    component={NextImage}
+                    src={minerDash}
+                  />
+                  <Center>
+                    <Text size='xs' ta='center'>
+                      An example of a miner&apos;s dashboard, where traders can view their rank and performance across various metrics.
+                    </Text>
+                  </Center>
+
+                </Card>
+
+              </Box>
 
             </Box>
           </Flex>
@@ -152,6 +184,9 @@ export default function Page() {
                 Pass our Trading Challenge for Contractors & Earn $40,000 in Rewards
               </Title>
               <Text mb='md'>
+                For a limited time, we&apos;re inviting the best quant research teams, ML experts, and traders to join our competition, with a chance at a contractor role at Taoshi at stake for those who successfully pass our 60-day challenge.
+              </Text>
+              <Text mb='md'>
                 But that&apos;s just the beginning. Once you pass our challenge, you&apos;ll gain access to one of the world&apos;s largest reward pools for trading signals in the world with over millions in rewards at stake. Additionally, you&apos;ll have the potential to receive ongoing payouts and future grants to scale your strategies.
               </Text>
               <Text>
@@ -164,17 +199,10 @@ export default function Page() {
             <Group gap='md'>
               <Button 
                 component={Link} 
-                href="#"
+                href="https://share.hsforms.com/1dk2NSACxQ5esOnY4wyho0Qqsppf"
                 onClick={() => trackEvent('click', 'trader_page', 'apply_to_challenge')}
               >
                 Apply to $40k Challenge
-              </Button>
-              <Button 
-                component={Link} 
-                href="https://github.com/taoshidev/proprietary-trading-network/blob/main/docs/miner.md"
-                onClick={() => trackEvent('click', 'trader_page', 'join_network')}
-              >
-                Join the Network
               </Button>
             </Group>
           </Center>
@@ -189,10 +217,10 @@ export default function Page() {
           w="100%"
           px={{ sm: 20 }}
         >
-          <Box>
+          <Box mb='100px'>
             <Box mb='xl'>
               <Title order={3} mb="md">
-                How It Works:
+                How It Works
               </Title>
               <Box mb='xl'>
                 <List withPadding>
@@ -207,7 +235,7 @@ export default function Page() {
                   <List.Item mb="md">
                     <Text>
                       <Text fw={700} component="span">
-                      Join the Network
+                      Join the Network:
                       </Text>{" "}
                       Get started by exploring our open-source repository, joining our Discord, and setting up a miner to submit your trading signals to the network. 
                     </Text>
@@ -215,7 +243,7 @@ export default function Page() {
                   <List.Item mb="md">
                     <Text>
                       <Text fw={700} component="span">
-                      Deploy Your Model
+                      Deploy Your Model:
                       </Text>{" "}
                       Optimize your ML-based trading strategies and integrate them into PTN.
                     </Text>
@@ -223,7 +251,7 @@ export default function Page() {
                   <List.Item mb="md">
                     <Text>
                       <Text fw={700} component="span">
-                      Compete & Perform
+                      Compete & Perform:
                       </Text>{" "}
                       Meet key performance metrics like Sharpe, Omega, and Sortino ratios.
                     </Text>
@@ -231,7 +259,7 @@ export default function Page() {
                   <List.Item mb="md">
                     <Text>
                       <Text fw={700} component="span">
-                      Unlock Rewards
+                      Unlock Rewards:
                       </Text>{" "}
                       Pass the 60-day challenge, and begin competing for a share of more than $30 million* in annual rewards. If you are a qualifying trader from Taoshi&apos;s Trading Challenge, you&apos;ll receive $40,000 in rewards for passing the 60-day challenge!
                     </Text>
@@ -245,7 +273,7 @@ export default function Page() {
               <Group gap='md'>
                 <Button 
                   component={Link} 
-                  href="#"
+                  href="https://share.hsforms.com/1dk2NSACxQ5esOnY4wyho0Qqsppf"
                   onClick={() => trackEvent('click', 'trader_page', 'apply_to_challenge')}
                 >
                   Apply to $40k Challenge
@@ -255,11 +283,15 @@ export default function Page() {
                   href="https://github.com/taoshidev/proprietary-trading-network/blob/main/docs/miner.md"
                   onClick={() => trackEvent('click', 'trader_page', 'join_network')}
                 >
-                  Join the Network
+                  Start Trading on PTN
                 </Button>
               </Group>
             </Center>
           </Box>
+
+          <Text size='xs' ta='center'>
+            *Annualized rewards are dependent on market factors outside of Taoshi&apos;s control and may fluctuate. This value is an estimate based on current market factors.
+          </Text>
 
         </Container>
       </Box>
