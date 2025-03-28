@@ -233,11 +233,11 @@ export const Nav = () => {
           </Anchor>
           <Anchor
             size="sm"
-            onClick={() => sendEvent("github")}
-            href="https://github.com/taoshidev/proprietary-trading-network"
+            onClick={() => sendEvent("trader")}
+            href='/trader'
             c="black"
           >
-            Github
+            Become a Trader
           </Anchor>
 
           <Menu
@@ -322,6 +322,16 @@ export const Nav = () => {
                 }
               >
                 LinkedIn
+              </Menu.Item>
+              <Menu.Item
+                onClick={() => sendEvent("github")}
+                component="a"
+                href="https://github.com/taoshidev/proprietary-trading-network"
+                leftSection={
+                  <IconBrandGithub style={{ width: rem(14), height: rem(14) }} />
+                }
+              >
+                Github
               </Menu.Item>
               <Menu.Item
                 onClick={() => sendEvent("newsroom")}

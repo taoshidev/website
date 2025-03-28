@@ -1,29 +1,34 @@
 "use client";
 
-import NextImage from "next/image";
+import Link from 'next/link';
 import {
   Box,
+  Button,
   Container,
   Center,
   Title,
-  Text,
-  Image,
-  Divider,
-  AspectRatio,
-  Flex,
   Group,
-  Button,
+  Text,
+  Divider,
+  Flex,
   List,
   SimpleGrid,
-  BackgroundImage, Card,
+  Card,
 } from "@mantine/core";
-
-import rnLogo from "@/assets/theta/logo-orange.svg";
-import backgroundWhite from "@/assets/rn/bg-white.png";
-import backgroundBlack from "@/assets/rn/bg-black.png";
-import flywheel from "@/assets/theta/flywheel.png";
+import { useCallback } from 'react';
 
 export default function Page() {
+  const trackEvent = useCallback((action: string, category: string, label: string) => {
+    // @ts-ignore
+    if (typeof window !== 'undefined' && window.gtag) {
+      // @ts-ignore
+      window.gtag('event', action, {
+        event_category: category,
+        event_label: label,
+      });
+    }
+  }, []);
+
   return (
     <Box>
       <Box
@@ -42,12 +47,11 @@ export default function Page() {
 
           </Box>
 
-          <Divider w='50px' mx='auto' mt={{ base: '50px', md: '75px' }} />
-
+          <Divider w='50px' mx='auto' mt={{ base: '25px', md: '38px' }} />
         </Container>
       </Box>
 
-      <Box mb={{ base: '50px', sm: '75px' }}>
+      <Box mb={{ base: '50px', sm: '100px' }}>
         <Container
           maw="1000px"
           w="100%"
@@ -57,21 +61,39 @@ export default function Page() {
             direction={{ base: "column", sm: "row" }}
           >
             <Box flex="1">
-              <Text mb='md'>
-                Are you ready to join the future of trading? Taoshi&apos;s Proprietary Trading Network (PTN) is the world&apos;s first decentralized proprietary trading challenge, built on Bittensor. We empower the brightest minds in quantitative trading to deploy, compete, and profit from their advanced trading models.
-              </Text>
-              <Text>
-                There are two ways to trade with Taoshi: compete in our $40,000 Challenge for a chance at a contractor role, or start trading on PTN today for a share of over *$30 million in annual rewards!
-              </Text>
+              <Box mb={{ base: '25px', sm: '38px' }}>
+                <Text mb='md'>
+                  Are you ready to join the future of trading? Taoshi&apos;s Proprietary Trading Network (PTN) is the world&apos;s first decentralized proprietary trading challenge, built on Bittensor. We empower the brightest minds in quantitative trading to deploy, compete, and profit from their advanced trading models.
+                </Text>
+                <Text>
+                  There are two ways to trade with Taoshi: compete in our $40,000 Challenge for a chance at a contractor role, or start trading on PTN today for a share of over *$30 million in annual rewards!
+                </Text>
+              </Box>
+
+              <Center>
+                <Group gap='md'>
+                  <Button 
+                    component={Link} 
+                    href="#"
+                    onClick={() => trackEvent('click', 'trader_page', 'apply_to_challenge')}
+                  >
+                    Apply to $40k Challenge
+                  </Button>
+                  <Button 
+                    component={Link} 
+                    href="https://github.com/taoshidev/proprietary-trading-network/blob/main/docs/miner.md"
+                    onClick={() => trackEvent('click', 'trader_page', 'join_network')}
+                  >
+                    Join the Network
+                  </Button>
+                </Group>
+              </Center>
             </Box>
           </Flex>
-
-          <Divider w='50px' mx='auto' mt={{ base: '50px', md: '75px' }} />
-
         </Container>
       </Box>
 
-      <Box mb={{ base: '50px', sm: '75px' }}>
+      <Box mb={{ base: '50px', sm: '100px' }}>
         <Container
           maw="1000px"
           w="100%"
@@ -115,19 +137,16 @@ export default function Page() {
 
             </Box>
           </Flex>
-
-          <Divider w='50px' mx='auto' mt={{ base: '50px', md: '75px' }} />
-
         </Container>
       </Box>
 
-      <Box mb={{ base: '50px', sm: '75px' }}>
+      <Box mb={{ base: '50px', sm: '100px' }}>
         <Container
           maw="1000px"
           w="100%"
           px={{ sm: 20 }}
         >
-          <Box>
+          <Box mb='xl'>
             <Box>
               <Title order={3} mb="md">
                 Pass our Trading Challenge for Contractors & Earn $40,000 in Rewards
@@ -141,20 +160,37 @@ export default function Page() {
             </Box>
           </Box>
 
-          <Divider w='50px' mx='auto' mt={{ base: '50px', md: '75px' }} />
+          <Center>
+            <Group gap='md'>
+              <Button 
+                component={Link} 
+                href="#"
+                onClick={() => trackEvent('click', 'trader_page', 'apply_to_challenge')}
+              >
+                Apply to $40k Challenge
+              </Button>
+              <Button 
+                component={Link} 
+                href="https://github.com/taoshidev/proprietary-trading-network/blob/main/docs/miner.md"
+                onClick={() => trackEvent('click', 'trader_page', 'join_network')}
+              >
+                Join the Network
+              </Button>
+            </Group>
+          </Center>
 
         </Container>
 
       </Box>
 
-      <Box mb={{ base: '50px', sm: '75px' }}>
+      <Box mb={{ base: '50px', sm: '100px' }}>
         <Container
           maw="1000px"
           w="100%"
           px={{ sm: 20 }}
         >
           <Box>
-            <Box>
+            <Box mb='xl'>
               <Title order={3} mb="md">
                 How It Works:
               </Title>
@@ -204,6 +240,25 @@ export default function Page() {
               </Box>
               <Text>Ready to start trading? Come compete with the world&apos;s best on Taoshi&apos;s Proprietary Trading Network, and take your share of over *$30 million in annual rewards!</Text>
             </Box>
+
+            <Center>
+              <Group gap='md'>
+                <Button 
+                  component={Link} 
+                  href="#"
+                  onClick={() => trackEvent('click', 'trader_page', 'apply_to_challenge')}
+                >
+                  Apply to $40k Challenge
+                </Button>
+                <Button 
+                  component={Link} 
+                  href="https://github.com/taoshidev/proprietary-trading-network/blob/main/docs/miner.md"
+                  onClick={() => trackEvent('click', 'trader_page', 'join_network')}
+                >
+                  Join the Network
+                </Button>
+              </Group>
+            </Center>
           </Box>
 
         </Container>
