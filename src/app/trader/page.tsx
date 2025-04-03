@@ -85,7 +85,8 @@ export default function Page() {
                   </Button>
                   <Button
                     component={Link}
-                    href="https://github.com/taoshidev/proprietary-trading-network/blob/main/docs/miner.md"
+                    href="https://docs.taoshi.io/ptn/overview/"
+                    target="_blank"
                     onClick={() =>
                       sendGAEvent("event", "buttonClicked", {
                         value: "Start Trading on PTN",
@@ -306,7 +307,8 @@ export default function Page() {
                 </Button>
                 <Button
                   component={Link}
-                  href="https://github.com/taoshidev/proprietary-trading-network/blob/main/docs/miner.md"
+                  href="https://docs.taoshi.io/ptn/overview/"
+                  target="_blank"
                   onClick={() =>
                     sendGAEvent("event", "buttonClicked", {
                       value: "Start Trading on PTN",
