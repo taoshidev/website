@@ -59,14 +59,14 @@ export const Nav = () => {
 
             <Menu.Dropdown>
               <Menu.Item
-                onClick={() => sendEvent("ptn")}
+                onClick={() => sendEvent("trader")}
                 component="a"
-                href="/ptn"
+                href="/trader"
                 leftSection={
-                  <IconGraph style={{ width: rem(14), height: rem(14) }} />
+                  <IconBriefcase2 style={{ width: rem(14), height: rem(14) }} />
                 }
               >
-                PTN
+                Become a Trader
               </Menu.Item>
               <Menu.Item
                 component="a"
@@ -82,17 +82,17 @@ export const Nav = () => {
                   />
                 }
               >
-                Theta Token
+                Theta
               </Menu.Item>
               <Menu.Item
-                onClick={() => sendEvent("request-network")}
+                onClick={() => sendEvent("ptn")}
                 component="a"
-                href="https://request.taoshi.io/"
+                href="/ptn"
                 leftSection={
-                  <IconDashboard style={{ width: rem(14), height: rem(14) }} />
+                  <IconGraph style={{ width: rem(14), height: rem(14) }} />
                 }
               >
-                Request Network
+                PTN
               </Menu.Item>
               <Menu.Item
                 onClick={() => sendEvent("dashboard")}
@@ -119,6 +119,17 @@ export const Nav = () => {
               </Menu.Item>
 
               <Menu.Divider variant="dashed" />
+              
+              <Menu.Item
+                onClick={() => sendEvent("request-network")}
+                component="a"
+                href="https://request.taoshi.io/"
+                leftSection={
+                  <IconDashboard style={{ width: rem(14), height: rem(14) }} />
+                }
+              >
+                Request Network
+              </Menu.Item>
 
               <Menu.Item
                 onClick={() => sendEvent("contact")}
@@ -202,6 +213,21 @@ export const Nav = () => {
         <Group align="center" gap="xl">
           <Anchor
             size="sm"
+            onClick={() => sendEvent("trader")}
+            href='/trader'
+            c="black"
+          >
+            Become a Trader
+          </Anchor>
+          <Anchor
+            size="sm"
+            href="/theta"
+            c="black"
+          >
+            Theta
+          </Anchor>
+          <Anchor
+            size="sm"
             onClick={() => sendEvent("ptn")}
             href="/ptn"
             c="black"
@@ -210,34 +236,11 @@ export const Nav = () => {
           </Anchor>
           <Anchor
             size="sm"
-            href="/theta"
-            c="orange"
-          >
-            Theta Token
-          </Anchor>
-          <Anchor
-            size="sm"
-            onClick={() => sendEvent("request-network")}
-            href="https://request.taoshi.io"
-            c="black"
-          >
-            Request Network
-          </Anchor>
-          <Anchor
-            size="sm"
             onClick={() => sendEvent("dashboard")}
             href="https://dashboard.taoshi.io"
             c="black"
           >
             Dashboard
-          </Anchor>
-          <Anchor
-            size="sm"
-            onClick={() => sendEvent("github")}
-            href="https://github.com/taoshidev/proprietary-trading-network"
-            c="black"
-          >
-            Github
           </Anchor>
 
           <Menu
@@ -263,6 +266,17 @@ export const Nav = () => {
             </Menu.Target>
 
             <Menu.Dropdown>
+              <Menu.Item
+                onClick={() => sendEvent("request-network")}
+                component="a"
+                href="https://request.taoshi.io/"
+                leftSection={
+                  <IconDashboard style={{ width: rem(14), height: rem(14) }} />
+                }
+              >
+                Request Network
+              </Menu.Item>
+              
               <Menu.Item
                 onClick={() => sendEvent("contact")}
                 component="a"
@@ -322,6 +336,16 @@ export const Nav = () => {
                 }
               >
                 LinkedIn
+              </Menu.Item>
+              <Menu.Item
+                onClick={() => sendEvent("github")}
+                component="a"
+                href="https://github.com/taoshidev/proprietary-trading-network"
+                leftSection={
+                  <IconBrandGithub style={{ width: rem(14), height: rem(14) }} />
+                }
+              >
+                Github
               </Menu.Item>
               <Menu.Item
                 onClick={() => sendEvent("newsroom")}

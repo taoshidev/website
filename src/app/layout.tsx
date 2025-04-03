@@ -3,11 +3,11 @@ import "./global.css";
 
 import type { Metadata } from "next";
 import NextTopLoader from "nextjs-toploader";
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import PlausibleProvider from "next-plausible";
 
 import { Providers } from "./providers";
-import {GoogleAnalytics} from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "Taoshi",
@@ -28,12 +28,13 @@ export default function RootLayout({
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
+        {/* <GoogleTagManager gtmId="GTM-NMGQLGF5" /> */}
       </head>
+
       <body>
         <NextTopLoader color="#E35F25" showSpinner={false} shadow={false} />
         <Providers>{children}</Providers>
-        <GoogleTagManager gtmId="G-00040SBXDP" />
-        <GoogleAnalytics />
+
         {/* <!-- Start of HubSpot Embed Code --> */}
         <script
           type="text/javascript"
@@ -43,6 +44,7 @@ export default function RootLayout({
           src="//js.hs-scripts.com/45009699.js"
         ></script>
         {/* <!-- End of HubSpot Embed Code --> */}
+        <GoogleAnalytics gaId="G-00040SBXDP" />
       </body>
     </html>
   );
