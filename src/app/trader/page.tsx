@@ -298,7 +298,8 @@ export default function Page() {
                   component={Link}
                   href="https://share.hsforms.com/1dk2NSACxQ5esOnY4wyho0Qqsppf"
                   onClick={() =>
-                    sendGAEvent("event", "buttonClicked", {
+                    sendGAEvent({
+                      event: "button_click",
                       value: "Apply to $40k Challenge",
                     })
                   }
