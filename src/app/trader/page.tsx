@@ -64,7 +64,7 @@ export default function Page() {
                 </Text>
                 <Text>
                   There are two ways to trade with Taoshi: compete in our
-                  $40,000 Challenge for a chance at a contractor role, or start
+                  $100,000 Challenge for a chance at a contractor role, or start
                   trading on PTN today for a share of over *$30 million in
                   annual rewards!
                 </Text>
@@ -77,11 +77,11 @@ export default function Page() {
                     href="https://share.hsforms.com/1dk2NSACxQ5esOnY4wyho0Qqsppf"
                     onClick={() =>
                       sendGAEvent("event", "buttonClicked", {
-                        value: "Apply to $40k Challenge",
+                        value: "Apply to $100k Challenge",
                       })
                     }
                   >
-                    Apply to $40k Challenge
+                    Apply to $100k Challenge
                   </Button>
                   <Button
                     component={Link}
@@ -182,7 +182,7 @@ export default function Page() {
           <Box mb="xl">
             <Box>
               <Title order={3} mb="md">
-                Pass our Trading Challenge for Contractors & Earn $40,000 in
+                Pass our Trading Challenge for Contractors & Earn $100,000 in
                 Rewards
               </Title>
               <Text mb="md">
@@ -214,11 +214,11 @@ export default function Page() {
                 href="https://share.hsforms.com/1dk2NSACxQ5esOnY4wyho0Qqsppf"
                 onClick={() =>
                   sendGAEvent("event", "buttonClicked", {
-                    value: "Apply to $40k Challenge",
+                    value: "Apply to $100k Challenge",
                   })
                 }
               >
-                Apply to $40k Challenge
+                Apply to $100k Challenge
               </Button>
             </Group>
           </Center>
@@ -240,7 +240,7 @@ export default function Page() {
                         Apply to Become a Trader (Optional):
                       </Text>{" "}
                       Express your interest in the contractor role for a chance
-                      at an additional $40,000 in rewards.
+                      at an additional $100,000 in rewards.
                     </Text>
                   </List.Item>
                   <List.Item mb="md">
@@ -279,7 +279,7 @@ export default function Page() {
                       Pass the 60-day challenge, and begin competing for a share
                       of more than $30 million* in annual rewards. If you are a
                       qualifying trader from Taoshi&apos;s Trading Challenge,
-                      you&apos;ll receive $40,000 in rewards for passing the
+                      you&apos;ll receive $100,000 in rewards for passing the
                       60-day challenge!
                     </Text>
                   </List.Item>
@@ -300,11 +300,11 @@ export default function Page() {
                   onClick={() =>
                     sendGAEvent({
                       event: "button_click",
-                      value: "Apply to $40k Challenge",
+                      value: "Apply to $100k Challenge",
                     })
                   }
                 >
-                  Apply to $40k Challenge
+                  Apply to $100k Challenge
                 </Button>
                 <Button
                   component={Link}
